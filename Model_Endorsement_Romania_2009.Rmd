@@ -1,0 +1,79 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(lfe)
+library(jtools)
+library(stargazer)
+```
+
+
+Read file generated in Python
+```{r}
+df <- read.csv("data_output/regression_Romania_2009.csv", encoding = "UTF-8")
+df <- df[grepl("Traian", df$candidate), ] # Traian Băsescu
+df
+```
+
+```{r}
+model_1 <- lm(rate ~ rate_tudor + rate_antonescu + rate_becali + rate_kelemen + rate_oprescu + rate_basescu, data = df)
+model_2 <- lm(rate ~ divisiveness_tudor + divisiveness_antonescu + divisiveness_becali + divisiveness_kelemen + divisiveness_oprescu + divisiveness_basescu, data = df)
+model_3 <- lm(rate ~ rate_tudor + rate_antonescu + rate_becali + rate_kelemen + rate_oprescu + rate_basescu + divisiveness_tudor + divisiveness_antonescu + divisiveness_becali + divisiveness_kelemen + divisiveness_oprescu + divisiveness_basescu, data = df)
+
+stargazer(model_1, model_2, model_3, type = "text")
+
+
+```
+
+```{r}
+
+library(minpack.lm)
+
+model_1 <- nlsLM(
+    formula = rate ~ const + b_tudor*rate_tudor + b_antonescu*rate_antonescu + b_kelemen*rate_kelemen + b_oprescu*rate_oprescu + b_basescu*rate_basescu,
+    data = df, 
+    start = list(const=0, b_tudor=0, b_antonescu=0, b_kelemen=0, b_oprescu=0, b_basescu=0),
+    lower = c(const=0, b_tudor=0, b_antonescu=0, b_kelemen=0, b_oprescu=0, b_basescu=0),
+    upper = c(const=1, b_tudor=1, b_antonescu=1, b_kelemen=1, b_oprescu=1, b_basescu=1),
+    #algorithm = "port"
+    )
+
+model_2 <- nlsLM(
+    formula = rate ~ const + d_tudor*divisiveness_tudor + d_antonescu*divisiveness_antonescu + d_kelemen*divisiveness_kelemen + d_oprescu*divisiveness_oprescu + d_basescu*divisiveness_basescu,
+    data = df, 
+    start = list(const=0, d_tudor=0, d_antonescu=0, d_kelemen=0, d_oprescu=0, d_basescu=0),
+    #lower = c(const=0, b_tudor=0, b_antonescu=0, b_becalli=0, b_kelemen=0, b_oprescu=0, b_basescu=0),
+    #upper = c(const=1, b_tudor=1, b_antonescu=1, b_becalli=1, b_kelemen=1, b_oprescu=1, b_basescu=1),
+    #algorithm = "port"
+    )
+
+model_3 <- nlsLM(
+    formula = rate ~ const + b_tudor*rate_tudor + b_antonescu*rate_antonescu + b_kelemen*rate_kelemen + b_oprescu*rate_oprescu + b_basescu*rate_basescu + d_tudor*divisiveness_tudor + d_antonescu*divisiveness_antonescu + d_kelemen*divisiveness_kelemen + d_oprescu*divisiveness_oprescu + d_basescu*divisiveness_basescu,
+    data = df, 
+    start = list(const=0, b_tudor=0, b_antonescu=0, b_kelemen=0, b_oprescu=0, b_basescu=0, d_tudor=0, d_antonescu=0, d_kelemen=0, d_oprescu=0, d_basescu=0),
+    lower = c(const=0, b_tudor=0, b_antonescu=0, b_kelemen=0, b_oprescu=0, b_basescu=0, d_tudor=-Inf, d_antonescu=-Inf, d_kelemen=-Inf, d_oprescu=-Inf, d_basescu=-Inf),
+    upper = c(const=1, b_tudor=1, b_antonescu=1, b_kelemen=1, b_oprescu=1, b_basescu=1, d_tudor=Inf, d_antonescu=Inf, d_kelemen=Inf, d_oprescu=Inf, d_basescu=Inf),
+    #algorithm = "port"
+    )
+
+models <- list(model_1, model_2, model_3)
+nlstargazer(models = models)
+```
+```{r}
+
+library(minpack.lm)
+
+model_test <- nlsLM(
+    formula = rate ~ const + b_tudor*rate_tudor + b_antonescu*rate_antonescu + b_kelemen*rate_kelemen + b_oprescu*rate_oprescu + b_basescu*rate_basescu + d_tudor*divisiveness_tudor*rate_tudor + d_antonescu*divisiveness_antonescu*rate_antonescu + d_kelemen*divisiveness_kelemen*rate_kelemen + d_oprescu*divisiveness_oprescu*rate_oprescu + d_basescu*divisiveness_basescu*rate_basescu,
+    data = df, 
+    start = list(const=0, b_tudor=0, b_antonescu=0, b_kelemen=0, b_oprescu=0, b_basescu=0, d_tudor=0, d_antonescu=0, d_kelemen=0, d_oprescu=0, d_basescu=0),
+    lower = c(const=0, b_tudor=0, b_antonescu=0, b_kelemen=0, b_oprescu=0, b_basescu=0, d_tudor=-Inf, d_antonescu=-Inf, d_kelemen=-Inf, d_oprescu=-Inf, d_basescu=-Inf),
+    upper = c(const=1, b_tudor=1, b_antonescu=1, b_kelemen=1, b_oprescu=1, b_basescu=1, d_tudor=Inf, d_antonescu=Inf, d_kelemen=Inf, d_oprescu=Inf, d_basescu=Inf),
+    #algorithm = "port"
+    )
+
+model_test
+```
+

@@ -1,0 +1,185 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(lfe)
+library(jtools)
+library(stargazer)
+library(minpack.lm)
+```
+
+
+Read file generated in Python
+```{r}
+df <- read.csv("data_output/regression_Chile_2021.csv")
+df <- subset(df, candidate == "JOSE ANTONIO KAST RIST") # 
+df
+```
+
+```{r}
+model_1 <- lm(rate ~ rate_parisi + rate_kast + rate_meo + rate_sichel + rate_provoste, data = df)
+model_2 <- lm(rate ~ divisiveness_parisi + divisiveness_kast + divisiveness_meo + divisiveness_sichel + divisiveness_provoste, data = df)
+model_3 <- lm(rate ~ rate_parisi + rate_kast + rate_meo + rate_sichel + rate_provoste + divisiveness_parisi + divisiveness_kast + divisiveness_meo + divisiveness_sichel + divisiveness_provoste, data = df)
+
+stargazer(model_1, model_2, model_3, type = "text")
+
+```
+
+
+
+```{r}
+model_1n <- nlsLM(
+    formula = rate ~ const + b_parisi*rate_parisi + b_kast*rate_kast + b_meo*rate_meo + b_sichel*rate_sichel + b_provoste*rate_provoste,
+    data = df, 
+    start = list(const=0, b_parisi=0, b_kast=0, b_meo=0, b_sichel=0, b_provoste=0),
+    lower = c(const=-Inf, b_parisi=0, b_kast=0, b_meo=0, b_sichel=0, b_provoste=0),
+    upper = c(const=Inf, b_parisi=1, b_kast=1, b_meo=1, b_sichel=1, b_provoste=1),
+    algorithm = "port",
+    model = FALSE
+)
+# summary(model_1n)
+
+res <- coef(summary(model_1n))[]
+m1 <- as.data.frame(res)
+m1
+```
+
+```{r}
+model_2n <- nlsLM(
+    formula = rate ~ const + d_parisi*divisiveness_parisi + d_kast*divisiveness_kast + d_meo*divisiveness_meo + d_sichel*divisiveness_sichel + d_provoste*divisiveness_provoste,
+    data = df, 
+    start = list(const=0, d_parisi=0, d_kast=0, d_meo=0, d_sichel=0, d_provoste=0),
+    #lower = c(const=-Inf, b_parisi=0, b_kast=0, b_meo=0, b_sichel=0, b_provoste=0),
+    #upper = c(const=Inf, b_parisi=1, b_kast=1, b_meo=1, b_sichel=1, b_provoste=1)
+)
+
+model_2n
+
+res <- coef(summary(model_2n))[]
+m2 <- as.data.frame(res)
+m2
+```
+
+```{r}
+model_3n <- nlsLM(
+    formula = rate ~ const + b_parisi*rate_parisi + b_kast*rate_kast + b_meo*rate_meo + b_sichel*rate_sichel + b_provoste*rate_provoste + d_parisi*divisiveness_parisi + d_kast*divisiveness_kast + d_meo*divisiveness_meo + d_sichel*divisiveness_sichel + d_provoste*divisiveness_provoste,
+    data = df, 
+    start = list(const=0, b_parisi=0, b_kast=0, b_meo=0, b_sichel=0, b_provoste=0, d_parisi=0, d_kast=0, d_meo=0, d_sichel=0, d_provoste=0),
+    lower = c(const=-Inf, b_parisi=0, b_kast=0, b_meo=0, b_sichel=0, b_provoste=0, d_parisi=-Inf, d_kast=-Inf, d_meo=-Inf, d_sichel=-Inf, d_provoste=-Inf),
+    upper = c(const=Inf, b_parisi=1, b_kast=1, b_meo=1, b_sichel=1, b_provoste=1, d_parisi=Inf, d_kast=Inf, d_meo=Inf, d_sichel=Inf, d_provoste=Inf)
+)
+
+model_3n
+
+res <- coef(summary(model_3n))[]
+m3 <- as.data.frame(res)
+m3
+```
+
+```{r}
+
+
+
+```
+
+```{r}
+names <- list(m1, m2, m3)
+func <- function(x) {
+  if (x < 0.01) {
+    return("***");
+  }
+  else if (x < 0.05) {
+    return("**");
+  }
+  else if (x < 0.1) {
+    return("*");
+  }
+  return("")
+}
+
+ll <- list()
+i <- 1
+library(glue)
+library(tibble)
+
+for(a in names){
+  model <- paste("model", i, sep = ".")
+  std <- paste("std_err", i, sep = ".")
+  t <- paste("t_value", i, sep = ".")
+  pval <- paste("p_value", i, sep = ".")
+  nm <- paste("row.names", i, sep = ".")
+  asd <- paste("pval", i, sep = ".")
+  
+  a <- tibble::rownames_to_column(a, nm)
+  a$pvalue <- sapply(a[["Pr(>|t|)"]], FUN = func)
+
+  a <- rename(a, 
+    "{model}" := Estimate,
+    "{std}" := "Std. Error",
+    "{t}" := "t value",
+    "{pval}" := "Pr(>|t|)",
+    "{asd}" := pvalue
+    
+    )
+  ll <- append(ll, list(a))
+  i <- i + 1
+
+}
+
+i <- 1
+a <- data.frame()
+for(x in c(1, 2, 3)){
+
+  if (x == 1) {
+    a <- as.data.frame(ll[1])
+  }
+  else {
+    a <- merge(
+        a,
+        as.data.frame(ll[x]),
+        by.x=paste("row.names", 1, sep="."),
+        by.y=paste("row.names", x, sep="."),
+        all=TRUE
+      )    
+  }
+  
+  i <- i + 1
+}
+
+dat <- data.frame(matrix(ncol = 4, nrow = 0))
+for(i in 1:nrow(a)) {
+    row <- a[i,]
+    # do stuff with row
+    label <- row[["row.names.1"]]
+    fl <- c(
+      label
+    )
+    for(x in c(1, 2, 3)) {
+      coef <- row[[paste("model", x, sep = ".")]]
+      pval <- row[[paste("pval", x, sep = ".")]]
+      vv <- round(coef, digits = 4)
+      
+      aa <- if(is.na(pval[1])) "" else paste(format(vv, nsmall = 4), pval, sep="")
+      fl <- append(fl, aa)
+    }
+
+    dat[nrow(dat) + 1,] <- fl
+
+}
+print.data.frame(dat)
+
+```
+
+
+
+```{r}
+library(knitr)
+```
+
+```{r}
+library(kableExtra)
+dat
+```
+

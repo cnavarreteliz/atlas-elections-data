@@ -1,0 +1,65 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+library(lfe)
+library(jtools)
+library(stargazer)
+```
+
+
+
+```{r}
+df <- read.csv("data_output/data_model_Chile_2021.csv")
+df
+```
+
+
+Model
+```{r}
+
+data <- df
+model_1 <- felm(growth ~ divisiveness | factor(candidate), data = data)
+model_2 <- felm(growth ~ rate_x | factor(candidate), data = data)
+model_3 <- felm(growth ~ entropy | factor(candidate), data = data)
+model_4 <- felm(growth ~ log(voters) | factor(candidate), data = data)
+
+model_5 <- felm(growth ~ divisiveness + rate_x + log(voters) + entropy | factor(candidate), data = data)
+
+stargazer(model_1, model_2, model_3, model_4, model_5, type = "text")
+```
+```{r}
+data <- df
+model_1 <- felm(scale(growth) ~ scale(divisiveness) | candidate + commune, data = data)
+model_2 <- felm(scale(growth) ~ scale(rate_x) | candidate + commune, data = data)
+model_3 <- felm(scale(growth) ~ scale(hhi) | candidate, data = data)
+model_4 <- felm(scale(growth) ~ scale(voters) | candidate, data = data)
+# model_5 <- felm(scale(growth) ~ scale(poverty_rate) | candidate, data = data)
+
+model_6 <- felm(scale(growth) ~ scale(divisiveness) + scale(rate_x) + scale(voters) + scale(hhi) | candidate + commune, data = data)
+# + scale(poverty_rate) model_5
+stargazer(model_1, model_2, model_3, model_4, model_6, type = "text")
+```
+
+```{r}
+cor(data[, c("hhi", "entropy", "voters", "rate_x", "divisiveness")],  method = "pearson")
+```
+
+
+```{r}
+plot_summs(model_5, plot.distributions = TRUE, inner_ci_level = .95)
+```
+
+```{r}
+res <- resid(model_5)
+#create Q-Q plot for residuals
+qqnorm(res)
+
+#add a straight diagonal line to the plot
+qqline(res) 
+
+plot(density(res))
+
+```
+

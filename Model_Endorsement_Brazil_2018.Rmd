@@ -1,0 +1,29 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(lfe)
+library(jtools)
+library(stargazer)
+```
+
+
+Read file generated in Python
+```{r}
+df <- read.csv("data_output/regression_Brazil_2018.csv")
+df <- subset(df, candidate == "JAIR MESSIAS BOLSONARO")
+df
+```
+
+```{r}
+model_1 <- lm(rate ~ rate_daciolo + rate_ciro + rate_alckmin + rate_meirelles + rate_bolsonaro + rate_amoedo, data = df)
+
+model_2 <- lm(rate ~ divisiveness_daciolo + divisiveness_ciro + divisiveness_haddad + divisiveness_alckmin + divisiveness_meirelles + divisiveness_bolsonaro + divisiveness_amoedo, data = df)
+
+model_3 <- lm(rate ~ rate_daciolo + rate_ciro + rate_alckmin + rate_meirelles + rate_bolsonaro + rate_amoedo + divisiveness_daciolo + divisiveness_daciolo + divisiveness_ciro + divisiveness_haddad + divisiveness_alckmin + divisiveness_meirelles + divisiveness_bolsonaro + divisiveness_amoedo, data = df)
+
+stargazer(model_1, model_2, model_3, type = "text")
+
+```

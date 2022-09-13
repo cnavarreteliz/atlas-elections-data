@@ -1,0 +1,66 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(lfe)
+library(jtools)
+library(stargazer)
+```
+
+
+Read file generated in Python
+```{r}
+df <- read.csv("data_output/regression_France_2022.csv")
+df <- subset(df, candidate == "Emmanuel MACRON")
+df
+```
+
+```{r}
+model_1 <- lm(rate ~ rate_macron + rate_roussel + rate_lassalle + rate_melenchon + rate_dupont + rate_pecresse + rate_jadot + rate_zemmour, data = df)
+
+model_2 <- lm(rate ~ divisiveness_macron + divisiveness_roussel + divisiveness_lassalle + divisiveness_melenchon + divisiveness_le_pen + divisiveness_dupont + divisiveness_pecresse + divisiveness_jadot + divisiveness_zemmour, data = df)
+
+model_3 <- lm(rate ~ rate_macron + rate_roussel + rate_lassalle + rate_melenchon + rate_dupont + rate_pecresse + rate_jadot + rate_zemmour +
+                divisiveness_macron + divisiveness_roussel + divisiveness_lassalle + divisiveness_melenchon + divisiveness_le_pen  + divisiveness_dupont + divisiveness_pecresse + divisiveness_jadot + divisiveness_zemmour, data = df)
+
+stargazer(model_1, model_2, model_3, type = "text")
+
+```
+
+```{r}
+model_1 <- nlsLM(
+    formula = rate ~ const + b_macron*rate_macron + b_roussel*rate_roussel + b_lassalle*rate_lassalle + b_melenchon*rate_melenchon + b_dupont*rate_dupont + b_pecresse*rate_pecresse
+    + b_jadot*rate_jadot + b_zemmour*rate_zemmour,
+    data = df, 
+    start = list(const=0, b_macron=0, b_roussel=0, b_lassalle=0, b_melenchon=0, b_dupont=0, b_pecresse=0, b_jadot=0, b_zemmour=0),
+    lower = c(const=-Inf, b_macron=0, b_roussel=0, b_lassalle=0, b_melenchon=0, b_dupont=0, b_pecresse=0, b_jadot=0, b_zemmour=0),
+    upper = c(const=Inf, b_macron=1, b_roussel=1, b_lassalle=1, b_melenchon=1, b_dupont=1, b_pecresse=1, b_jadot=1, b_zemmour=1),
+    algorithm = "port",
+    model = FALSE
+)
+
+model_2 <- nlsLM(
+    formula = rate ~ const + d_macron*divisiveness_macron + d_roussel*divisiveness_roussel + d_lassalle*divisiveness_lassalle + d_melenchon*divisiveness_melenchon + d_dupont*divisiveness_dupont + d_pecresse*divisiveness_pecresse
+    + d_jadot*divisiveness_jadot + d_zemmour*divisiveness_zemmour,
+    data = df, 
+    start = list(const=0, d_macron=0, d_roussel=0, d_lassalle=0, d_melenchon=0, d_dupont=0, d_pecresse=0, d_jadot=0, d_zemmour=0),
+    algorithm = "port",
+    model = FALSE
+)
+
+model_3 <- nlsLM(
+    formula = rate ~ const+ b_macron*rate_macron + b_roussel*rate_roussel + b_lassalle*rate_lassalle + b_melenchon*rate_melenchon + b_dupont*rate_dupont + b_pecresse*rate_pecresse
+    + b_jadot*rate_jadot + b_zemmour*rate_zemmour + d_macron*divisiveness_macron + d_roussel*divisiveness_roussel + d_lassalle*divisiveness_lassalle + d_melenchon*divisiveness_melenchon + d_dupont*divisiveness_dupont + d_pecresse*divisiveness_pecresse + d_jadot*divisiveness_jadot + d_zemmour*divisiveness_zemmour,
+    data = df, 
+    start = list(const=0, b_macron=0, b_roussel=0, b_lassalle=0, b_melenchon=0, b_dupont=0, b_pecresse=0, b_jadot=0, b_zemmour=0, d_macron=0, d_roussel=0, d_lassalle=0, d_melenchon=0, d_dupont=0, d_pecresse=0, d_jadot=0, d_zemmour=0),
+    lower = c(const=-Inf, b_macron=0, b_roussel=0, b_lassalle=0, b_melenchon=0, b_dupont=0, b_pecresse=0, b_jadot=0, b_zemmour=0, d_macron=-Inf, d_roussel=-Inf, d_lassalle=-Inf, d_melenchon=-Inf, d_dupont=-Inf, d_pecresse=-Inf, d_jadot=-Inf, d_zemmour=-Inf),
+    upper = c(const=Inf, b_macron=1, b_roussel=1, b_lassalle=1, b_melenchon=1, b_dupont=1, b_pecresse=1, b_jadot=1, b_zemmour=1, d_macron=Inf, d_roussel=Inf, d_lassalle=Inf, d_melenchon=Inf, d_dupont=Inf, d_pecresse=Inf, d_jadot=Inf, d_zemmour=Inf),
+    algorithm = "port"
+)
+
+models <- list(model_1, model_2, model_3)
+nlstargazer(models = models)
+```
+
