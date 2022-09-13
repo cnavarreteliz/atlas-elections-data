@@ -76,7 +76,7 @@ for year, country, location_level in [
     print(year, country)
 
     df = pd.read_csv(
-        f"data_output/{country}/{year}_first_round.csv.gzip", compression="gzip")
+        f"data_output/{country}/{year}_first_round.csv.gz", compression="gzip")
     df.columns = [x.lower() for x in df.columns]
 
     dd = df.groupby("candidate").agg({"value": "sum"})
@@ -84,11 +84,11 @@ for year, country, location_level in [
     values = list(dd[dd["rate"] > RATE_THRESHOLD].index.unique())
 
     df_runoff = pd.read_csv(
-        f"data_output/{country}/{year}_runoff.csv.gzip", compression="gzip")
+        f"data_output/{country}/{year}_runoff.csv.gz", compression="gzip")
     df_runoff.columns = [x.lower() for x in df_runoff.columns]
 
     df_location = pd.read_csv(
-        f"data_output/{country}/{year}_first_round_location.csv.gzip", compression="gzip")
+        f"data_output/{country}/{year}_first_round_location.csv.gz", compression="gzip")
 
     df = df[df["candidate"].isin(values)]
     df_runoff = df_runoff[df_runoff["candidate"].isin(values)]
@@ -108,7 +108,7 @@ for year, country, location_level in [
     df_rounds = pd.merge(df1, df2, on=[location_level, "candidate"])
     df_rounds["diff"] = df_rounds["rate_y"] - df_rounds["rate_x"]
 
-    path = f"data_output/{country}/{year}_pairwise.csv.gzip"
+    path = f"data_output/{country}/{year}_pairwise.csv.gz"
 
     if not os.path.isfile(path):
 
@@ -128,7 +128,7 @@ for year, country, location_level in [
 
     df_dv = data.groupby([location_level, "candidate"]).agg(
         {"rate": "std"}).rename(columns={"rate": "value"}).reset_index()
-    path = f"data_output/{country}/{year}_divisiveness_{location_level}.csv.gzip"
+    path = f"data_output/{country}/{year}_divisiveness_{location_level}.csv.gz"
 
     df_dv.to_csv(path, compression="gzip", index=False)
 
