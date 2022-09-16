@@ -12,15 +12,18 @@ library(stargazer)
 
 Read file generated in Python
 ```{r}
-df <- read.csv("data_output/regression_Romania_2009.csv", encoding = "UTF-8")
+country <- "Romania"
+year <- 2009
+
+df <- read.csv("data_regressions/Romania_2009_polling_station.csv", encoding="iso8859_16")
 df <- df[grepl("Traian", df$candidate), ] # Traian Băsescu
 df
 ```
 
 ```{r}
-model_1 <- lm(rate ~ rate_tudor + rate_antonescu + rate_becali + rate_kelemen + rate_oprescu + rate_basescu, data = df)
-model_2 <- lm(rate ~ divisiveness_tudor + divisiveness_antonescu + divisiveness_becali + divisiveness_kelemen + divisiveness_oprescu + divisiveness_basescu, data = df)
-model_3 <- lm(rate ~ rate_tudor + rate_antonescu + rate_becali + rate_kelemen + rate_oprescu + rate_basescu + divisiveness_tudor + divisiveness_antonescu + divisiveness_becali + divisiveness_kelemen + divisiveness_oprescu + divisiveness_basescu, data = df)
+model_1 <- lm(rate ~ rate_tudor + rate_antonescu + rate_kelemen + rate_oprescu + rate_basescu, data = df)
+model_2 <- lm(rate ~ divisiveness_tudor + divisiveness_antonescu + divisiveness_kelemen + divisiveness_oprescu + divisiveness_basescu, data = df)
+model_3 <- lm(rate ~ rate_tudor + rate_antonescu + rate_kelemen + rate_oprescu + rate_basescu + divisiveness_tudor + divisiveness_antonescu + divisiveness_kelemen + divisiveness_oprescu + divisiveness_basescu, data = df)
 
 stargazer(model_1, model_2, model_3, type = "text")
 
@@ -75,5 +78,38 @@ model_test <- nlsLM(
     )
 
 model_test
+```
+```{r}
+data1r <- fread("data_output/Romania/2009_first_round.csv.gz", encoding="UTF-8")
+data_1r <- data1r[ , .(value = sum(value)), by = candidate]
+data_1r$rate <- data_1r$value / sum(data_1r$value)
+data_1r[grepl("Traian", data_1r$candidate), "candidate"] <- "Traian Basescu"
+data_1r[grepl("Mircea", data_1r$candidate), "candidate"] <- "Mircea Geoana"
+
+candidates <- c(subset(data_1r, rate > 0.02)[["candidate"]])
+candidates
+```
+
+
+
+```{r}
+coefs <- coef(model_1)
+df_model <- data.frame(
+  candidate = c("Traian Basescu", "Crin Antonescu", "Corneliu Vadim Tudor", "Sorin Oprescu", "Hunor Kelemen"),
+  coef = c(coefs[["b_basescu"]], coefs[["b_antonescu"]], coefs[["b_tudor"]], coefs[["b_oprescu"]], coefs[["b_kelemen"]])
+)
+df_model <- merge(df_model, data_1r, all=TRUE)
+df_model[["1_coef"]] <- 1 - df_model$coef
+
+
+df_model[["to_candidate_a"]] <- df_model[["rate"]] * df_model[["coef"]]
+df_model[["to_candidate_b"]] <- df_model[["rate"]] * df_model[["1_coef"]]
+
+df_model
+```
+
+```{r}
+draw_sankey(df_model, candidates, c("Mircea Geoana", "Traian Basescu"))
+
 ```
 

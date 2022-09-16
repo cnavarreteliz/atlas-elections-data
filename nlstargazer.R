@@ -1,7 +1,8 @@
-
 library(glue)
 library(tibble)
 library(dplyr)
+library(kableExtra)
+
 
 nls_extract_params <- function(model) {
   res <- coef(summary(model))[]
@@ -10,6 +11,7 @@ nls_extract_params <- function(model) {
   
   return(list(parameters, residual))
 }
+
 
 nlstargazer <- function(models, digits = 4) {
   N <- length(models)

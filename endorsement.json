@@ -1,0 +1,47 @@
+{
+  "Chile_2017": {
+    "SEBASTIAN PIÑERA ECHENIQUE": [],
+    "ALEJANDRO GUILLIER": []
+  },
+  "Chile_2021": {
+    "JOSE ANTONIO KAST RIST": [
+      [
+        "SEBASTIAN SICHEL RAMIREZ",
+        "FRANCO PARISI FERNANDEZ"
+      ],
+      []
+    ],
+    "GABRIEL BORIC FONT": [
+      [
+        "MARCO ENRIQUEZ-OMINAMI GUMUCIO",
+        "YASNA PROVOSTE CAMPILLAY"
+      ],
+      []
+    ]
+  },
+  "France_2017": {
+    "Emmanuel MACRON": [],
+    "Marine Le Pen": []
+  },
+  "France_2022": {
+    "Emmanuel MACRON": [
+      [
+        "Anne HIDALGO",
+        "Yannick JADOT",
+        "Valérie PÉCRESSE"
+      ],
+      [
+        "Jean-Luc MÉLENCHON",
+        "Philippe POUTOU",
+        "Fabien ROUSSEL"
+      ]
+    ],
+    "Marine LE PEN": [
+      [
+        "Nicolas DUPONT-AIGNAN",
+        "Éric ZEMMOUR"
+      ],
+      []
+    ]
+  }
+}

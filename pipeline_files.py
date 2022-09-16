@@ -1,3 +1,4 @@
+import json
 import numpy as np
 import os
 import pandas as pd
@@ -8,72 +9,21 @@ from glob import glob
 
 
 RATE_THRESHOLD = 0.02
-labels = {
-    "Anne HIDALGO": "hidalgo",
-    "Emmanuel MACRON": "macron",
-    "Fabien ROUSSEL": "roussel",
-    "Jean LASSALLE": "lassalle",
-    "Jean-Luc MÉLENCHON": "melenchon",
-    "Marine LE PEN": "le_pen",
-    "Nathalie ARTHAUD": "arthaud",
-    "Nicolas DUPONT-AIGNAN": "dupont",
-    "Philippe POUTOU": "poutou",
-    "Valérie PÉCRESSE": "pecresse",
-    "Yannick JADOT": "jadot",
-    "Éric ZEMMOUR": "zemmour",
-    'Benoît HAMON': "hamon",
-    'François FILLON': "fillon",
+DIVISIVENESS_COLUMN = "rate"  # Values accepted are {"rate": "rank"}
+_labels = open("acronyms.json", encoding="utf-8")
+_labels = json.load(_labels)
 
-    "ALVARO FERNANDES DIAS": "alvaro",
-    "BENEVENUTO DACIOLO FONSECA DOS SANTOS": "daciolo",
-    "CIRO FERREIRA GOMES": "ciro",
-    "FERNANDO HADDAD": "haddad",
-    "GERALDO JOSÉ RODRIGUES ALCKMIN FILHO": "alckmin",
-    "GUILHERME CASTRO BOULOS": "boulos",
-    "HENRIQUE DE CAMPOS MEIRELLES": "meirelles",
-    "JAIR MESSIAS BOLSONARO": "bolsonaro",
-    "JOSE MARIA EYMAEL": "eymael",
-    "JOÃO DIONISIO FILGUEIRA BARRETO AMOEDO": "amoedo",
-    "JOÃO VICENTE FONTELLA GOULART": "goulart",
-    "MARIA OSMARINA MARINA DA SILVA VAZ DE LIMA": "da_silva",
-    "VERA LUCIA PEREIRA DA SILVA SALGADO": "vera_lucia",
-
-    "GABRIEL BORIC FONT": "boric",
-    "JOSE ANTONIO KAST RIST": "kast",
-    "YASNA PROVOSTE CAMPILLAY": "provoste",
-    "SEBASTIAN SICHEL RAMIREZ": "sichel",
-    "EDUARDO ARTES BRICHETTI": "artes",
-    "MARCO ENRIQUEZ-OMINAMI GUMUCIO": "meo",
-    "FRANCO PARISI FERNANDEZ": "parisi",
-
-    "CAROLINA GOIC BOROEVIC": "goic",
-    "SEBASTIAN PIÑERA ECHENIQUE": "pinera",
-    "ALEJANDRO  GUILLIER ALVAREZ": "guillier",
-    "MARCO  ENRIQUEZ-OMINAMI GUMUCIO": "meo",
-    "BEATRIZ SANCHEZ MUÑOZ": "sanchez",
-
-    "Constantin Ninel Potârcă": "potarca",
-    "Constantin Rotaru": "rotaru",
-    "Corneliu Vadim Tudor": "tudor",
-    "Crin Antonescu": "antonescu",
-    "George Becali": "becali",
-    "Gheorghe-Eduard Manole": "manole",
-    "Hunor Kelemen": "kelemen",
-    "Mircea Geoană": "geoana",
-    "Ovidiu Cristian Iane": "iane",
-    "Remus Cernea": "cernea",
-    "Sorin Oprescu": "oprescu",
-    "Traian Băsescu": "basescu"
-}
 
 for year, country, location_level in [
     (2009, "Romania", "county_name"),
-    (2017, "Chile", "commune"),
-    (2021, "Chile", "commune"),
+    (2017, "Chile", "province"),
+    (2021, "Chile", "province"),
     (2017, "France", "department"),
-    (2022, "France", "department")
+    (2022, "France", "department"),
+    (2018, "Brazil", "region")
 ]:
     print(year, country)
+    labels = _labels[f"{country}_{year}"]
 
     df = pd.read_csv(
         f"data_output/{country}/{year}_first_round.csv.gz", compression="gzip")
@@ -127,7 +77,7 @@ for year, country, location_level in [
     ), df.copy(), on="polling_id").copy()
 
     df_dv = data.groupby([location_level, "candidate"]).agg(
-        {"rate": "std"}).rename(columns={"rate": "value"}).reset_index()
+        {DIVISIVENESS_COLUMN: "std"}).rename(columns={DIVISIVENESS_COLUMN: "value"}).reset_index()
     path = f"data_output/{country}/{year}_divisiveness_{location_level}.csv.gz"
 
     df_dv.to_csv(path, compression="gzip", index=False)
@@ -168,5 +118,11 @@ for year, country, location_level in [
 
     dd.columns = cols
     dd = pd.merge(dd, df_b, on="polling_id")
+    encoding = "utf-8"
+    if country == "Romania":
+        encoding = "iso8859_16"
     dd.to_csv(
-        f"data_output/regression_{country}_{year}.csv", encoding="utf-8", index=False)
+        f"data_regressions/{country}_{year}_polling_station.csv",
+        encoding=encoding,
+        index=False
+    )

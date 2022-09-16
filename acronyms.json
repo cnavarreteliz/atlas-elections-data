@@ -1,0 +1,77 @@
+{
+  "France_2022": {
+    "Anne HIDALGO": "hidalgo",
+    "Emmanuel MACRON": "macron",
+    "Fabien ROUSSEL": "roussel",
+    "Jean LASSALLE": "lassalle",
+    "Jean-Luc MÉLENCHON": "melenchon",
+    "Marine LE PEN": "le_pen",
+    "Nathalie ARTHAUD": "arthaud",
+    "Nicolas DUPONT-AIGNAN": "dupont",
+    "Philippe POUTOU": "poutou",
+    "Valérie PÉCRESSE": "pecresse",
+    "Yannick JADOT": "jadot",
+    "Éric ZEMMOUR": "zemmour"
+  },
+  "France_2017": {
+    "Benoît HAMON": "hamon",
+    "François FILLON": "fillon",
+    "Emmanuel MACRON": "macron",
+    "Fabien ROUSSEL": "roussel",
+    "Jean LASSALLE": "lassalle",
+    "Jean-Luc MÉLENCHON": "melenchon",
+    "Marine LE PEN": "le_pen",
+    "Nathalie ARTHAUD": "arthaud",
+    "Nicolas DUPONT-AIGNAN": "dupont",
+    "Philippe POUTOU": "poutou",
+    "Valérie PÉCRESSE": "pecresse",
+    "Yannick JADOT": "jadot",
+    "Éric ZEMMOUR": "zemmour"
+  },
+  "Brazil_2018": {
+    "ALVARO FERNANDES DIAS": "alvaro",
+    "BENEVENUTO DACIOLO FONSECA DOS SANTOS": "daciolo",
+    "CIRO FERREIRA GOMES": "ciro",
+    "FERNANDO HADDAD": "haddad",
+    "GERALDO JOSÉ RODRIGUES ALCKMIN FILHO": "alckmin",
+    "GUILHERME CASTRO BOULOS": "boulos",
+    "HENRIQUE DE CAMPOS MEIRELLES": "meirelles",
+    "JAIR MESSIAS BOLSONARO": "bolsonaro",
+    "JOSE MARIA EYMAEL": "eymael",
+    "JOÃO DIONISIO FILGUEIRA BARRETO AMOEDO": "amoedo",
+    "JOÃO VICENTE FONTELLA GOULART": "goulart",
+    "MARIA OSMARINA MARINA DA SILVA VAZ DE LIMA": "da_silva",
+    "VERA LUCIA PEREIRA DA SILVA SALGADO": "vera_lucia"
+  },
+  "Chile_2021": {
+    "GABRIEL BORIC FONT": "boric",
+    "JOSE ANTONIO KAST RIST": "kast",
+    "YASNA PROVOSTE CAMPILLAY": "provoste",
+    "SEBASTIAN SICHEL RAMIREZ": "sichel",
+    "EDUARDO ARTES BRICHETTI": "artes",
+    "MARCO ENRIQUEZ-OMINAMI GUMUCIO": "meo",
+    "FRANCO PARISI FERNANDEZ": "parisi"
+  },
+  "Chile_2017": {
+    "CAROLINA GOIC BOROEVIC": "goic",
+    "SEBASTIAN PIÑERA ECHENIQUE": "pinera",
+    "ALEJANDRO  GUILLIER ALVAREZ": "guillier",
+    "MARCO  ENRIQUEZ-OMINAMI GUMUCIO": "meo",
+    "BEATRIZ SANCHEZ MUÑOZ": "sanchez",
+    "JOSE ANTONIO KAST RIST": "kast"
+  },
+  "Romania_2009": {
+    "Constantin Ninel Potârcă": "potarca",
+    "Constantin Rotaru": "rotaru",
+    "Corneliu Vadim Tudor": "tudor",
+    "Crin Antonescu": "antonescu",
+    "George Becali": "becali",
+    "Gheorghe-Eduard Manole": "manole",
+    "Hunor Kelemen": "kelemen",
+    "Mircea Geoană": "geoana",
+    "Ovidiu Cristian Iane": "iane",
+    "Remus Cernea": "cernea",
+    "Sorin Oprescu": "oprescu",
+    "Traian Băsescu": "basescu"
+  }
+}

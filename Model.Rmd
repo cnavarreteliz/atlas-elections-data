@@ -11,7 +11,7 @@ library(stargazer)
 
 
 ```{r}
-df <- read.csv("data_output/data_model_Chile_2021.csv")
+df <- read.csv("data_regressions/model_Chile_2021_province.csv")
 df
 ```
 
@@ -31,19 +31,26 @@ stargazer(model_1, model_2, model_3, model_4, model_5, type = "text")
 ```
 ```{r}
 data <- df
-model_1 <- felm(scale(growth) ~ scale(divisiveness) | candidate + commune, data = data)
-model_2 <- felm(scale(growth) ~ scale(rate_x) | candidate + commune, data = data)
-model_3 <- felm(scale(growth) ~ scale(hhi) | candidate, data = data)
-model_4 <- felm(scale(growth) ~ scale(voters) | candidate, data = data)
-# model_5 <- felm(scale(growth) ~ scale(poverty_rate) | candidate, data = data)
-
-model_6 <- felm(scale(growth) ~ scale(divisiveness) + scale(rate_x) + scale(voters) + scale(hhi) | candidate + commune, data = data)
+model_1 <- felm(scale(growth) ~ scale(divisiveness) | candidate, data = data)
+model_2 <- felm(scale(growth) ~ scale(rate_x) | candidate, data = data)
+model_3 <- felm(scale(growth) ~ scale(diff_abstention) | candidate, data = data)
+model_4 <- felm(scale(growth) ~ scale(hhi) | candidate, data = data)
+model_5 <- felm(scale(growth) ~ scale(divisiveness) + scale(rate_x) + scale(hhi) + scale(diff_abstention) | candidate, data = data)
 # + scale(poverty_rate) model_5
-stargazer(model_1, model_2, model_3, model_4, model_6, type = "text")
+# ABSTENTION: As participation in the runoff was increased, ...
+stargazer(model_1, model_2, model_3, model_4, model_5, type = "text")
 ```
 
 ```{r}
-cor(data[, c("hhi", "entropy", "voters", "rate_x", "divisiveness")],  method = "pearson")
+data <- df
+model_1 <- felm(scale(diff_abstention) ~ scale(divisiveness) | candidate, data = data)
+model_2 <- felm(scale(diff_abstention) ~ scale(rate_x) | candidate, data = data)
+model_4 <- felm(scale(diff_abstention) ~ scale(hhi) | candidate, data = data)
+model_5 <- felm(scale(diff_abstention) ~ scale(divisiveness) + scale(rate_x) + scale(hhi) + scale(abstention_fround) | candidate, data = data)
+# + scale(poverty_rate) model_5
+# ABSTENTION: As participation in the runoff was increased, ...
+stargazer(model_1, model_2, model_4, model_5, type = "text")
+
 ```
 
 

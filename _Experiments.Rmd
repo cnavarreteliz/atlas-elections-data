@@ -1,0 +1,106 @@
+```{r}
+df <- read.csv("test2.csv")
+df
+```
+```{r}
+library(stargazer)
+library(fixest)
+library("bife")
+
+```
+
+```{r}
+model_1 <- glm(
+  flip ~ rate_winner + rate_loser,
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_2 <- glm(
+  flip ~ dv_winner + dv_loser,
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_3 <- glm(
+  flip ~ en_winner + en_loser,
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_4 <- glm(
+  flip ~ rate_winner + rate_loser + dv_winner + dv_loser,
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_5 <- glm(
+  flip ~ rate_winner + rate_loser + dv_winner + dv_loser + en_winner + en_loser + diff_participation,
+  family = binomial(link = "logit"),
+  data = df
+)
+
+stargazer(model_1, model_2, model_3, model_4, model_5, type = "text")
+```
+
+```{r}
+model_1 <- glm(
+  flip ~ scale(rate_winner) + scale(rate_loser),
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_2 <- glm(
+  flip ~ scale(dv_winner) + scale(dv_loser),
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_3 <- glm(
+  flip ~ scale(en_winner) + scale(en_loser),
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_4 <- glm(
+  flip ~ scale(rate_winner) + scale(rate_loser) + scale(dv_winner) + scale(dv_loser),
+  family = binomial(link = "logit"),
+  data = df
+)
+
+model_5 <- glm(
+  flip ~ scale(rate_winner) + scale(rate_loser) + scale(dv_winner) + scale(dv_loser) + scale(en_winner) + scale(en_loser),
+  family = binomial(link = "logit"),
+  data = subset(df, rate_diff > 0.05)
+)
+
+model_6 <- glm(
+  flip ~ scale(rate_winner) + scale(rate_loser) + scale(dv_winner) + scale(dv_loser) + scale(en_winner) + scale(en_loser) + scale(diff_participation),
+  family = binomial(link = "logit"),
+  data = subset(df, rate_diff < 0.05)
+)
+
+
+stargazer(model_1, model_2, model_3, model_4, model_5, model_6, type = "text")
+```
+
+
+```{r}
+model_1 <- glm(
+  increase_participation ~ scale(rate_winner) + scale(rate_loser) + scale(dv_winner) + scale(dv_loser),
+  data = df
+)
+
+
+stargazer(model_1, type = "text")
+```
+
+```{r}
+library(ShapleyValue)
+y <- df$flip
+x <- df[c("rate_winner", "rate_loser", "dv_winner", "dv_loser", "en_winner", "en_loser")]
+
+shapleyvalue(y,x)
+
+```
+
