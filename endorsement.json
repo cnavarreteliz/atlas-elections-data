@@ -1,7 +1,21 @@
 {
   "Chile_2017": {
-    "SEBASTIAN PIÑERA ECHENIQUE": [],
-    "ALEJANDRO GUILLIER": []
+    "SEBASTIAN PIÑERA ECHENIQUE": [
+      [
+        "JOSE ANTONIO KAST RIST"
+      ],
+      []
+    ],
+    "ALEJANDRO  GUILLIER ALVAREZ": [
+      [
+        "CAROLINA GOIC BOROEVIC",
+        "MARCO  ENRIQUEZ-OMINAMI GUMUCIO",
+        "ALEJANDRO NAVARRO BRAIN"
+      ],
+      [
+        "EDUARDO ARTES BRICHETTI"
+      ]
+    ]
   },
   "Chile_2021": {
     "JOSE ANTONIO KAST RIST": [
@@ -19,9 +33,32 @@
       []
     ]
   },
+  "Brazil_2018": {
+    "JAIR MESSIAS BOLSONARO": [
+      [],
+      []
+    ],
+    "FERNANDO HADDAD": [
+      [
+        "CIRO FERREIRA GOMES"
+      ],
+      []
+    ]
+  },
   "France_2017": {
-    "Emmanuel MACRON": [],
-    "Marine Le Pen": []
+    "Emmanuel MACRON": [
+      [
+        "Benoît HAMON",
+        "François FILLON"
+      ],
+      []
+    ],
+    "Marine LE PEN": [
+      [
+        "Nicolas DUPONT-AIGNAN"
+      ],
+      []
+    ]
   },
   "France_2022": {
     "Emmanuel MACRON": [
@@ -42,6 +79,22 @@
         "Éric ZEMMOUR"
       ],
       []
+    ]
+  },
+  "Romania_2009": {
+    "Traian Băsescu": [
+      [],
+      []
+    ],
+    "Mircea Geoană": [
+      [
+        "Crin Antonescu",
+        "Corneliu Vadim Tudor",
+        "Hunor Kelemen"
+      ],
+      [
+        "Sorin Oprescu"
+      ]
     ]
   }
 }

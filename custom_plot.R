@@ -15,10 +15,7 @@ draw_sankey <- function(data, candidates, runoff_candidates) {
     row <- data[i, ]
     candidate <- row[["candidate"]]
     idx <- which(candidates == candidate)[1] - 1
-    
-    print(candidate[])
-    print(runoff_candidates[[1]])
-    print(candidate[] == runoff_candidates[[1]])
+
     
     if (!(is.na(row[["coef"]]))) {
       source <- append(source, idx)

@@ -1,0 +1,69 @@
+Read library Voter Transition Rates proposed by Andreadis & Chadjipadelis (2009)
+Source: http://www.polres.gr/en/vtr
+Paper: https://www.tandfonline.com/doi/pdf/10.1080/17457280902799089
+
+```{r}
+source("VTR.R")
+library(tidyverse)
+library(data.table)
+library(ggplot2)
+library(glue)
+```
+
+Read data from the first round and runoff
+
+```{r}
+year <- 2012
+country <- "France"
+geography <- "department_id"
+
+
+df.1 <- setDT(read.csv(glue("data_output/{country}/{year}_first_round.csv.gz"), encoding = "UTF-8"))
+df.2 <- setDT(read.csv(glue("data_output/{country}/{year}_runoff.csv.gz"), encoding = "UTF-8"))
+df.location <- setDT(read.csv(glue("data_output/{country}/{year}_first_round_location.csv.gz"), encoding = "UTF-8"))
+
+df.1 <- merge(df.1, df.location[, c("polling_id", glue("{geography}"))], by = "polling_id", allow.cartesian = TRUE)
+df.2 <- merge(df.2, df.location[, c("polling_id", glue("{geography}"))], by = "polling_id", allow.cartesian = TRUE)
+
+df.total.1 <- df.1[ , .(total = sum(value)), by = geography]
+df.1 <- df.1[ , .(value = sum(value)), by = c(geography, "candidate")]
+df.1 <- merge(df.1, df.total.1, by = geography)
+df.1$rate <- df.1$value / df.1$total
+
+df.total.2 <- df.2[ , .(total = sum(value)), by = geography]
+df.2 <- df.2[ , .(value = sum(value)), by = c(geography, "candidate")]
+df.2 <- merge(df.2, df.total.2, by = geography)
+df.2$rate <- df.2$value / df.2$total
+```
+
+
+Convert data into matrix
+```{r}
+df.1[is.na(df.1)] <- 0
+df.2[is.na(df.2)] <- 0
+
+df.F <- pivot_wider(df.1, id_cols = geography, names_from = "candidate", values_from = "rate")
+df.S <- pivot_wider(df.2, id_cols = geography, names_from = "candidate", values_from = "rate")
+data_sum <- df.1[ , .(N = sum(value)), by = geography]     # Aggregate data
+```
+
+
+```{r}
+myN <- data.frame(value = data_sum[["N"]])
+myF <- df.F[, unique(df.1$candidate)]
+myS <- df.S[, unique(df.2$candidate)]
+
+z <- multirate(myN, myF, myS, 0.01)
+```
+
+
+```{r}
+df <- data.frame(z$Bb)
+write.csv(df, glue("data_transition/{country}_{year}_{geography}.csv"), row.names = TRUE)
+
+df <- data.frame(z$bb)
+df[glue("{geography}")] <- df.F[glue("{geography}")]
+
+write.csv(df, glue("data_transition/{country}_{year}_{geography}_expanded.csv"), row.names = TRUE)
+```
+

@@ -82,7 +82,7 @@ candidates
 
 
 ```{r}
-coefs <- coef(model_1)
+coefs <- coef(model_3)
 df_model <- data.table(
   candidate = c("JOSE ANTONIO KAST RIST", "YASNA PROVOSTE CAMPILLAY", "SEBASTIAN SICHEL RAMIREZ", "MARCO ENRIQUEZ-OMINAMI GUMUCIO", "FRANCO PARISI FERNANDEZ"),
   coef = c(coefs[["b_kast"]], coefs[["b_provoste"]], coefs[["b_sichel"]], coefs[["b_meo"]], coefs[["b_parisi"]])
@@ -97,7 +97,7 @@ df_model[["to_candidate_b"]] <- df_model[["rate"]] * df_model[["1_coef"]]
 df_model
 ```
 ```{r}
-draw_sankey(df_model, candidates)
+draw_sankey(df_model, candidates, c("GABRIEL BORIC FONT", "JOSE ANTONIO KAST RIST"))
 ```
 
 

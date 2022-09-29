@@ -7,15 +7,35 @@ output: html_notebook
 library(lfe)
 library(jtools)
 library(stargazer)
+library(minpack.lm)
+source("nlstargazer.R")
 ```
 
 
 Read file generated in Python
 ```{r}
-df <- read.csv("data_output/regression_France_2022.csv")
+df <- read.csv("data_regressions/France_2022_polling_station.csv")
 df <- subset(df, candidate == "Emmanuel MACRON")
-df
 ```
+
+
+Read centroids from each department
+```{r}
+df_centroids <- read.csv("data_distances/France_department.csv")
+df_centroids
+```
+
+```{r}
+library(spatialreg)
+points <- dist(df_centroids, method = "euclidean", upper = T, diag = T)
+
+```
+```{r}
+lagsarlm(rate ~ divisiveness_macron + divisiveness_roussel + divisiveness_lassalle + divisiveness_melenchon + divisiveness_le_pen + divisiveness_dupont + divisiveness_pecresse + divisiveness_jadot + divisiveness_zemmour, 
+         listw = points,
+         data = df)
+```
+
 
 ```{r}
 model_1 <- lm(rate ~ rate_macron + rate_roussel + rate_lassalle + rate_melenchon + rate_dupont + rate_pecresse + rate_jadot + rate_zemmour, data = df)
@@ -29,6 +49,10 @@ stargazer(model_1, model_2, model_3, type = "text")
 
 ```
 
+
+
+
+x
 ```{r}
 model_1 <- nlsLM(
     formula = rate ~ const + b_macron*rate_macron + b_roussel*rate_roussel + b_lassalle*rate_lassalle + b_melenchon*rate_melenchon + b_dupont*rate_dupont + b_pecresse*rate_pecresse
@@ -62,5 +86,139 @@ model_3 <- nlsLM(
 
 models <- list(model_1, model_2, model_3)
 nlstargazer(models = models)
+```
+```{r}
+data <- read.table("data_output/France/2022_first_round.csv.gz")
+data_sum <- data[ , .(group_sum = sum(value)), by = candidate]     # Aggregate data
+data_sum 
+```
+
+```{r}
+library(data.table)
+data1r <- fread("data_output/France/2022_first_round.csv.gz", encoding = "UTF-8")
+data_1r <- data1r[ , .(value = sum(value)), by = candidate]
+data_1r$rate <- data_1r$value / sum(data_1r$value)
+data_1r
+```
+
+
+```{r}
+candidates <- c(subset(data_1r, rate > 0.02)[["candidate"]])
+candidates
+```
+
+
+
+```{r}
+coefs <- coef(model_3)
+df_model <- data.table(
+  candidate = c("Fabien ROUSSEL", "Emmanuel MACRON", "Jean LASSALLE", "Éric ZEMMOUR", "Jean-Luc MÉLENCHON", 
+                "Yannick JADOT", "Valérie PÉCRESSE", "Nicolas DUPONT-AIGNAN"),
+  coef = c(coefs[["b_roussel"]], coefs[["b_macron"]], coefs[["b_lassalle"]], coefs[["b_zemmour"]], coefs[["b_melenchon"]],
+           coefs[["b_jadot"]], coefs[["b_pecresse"]], coefs[["b_dupont"]])
+)
+df_model <- merge(df_model, data_1r, all=TRUE)
+df_model[["1_coef"]] <- 1 - df_model$coef
+
+
+df_model[["to_candidate_a"]] <- df_model[["rate"]] * df_model[["coef"]]
+df_model[["to_candidate_b"]] <- df_model[["rate"]] * df_model[["1_coef"]]
+
+df_model
+```
+```{r}
+
+```
+
+
+
+```{r}
+source <- c()
+target <- c()
+value <- c()
+
+idx_candidate_a <- length(candidates) + 0
+idx_candidate_b <- length(candidates) + 1
+
+for(i in 1:nrow(df_model)) {
+  row <- df_model[i, ]
+  candidate <- row[["candidate"]]
+  idx <- which(candidates == candidate)[1] - 1
+
+  if (!(is.na(row[["coef"]]))) {
+    print(candidate)
+    source <- append(source, idx)
+    target <- append(target, idx_candidate_a) # BORIC
+    value <- append(value, row[["to_candidate_b"]] * 100)
+    
+    source <- append(source, idx)
+    target <- append(target, idx_candidate_b) # KAST
+    value <- append(value, row[["to_candidate_a"]] * 100)
+  }
+
+  else if (candidate == "Marine LE PEN") {
+    source <- append(source, idx)
+    target <- append(target, idx_candidate_a) # BORIC
+    value <- append(value, row[["rate"]] * 100)
+    
+    source <- append(source, idx)
+    target <- append(target, idx_candidate_b) # KAST
+    value <- append(value, 0)
+  }
+  
+}
+```
+
+```{r}
+# Load the package required to read JSON files.
+library("rjson")
+# Give the input file name to the function.
+colors <- fromJSON(file="consts.json")
+# Print the result.
+
+label <- c(candidates, c("Marine LE PEN", "Emmanuel MACRON"))
+color_label <- c()
+
+for (x in label) {
+  color_label <- append(color_label, colors[[x]])
+}
+
+color_label
+```
+
+
+```{r}
+library(plotly)
+
+fig <- plot_ly(
+    type = "sankey",
+    orientation = "h",
+
+    node = list(
+      label = label,
+      color = color_label,
+      pad = 15,
+      thickness = 20,
+      line = list(
+        color = "black",
+        width = 0
+      )
+    ),
+
+    link = list(
+      source = source,
+      target = target,
+      value =  value,
+      color = "#ebebeb"
+    )
+  )
+fig <- fig %>% layout(
+    title = "",
+    font = list(
+      size = 16
+    )
+)
+
+fig
 ```
 

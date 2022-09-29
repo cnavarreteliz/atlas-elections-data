@@ -1,0 +1,26 @@
+```{r}
+library(stargazer)
+```
+
+
+```{r}
+df.1 <- read.csv("data_regressions/test.csv", encoding = "UTF-8")
+df.1
+```
+
+
+
+
+```{r}
+model.1 <- lm(scale(value_y) ~ scale(value_x), data = df.1)
+model.2 <- lm(scale(value_y) ~ scale(averaged_values_y), data = df.1)
+model.3 <- lm(scale(value_y) ~ scale(value_x) + scale(averaged_values_y), data = df.1)
+# model.2 <- lagsarlm(value_y ~ value_x + averaged_values_x + averaged_values_y, data = df.1, listw = geow)
+
+stargazer(model.1, model.2, model.3, type = "text")
+```
+```{r}
+moran.plot(df.1$value_y, listw=geow, xlab="Standardized Divisiveness", ylab="Neighbors Standardized Divisiveness",
+main=c("Moran Scatterplot") )
+```
+

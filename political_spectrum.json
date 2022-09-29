@@ -1,0 +1,74 @@
+{
+  "Chile_2021": {
+    "scale": [
+      "EDUARDO ARTES BRICHETTI",
+      "GABRIEL BORIC FONT",
+      "MARCO ENRIQUEZ-OMINAMI GUMUCIO",
+      "YASNA PROVOSTE CAMPILLAY",
+      "FRANCO PARISI FERNANDEZ",
+      "SEBASTIAN SICHEL RAMIREZ",
+      "JOSE ANTONIO KAST RIST"
+    ],
+    "candidates": {
+      "GABRIEL BORIC FONT": -1,
+      "JOSE ANTONIO KAST RIST": 1
+    }
+  },
+  "Chile_2017": {
+    "scale": [
+      "EDUARDO ARTES BRICHETTI",
+      "ALEJANDRO NAVARRO BRAIN",
+      "BEATRIZ SANCHEZ MUÑOZ",
+      "MARCO  ENRIQUEZ-OMINAMI GUMUCIO",
+      "ALEJANDRO  GUILLIER ALVAREZ",
+      "CAROLINA GOIC BOROEVIC",
+      "SEBASTIAN PIÑERA ECHENIQUE",
+      "JOSE ANTONIO KAST RIST"
+    ],
+    "candidates": {
+      "ALEJANDRO  GUILLIER ALVAREZ": -1,
+      "SEBASTIAN PIÑERA ECHENIQUE": 1
+    }
+  },
+  "France_2017": {
+    "scale": [
+      "Nathalie ARTHAUD",
+      "Philippe POUTOU",
+      "Jean-Luc MÉLENCHON",
+      "Benoît HAMON",
+      "Emmanuel MACRON",
+      "Jean LASSALLE",
+      "François FILLON",
+      "Jacques CHEMINADE",
+      "Nicolas DUPONT-AIGNAN",
+      "François ASSELINEAU",
+      "Marine LE PEN"
+    ],
+    "source": "https://www.lexpress.fr/actualites/1/politique/la-presidentielle-sur-twitter-decryptee-par-un-macroscope-politique_1895616.html",
+    "candidates": {
+      "Emmanuel MACRON": -1,
+      "Marine LE PEN": 1
+    }
+  },
+  "France_2022": {
+    "scale": [
+      "Nathalie ARTHAUD",
+      "Philippe POUTOU",
+      "Fabien ROUSSEL",
+      "Jean-Luc MÉLENCHON",
+      "Jean LASSALLE",
+      "Anne HIDALGO",
+      "Yannick JADOT",
+      "Emmanuel MACRON",
+      "Valérie PÉCRESSE",
+      "Nicolas DUPONT-AIGNAN",
+      "Marine LE PEN",
+      "Éric ZEMMOUR"
+    ],
+    "source": "https://www.aljazeera.com/news/2022/3/22/frances-presidential-elections-all-you-need-to-know",
+    "candidates": {
+      "Emmanuel MACRON": -1,
+      "Marine LE PEN": 1
+    }
+  }
+}

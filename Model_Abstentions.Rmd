@@ -1,0 +1,70 @@
+Read libraries
+```{r}
+library(lfe)
+library(sf) # Shapes
+library(spdep)
+library(spatialreg)
+library(stargazer)
+```
+
+Read file generated in Python
+```{r}
+df <- read.csv("data_regressions/Turnout_France_2017.csv", encoding = "UTF-8")
+df
+```
+
+```{r}
+gdf <- read_sf("https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson")
+gdf
+```
+```{r}
+geonb <- poly2nb(gdf, queen=T)
+geow <- nb2listw(geonb, style="W", zero.policy = TRUE)
+
+
+```
+
+
+Run model
+```{r}
+model_1 <- lm(
+  scale(turnout_rate) ~ scale(value) + scale(poverty),
+  data = subset(df, department_id %in% gdf$code)
+)
+
+model_2 <- lagsarlm(
+  scale(turnout_rate) ~ scale(value) + scale(poverty),
+  data = subset(df, department_id %in% gdf$code),
+  listw = geow
+)
+
+model_3 <- errorsarlm(
+  scale(turnout_rate) ~ scale(value) + scale(poverty),
+  data = subset(df, department_id %in% gdf$code),
+  listw = geow
+)
+
+
+stargazer(model_1, model_2, model_3, type = "text")
+```
+```{r}
+summary(model_3)
+```
+
+
+
+```{r}
+moran.plot(subset(df, department_id %in% gdf$code)$turnout_rate, listw=geow, xlab="Standardized Turnout Rate", ylab="Neighbors Standardized Turnout Rate",
+main=c("Moran Scatterplot") )
+```
+
+```{r}
+moran.mc(subset(df, department_id %in% gdf$code)$value, geow, nsim=999)
+
+```
+
+```{r}
+lm.morantest(model_1, geow)
+
+```
+
