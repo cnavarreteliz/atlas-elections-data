@@ -21,6 +21,16 @@ and descriptive analysis througout the manuscript.
 Data origin, features and data cleaning procedure is explained in the supplementary material.
 """
 
+regression = False
+
+
+def er_polarization(rates, weights, alpha=0.25, K=1000):
+    xx = np.multiply.outer(weights ** (1 + alpha), weights)
+    yy = np.absolute(np.subtract.outer(rates, rates))
+    # avg = np.average(rates, weights=weights)
+
+    return K * np.sum(xx * yy)
+
 
 def calculate_divisiveness(
     year,
@@ -28,7 +38,7 @@ def calculate_divisiveness(
     location_level,
     method="std"
 ):
-    labels = _labels[f"{country}_{year}"]
+    # labels = _labels[f"{country}_{year}"]
     runoff_countries = ["France", "Chile", "Brazil", "Romania"]
 
     df = pd.read_csv(
@@ -53,7 +63,7 @@ def calculate_divisiveness(
 
     df = df[df["candidate"].isin(values)]
 
-    # Re-calculates percentages after removing candidates under the threshold defined by the user
+    # Re-calculates voting percentage of candidates after removing outliers
     tt = df.groupby(["polling_id", "candidate"]).agg({"value": "sum"})
     tt["rate"] = tt.groupby(level=[0]).apply(lambda x: x/x.sum())
     tt = tt.reset_index()
@@ -130,9 +140,35 @@ def calculate_divisiveness(
             for candidate, tmp_cand in tmp.groupby("candidate"):
                 output.append({
                     "candidate": candidate,
-                    "value": _(tmp_cand["rate"]),
+                    "value": _(tmp_cand["rate"].dropna()),
                     location_level: i
                 })
+
+        df_dv = pd.DataFrame(output)
+
+    elif method == "er":
+        output = []
+        alpha = 0.25
+        df_tmp = pd.merge(
+            data,
+            data.groupby("polling_id").agg({"value": "sum"}).rename(
+                columns={"value": "N"}).reset_index(),
+            on="polling_id"
+        )
+        for idx, _data in df_tmp.groupby(["candidate", location_level]):
+            candidate, geography = idx
+            _data = _data.fillna(0)
+            _data["weight"] = _data["N"] / _data["N"].sum()
+            weights = _data["weight"].fillna(0).values
+            rates = _data["rate"].fillna(0).values
+
+            value = er_polarization(rates, weights, alpha=alpha, K=1000)
+
+            output.append({
+                "value": value,
+                "candidate": candidate,
+                location_level: geography
+            })
 
         df_dv = pd.DataFrame(output)
 
@@ -148,41 +184,45 @@ def calculate_divisiveness(
 
         return df_tmp
 
-    df = pd.merge(df, df_location, on="polling_id")
+    if regression:
+        df = pd.merge(df, df_location, on="polling_id")
 
-    df_a = get_rate(df, location=[location_level, "polling_id"], level=[0, 1])
-    df_a = pd.merge(df_a, df_dv.rename(columns={"value": "divisiveness"}), on=[
-                    location_level, "candidate"])
+        df_a = get_rate(
+            df, location=[location_level, "polling_id"], level=[0, 1])
+        df_a = pd.merge(df_a, df_dv.rename(columns={"value": "divisiveness"}), on=[
+                        location_level, "candidate"])
 
-    df_b = get_rate(df_runoff)
+        if country in runoff_countries:
+            df_b = get_rate(df_runoff)
 
-    dd = df_a.pivot_table(
-        index=["polling_id"],
-        columns=["candidate"],
-        values=["rate", "value", "divisiveness"]
-    ).reset_index()
+        dd = df_a.pivot_table(
+            index=["polling_id"],
+            columns=["candidate"],
+            values=["rate", "value", "divisiveness"]
+        ).reset_index()
 
-    cols = []
-    for column in dd.columns:
-        a, b = column
-        new_column = None
-        if not b:
-            new_column = a
-        else:
-            new_column = f"{a}_{labels[b]}"
+        cols = []
+        for column in dd.columns:
+            a, b = column
+            new_column = None
+            if not b:
+                new_column = a
+            else:
+                new_column = f"{a}_{b}"  # labels
 
-        cols.append(new_column)
+            cols.append(new_column)
 
-    dd.columns = cols
-    dd = pd.merge(dd, df_b, on="polling_id")
-    encoding = "utf-8"
-    if country == "Romania":
-        encoding = "iso8859_16"
-    dd.to_csv(
-        f"data_regressions/{country}_{year}_polling_station_{method}.csv",
-        encoding=encoding,
-        index=False
-    )
+        dd.columns = cols
+        if country in runoff_countries:
+            dd = pd.merge(dd, df_b, on="polling_id")
+        encoding = "utf-8"
+        if country == "Romania":
+            encoding = "iso8859_16"
+        dd.to_csv(
+            f"data_regressions/{country}_{year}_polling_station_{method}.csv",
+            encoding=encoding,
+            index=False
+        )
 
 
 for year, country, location_level in [
@@ -191,15 +231,16 @@ for year, country, location_level in [
     # (2021, "Chile", "province"),
     # (2017, "Chile", "commune"),
     # (2021, "Chile", "commune"),
-    # (2017, "France", "department"),
-    # (2022, "France", "department"),
-    (2002, "France", "department_id"),
-    (2007, "France", "department_id"),
-    (2012, "France", "department_id"),
-    (2017, "France", "department_id"),
-    (2022, "France", "department_id"),
+    # (2002, "France", "department_id"),
+    # (2007, "France", "department_id"),
+    # (2012, "France", "department_id"),
+    # (2017, "France", "department_id"),
+    # (2022, "France", "department_id"),
     # (2018, "Brazil", "region_id")
+    # (2022, "Italy", "province_id"),
+    # (2021, "Germany", "constituency"),
+    # (2019, "Spain", "province_id")
 ]:
-    for method in ["std", "std_rank", "skew", "kurtosis"]:
+    for method in ["er"]:  # "std", "std_rank", "skew", "kurtosis"
         print(year, country, location_level, method)
         calculate_divisiveness(year, country, location_level, method)
