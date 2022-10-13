@@ -1,5 +1,5 @@
 ```{r}
-df <- read.csv("data_regressions/Chile_2021_flip.csv.gz", encoding = "UTF-8")
+df <- read.csv("data_regressions/France_2017_flip.csv.gz", encoding = "UTF-8")
 df <- na.omit(df)
 df <- subset(df, rate_winner < 0.5)
 df$country <- "France"
@@ -38,7 +38,7 @@ Libraries
 ```{r}
 library(stargazer)
 library(fixest)
-library("bife")
+library(bife)
 library(spatialreg)
 library(spdep)
 library(alpaca)
@@ -48,12 +48,6 @@ library(alpaca)
 ```{r}
 model.1 <- alpaca::feglm(
   flip ~ scale(rate_winner) + scale(rate_loser) | country + year,
-  family = binomial(link = "logit"),
-  data = df
-)
-
-model.2 <- alpaca::feglm(
-  flip ~ scale(rate_winner) + scale(rate_loser) | department + country + year,
   family = binomial(link = "logit"),
   data = df
 )
@@ -94,12 +88,6 @@ model.8 <- alpaca::feglm(
   data = df
 )
 
-model.9 <- alpaca::feglm(
-  flip ~ scale(rate_winner) + scale(rate_loser) + scale(dv_winner) + scale(dv_loser) + scale(en_winner) + scale(en_loser) + scale(en_dv_winner) + scale(en_dv_loser) + scale(polarization) + scale(flip_neighbors) + scale(polling_winner_fround)  | country + year,
-  family = binomial(link = "logit"),
-  data = df
-)
-
 # stargazer(model_1, model_2, model_3, model_4, model_5, model_6, type = "text") +  scale(flip_neighbors) 
 ```
 
@@ -121,12 +109,11 @@ target <- c(
   #"scale(en_dv_winner_2)",
   #"scale(en_dv_loser_2)",
   "scale(polling_winner_fround)",
-  "scale(flip_neighbors)",
-  "scale(polarization)"
+  "scale(flip_neighbors)"
   # "scale(flip_neighbors)",
 )
 tbl <- nlstargazer(
-  list(model.1, model.2, model.3, model.4, model.5, model.6, model.7, model.8, model.9),
+  list(model.1, model.3, model.4, model.5, model.6, model.7, model.8),
   digits = 3,
   sort_parameters = target,
   rename_parameters = list(
@@ -139,8 +126,7 @@ tbl <- nlstargazer(
     c("scale(en_dv_winner)", "Div. Endors. Winner"),
     c("scale(en_dv_loser)", "Div. Endors. Loser"),
     c("scale(polling_winner_fround)", "Same.Winner"),
-    c("scale(flip_neighbors)", "Avg. Flip Neighbors"),
-    c("scale(polarization)", "GPI")
+    c("scale(flip_neighbors)", "Avg. Flip Neighbors")
   )
 )
 

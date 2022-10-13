@@ -13,9 +13,9 @@ library(glue)
 Read data from the first round and runoff
 
 ```{r}
-year <- 2012
-country <- "France"
-geography <- "department_id"
+year <- 2021
+country <- "Chile"
+geography <- "commune"
 
 
 df.1 <- setDT(read.csv(glue("data_output/{country}/{year}_first_round.csv.gz"), encoding = "UTF-8"))

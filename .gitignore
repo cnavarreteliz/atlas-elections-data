@@ -1,4 +1,5 @@
 data/
 .Rproj.user
-.Rdata
+.RData
+.Rhistory
 *.gpkg

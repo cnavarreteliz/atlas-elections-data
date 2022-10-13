@@ -10,6 +10,7 @@ from scipy.stats import kurtosis, skew
 
 
 RATE_THRESHOLD = 0.02
+VOTES_POLLING = 100
 # Values accepted are {"rate": "rank"}
 _labels = open("acronyms.json", encoding="utf-8")
 _labels = json.load(_labels)
@@ -61,7 +62,11 @@ def calculate_divisiveness(
     df_location = pd.read_csv(
         f"data_output/{country}/{year}_first_round_location.csv.gz", compression="gzip")
 
-    df = df[df["candidate"].isin(values)]
+    df = df[df["candidate"].isin(values)].copy()
+
+    ee = df.groupby("polling_id").agg({"value": "sum"})
+    values_polling = list(ee[ee["value"] > VOTES_POLLING].index.unique())
+    df = df[df["polling_id"].isin(values_polling)].copy()
 
     # Re-calculates voting percentage of candidates after removing outliers
     tt = df.groupby(["polling_id", "candidate"]).agg({"value": "sum"})
@@ -232,15 +237,16 @@ for year, country, location_level in [
     # (2017, "Chile", "commune"),
     # (2021, "Chile", "commune"),
     # (2002, "France", "department_id"),
-    # (2007, "France", "department_id"),
-    # (2012, "France", "department_id"),
-    # (2017, "France", "department_id"),
-    # (2022, "France", "department_id"),
+    (2007, "France", "department_id"),
+    (2012, "France", "department_id"),
+    (2017, "France", "department_id"),
+    (2022, "France", "department_id"),
     # (2018, "Brazil", "region_id")
     # (2022, "Italy", "province_id"),
     # (2021, "Germany", "constituency"),
     # (2019, "Spain", "province_id")
 ]:
-    for method in ["er"]:  # "std", "std_rank", "skew", "kurtosis"
+    # "er" "divisiveness" "std", "std_rank", "skew", "kurtosis"
+    for method in ["divisiveness"]:
         print(year, country, location_level, method)
         calculate_divisiveness(year, country, location_level, method)

@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 
-def flip_df(df_fround, df_runoff, df_location, df_dv, country, year, location_level):
+def flip_df(df_fround, df_runoff, df_location, df_dv, country, year, location_level, method):
     candidate_a, candidate_b = df_runoff["candidate"].unique()
     endorsements = open("endorsement.json", encoding="utf-8")
     endorsements = json.load(endorsements)
@@ -197,7 +197,7 @@ def flip_df(df_fround, df_runoff, df_location, df_dv, country, year, location_le
     #     ])
 
     data.to_csv(
-        f"data_regressions/{country}_{year}_flip.csv.gz",
+        f"data_regressions/{country}_{year}_flip_{method}.csv.gz",
         compression="gzip",
         index=False
     )
