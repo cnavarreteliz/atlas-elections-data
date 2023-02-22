@@ -1,9 +1,9 @@
 ```{r}
-df <- read.csv("data_regressions/France_2017_flip.csv.gz", encoding = "UTF-8")
+df <- read.csv("data_regressions/France_2022_flip.csv.gz", encoding = "UTF-8")
 df <- na.omit(df)
 df <- subset(df, rate_winner < 0.5)
 df$country <- "France"
-df$year <- 2017
+df$year <- 2022
 df
 ```
 Read multiple files
@@ -12,21 +12,21 @@ library(stringr)
 
 items <- list(c("France", 2017), c("France", 2022), c("Chile", 2017), c("Chile", 2021)) # , c("Romania", 2009)
 df <- data.frame()
-for(item in items) {
+for (item in items) {
   country <- item[1]
   year <- item[2]
-  
+
   path <- "data_regressions/${country}_${year}_flip.csv.gz"
-  path <- stringr::str_interp(path, list(country=country, year=year))
-  
+  path <- stringr::str_interp(path, list(country = country, year = year))
+
   print(path)
-  
+
   tmp <- read.csv(path, encoding = "UTF-8")
   tmp <- na.omit(tmp)
   tmp <- tmp[c("dv_loser", "dv_winner", "flip", "flip_neighbors", "en_winner", "en_loser", "rate_winner", "rate_loser", "en_dv_winner", "en_dv_loser", "polarization", "polling_winner_fround")]
   tmp$country <- country
   tmp$year <- year
-  
+
   df <- rbind(df, tmp)
 }
 df <- subset(df, rate_winner < 0.5)
@@ -83,12 +83,12 @@ model.7 <- alpaca::feglm(
 )
 
 model.8 <- alpaca::feglm(
-  flip ~ scale(rate_winner) + scale(rate_loser) + scale(dv_winner) + scale(dv_loser) + scale(en_winner) + scale(en_loser) + scale(en_dv_winner) + scale(en_dv_loser) + scale(flip_neighbors) + scale(polling_winner_fround)  | country + year,
+  flip ~ scale(rate_winner) + scale(rate_loser) + scale(dv_winner) + scale(dv_loser) + scale(en_winner) + scale(en_loser) + scale(en_dv_winner) + scale(en_dv_loser) + scale(flip_neighbors) + scale(polling_winner_fround) | country + year,
   family = binomial(link = "logit"),
   data = df
 )
 
-# stargazer(model_1, model_2, model_3, model_4, model_5, model_6, type = "text") +  scale(flip_neighbors) 
+# stargazer(model_1, model_2, model_3, model_4, model_5, model_6, type = "text") +  scale(flip_neighbors)
 ```
 
 
@@ -104,10 +104,10 @@ target <- c(
   "scale(en_loser)",
   "scale(en_dv_winner)",
   "scale(en_dv_loser)",
-  #"scale(en_winner_2)",
-  #"scale(en_loser_2)",
-  #"scale(en_dv_winner_2)",
-  #"scale(en_dv_loser_2)",
+  # "scale(en_winner_2)",
+  # "scale(en_loser_2)",
+  # "scale(en_dv_winner_2)",
+  # "scale(en_dv_loser_2)",
   "scale(polling_winner_fround)",
   "scale(flip_neighbors)"
   # "scale(flip_neighbors)",
@@ -136,8 +136,7 @@ kable(tbl) %>%
 
 
 ```{r}
-writeLines(knitr::kable(tbl, "latex") , 'df.tex')
-
+writeLines(knitr::kable(tbl, "latex"), "df.tex")
 ```
 
 
@@ -149,12 +148,10 @@ x <- df[, c("rate_winner", "rate_loser", "dv_winner", "dv_loser", "en_winner", "
 
 
 shapleyvalue(y, x)
-
 ```
 ```{r}
 library(caret)
 varImp(model_1, scale = FALSE)
-
 ```
 
 ```{r}

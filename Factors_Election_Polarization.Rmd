@@ -1,0 +1,110 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(lfe)
+library(plm)       # Panel data analysis library
+library(stargazer)
+library(sjPlot)
+library(jtools)
+source("nlstargazer.R")
+```
+
+```{r}
+print("")
+```
+
+
+Read File generated in python
+
+```{r}
+df <- read.csv(file = "data_regressions/United_States_sociodemographic.csv")
+df$political_g1 = df$political_g > 0
+df$epi_g1 = df$epi_g > 0
+df$affective_g1 = df$affective_g > 0
+df
+```
+
+
+```{r}
+library(tidyverse)
+library(bife)
+
+```
+
+```{r}
+
+model.1 <- felm(epi ~ affective*political + affective_1*political_1 | year, data = df)
+stargazer(model.1, type="text")
+```
+
+
+
+```{r}
+model.1 <- felm(epi_between ~ gini_1 + log(population_1) + log(gdp_1) | year, data = df)
+model.2 <- felm(epi_between ~ unemployment_1 + log(population_1) + log(gdp_1) | year, data = df)
+model.3 <- felm(epi_between ~ sp_epi_1 + log(population_1) + log(gdp_1) | year, data = df)
+model.4 <- felm(epi_between ~ log(personal_income_1) + log(population_1) + log(gdp_1) | year, data = df)
+model.5 <- felm(epi_between ~ gini_1 + log(personal_income_1) + log(population_1) + log(gdp_1) | year, data = df)
+model.6 <- felm(epi_between ~ gini_1 + log(personal_income_1) + sp_epi_1 + unemployment_1 + log(population_1) + log(gdp_1) | year, data = df)
+
+stargazer::stargazer(
+  model.1, model.2, model.3,model.4, model.5, model.6, 
+  dep.var.labels=c("Between-EPI"),
+  covariate.labels = c("Inequality level (t-1)", "Unemployment level (t-1)", "EPI Neighbors (t-1)", "Log of personal income (t-1)", "Log of population (t-1)", "Log of GDP (t-1)"),
+  type = "text"
+)
+```
+
+Insert library
+```{r}
+source("customstargazer.R")
+```
+
+
+Models with state fixed effects
+```{r}
+model.1 <- felm(epi_between ~ gini_1 + log(population_1) + log(gdp_1) | state, data = df)
+model.2 <- felm(epi_between ~ unemployment_1 + log(population_1) + log(gdp_1) | state, data = df)
+model.3 <- felm(epi_between ~ sp_epi_1 + log(population_1) + log(gdp_1) | state, data = df)
+model.4 <- felm(epi_between ~ log(personal_income_1) + log(population_1) + log(gdp_1) | state, data = df)
+model.5 <- felm(epi_between ~ gini_1 + log(personal_income_1) + log(population_1) + log(gdp_1) | state, data = df)
+model.6 <- felm(epi_between ~ gini_1 + log(personal_income_1) + sp_epi_1 + unemployment_1 + log(population_1) + log(gdp_1) | state, data = df)
+
+model.7 <- felm(epi_within ~ gini_1 + log(population_1) + log(gdp_1) | state, data = df)
+model.8 <- felm(epi_within ~ unemployment_1 + log(population_1) + log(gdp_1) | state, data = df)
+model.9 <- felm(epi_within ~ sp_epi_1 + log(population_1) + log(gdp_1) | state, data = df)
+model.10 <- felm(epi_within ~ log(personal_income_1) + log(population_1) + log(gdp_1) | state, data = df)
+model.11 <- felm(epi_within ~ gini_1 + log(personal_income_1) + log(population_1) + log(gdp_1) | state, data = df)
+model.12 <- felm(epi_within ~ gini_1 + log(personal_income_1) + sp_epi_1 + unemployment_1 + log(population_1) + log(gdp_1) | state, data = df)
+
+# print((summary(model.1)[]))
+
+tbl <- customstargazer(
+  list(model.1, model.7, model.2, model.8, model.3, model.9, model.4, model.10, model.5, model.11, model.6, model.12),
+  sort_parameters=c("gini_1", "unemployment_1", "sp_epi_1", "log(personal_income_1)", "log(gdp_1)", "log(population_1)")
+)
+
+tbl %>% as_tibble() %>% print(n = nrow(.))
+
+```
+
+```{r}
+
+plot_summs(model.1, model.2, model.3, model.4, model.5, model.6) # model.names = c("EPI-within", "EPI-between", "EPI"), show.values = TRUE, value.offset = .3
+
+
+
+
+```
+
+
+Export to LaTeX
+
+```{r}
+writeLines(knitr::kable(tbl, "latex"), "df.tex")
+
+```
+

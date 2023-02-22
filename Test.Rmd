@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+output: html_document
+date: "2022-11-02"
+---
+
+```{r}
+library(lfe)
+library(stargazer)
+```
+
+
+```{r}
+df <- read.csv("test.csv")
+df
+
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+model.1 <- glm(in_out ~ value_x + value_y, data = df)
+
+stargazer(model.1, type = "text")
+```
+

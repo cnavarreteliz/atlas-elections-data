@@ -3,13 +3,13 @@ import pandas as pd
 from data_curation import flip_df
 
 method = "er"
-for method in ["kurtosis"]:  # "er", "std", "std_rank", "skew",
+for method in ["std"]:  # "er", "std", "std_rank", "skew",
     for year, country, location_level in [
         # (2009, "Romania", "county_name"),
         # (2017, "Chile", "province"),
         # (2021, "Chile", "province"),
-        (2017, "France", "department_id"),
-        # (2022, "France", "department_id"),
+        # (2017, "France", "department_id"),
+        (2022, "France", "department_id"),
         # (2018, "Brazil", "region_id")
     ]:
         print(country, year)

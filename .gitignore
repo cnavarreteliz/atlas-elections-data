@@ -1,4 +1,6 @@
 data/
+data_external/
+stargazer/
 .Rproj.user
 .RData
 .Rhistory
