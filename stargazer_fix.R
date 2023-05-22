@@ -1,6 +1,6 @@
 ## Quick fix for stargazer <= 5.2.3 is.na() issue with long model names in R >= 4.2
 # Unload stargazer if loaded
-detach("package:stargazer", unload=TRUE)
+# detach("package:stargazer", unload=TRUE)
 # Delete it
 remove.packages("stargazer")
 # Download the source

@@ -18,7 +18,13 @@ nls_extract_params <- function(model) {
     return(list(parameters, residual, nobs, deviance, adjrsquared, rsquared, rse, rdf))
 }
 
-customstargazer <- function(models, digits = 4, sort_parameters = c(), rename_parameters = c()) {
+customstargazer <- function(
+    models, 
+    digits = 4, 
+    sort_parameters = c(), 
+    rename_parameters = c(),
+    custom_rows = FALSE
+) {
     N <- length(models)
     items <- seq(1, N, by = 1)
 
@@ -104,20 +110,20 @@ customstargazer <- function(models, digits = 4, sort_parameters = c(), rename_pa
     }
 
     df_output <- data.frame(matrix(ncol = N + 1, nrow = 0))
-    cnames <- c("Parameters")
+    cnames <- c("Variable")
     for (itm in items) {
         cnames <- append(cnames, paste("(", itm, ")", sep = ""))
     }
     colnames(df_output) <- cnames
+    
+    if (length(rename_parameters) > 0) {
+      for (item in rename_parameters) {
+        df$row.names.1[df$row.names.1 == item[[1]]] <- item[[2]]
+      }
+    }
 
     if (length(sort_parameters) > 0) {
         df <- df[match(sort_parameters, df$row.names.1), ]
-    }
-
-    if (length(rename_parameters) > 0) {
-        for (item in rename_parameters) {
-            df$row.names.1[df$row.names.1 == item[[1]]] <- item[[2]]
-        }
     }
 
     for (i in 1:nrow(df)) {
@@ -143,6 +149,12 @@ customstargazer <- function(models, digits = 4, sort_parameters = c(), rename_pa
         }
         df_output[nrow(df_output) + 1, ] <- new_row
         df_output[nrow(df_output) + 1, ] <- new_row2
+    }
+    
+    if (length(custom_rows) > 0) {
+        for(i in 1:length(custom_rows)) {
+            df_output[nrow(df_output) + 1, ] <- custom_rows[[i]]
+        }
     }
 
     # df_output[nrow(df_output) + 1,] <- residuals
