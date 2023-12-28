@@ -20,12 +20,13 @@ source("customstargazer.R")
 Reads a DataFrame for the United States (2000-2020)
 ```{r}
 df <- read.csv(file = "data_regressions/United_States_sociodemographic.csv")
-df <- subset(df, state != "DISTRICT OF COLUMBIA")
+#df <- subset(df, state != "DISTRICT OF COLUMBIA")
 #df <- subset(df, state != "HAWAII")
 #df <- subset(df, state != "ALASKA")
 
 #df <- subset(df, type == "SWING")
 
+df$swing <- df$type == "SWING"
 df$gdp <- df$gdp / df$population
 df
 ```
@@ -44,6 +45,8 @@ vars <- list(
   "unemployment"="Unemployment (t)",
   "scale(unemployment)"="Unemployment (t)",
   "unemployment_1"="Unemployment (t - 1)",
+  "scale(epi_within)"="Within-EP (t)",
+  "scale(epi_between)"="Between-EP (t)",
   "scale(gini):scale(unemployment)"="Inequality * Unemployment (t)",
   "scale(unemployment):scale(gini)"="Inequality * Unemployment (t)",
   "scale(theil):scale(unemployment)"="Inequality * Unemployment (t)",
@@ -55,8 +58,8 @@ vars <- list(
   "sp_epi_between_1"="Spatial Between-EP (t - 1)",
   "sp_epi_within_1"="Spatial Within-EP (t - 1)",
   "scale(sp_epi_lag)"="Spatial polarization (t)",
-  "sp_epi_within"="Spatial Within-EP (t)",
-  "sp_epi_between"="Spatial Between-EP (t)",
+  "scale(sp_epi_within)"="Spatial Within-EP (t)",
+  "scale(sp_epi_between)"="Spatial Between-EP (t)",
   "scale(sp_epi)"="Spatial EP (t)",
   "sp_epi_1"="Spatial EP (t - 1)",
   "sp_epi"="Spatial EP (t)",
@@ -78,12 +81,65 @@ vars <- list(
   "log(pop_density + 1)"="Log of Pop. Density (t)",
   "scale(pop_density)"="Pop. Density (t)",
   "log(pop_density_1 + 1)"="Log of Pop. Density (t - 1)",
+  "swing"="Swing State",
   "(Intercept)"="(Intercept)"
 )
 
 
 #"epi_lag"
 #colnames(data1)[colnames(data1) == "sp_epi"] ="sp_epi_lag"
+```
+
+Model for Voting Turnout
+
+```{r}
+model.1 = felm(scale(turnout) ~ scale(gini) + swing | year | 0 | state, data=df)
+
+model.2 = felm(scale(turnout) ~ scale(unemployment) + swing | year | 0 | state, data=df)
+
+model.3 = felm(scale(turnout) ~ scale(epi_within) + swing | year | 0 | state, data=df)
+
+model.4 = felm(scale(turnout) ~ scale(epi_between) + swing | year | 0 | state, data=df)
+
+model.5 = felm(scale(turnout) ~ scale(gini) + scale(unemployment) + scale(epi_within) + scale(epi_between) + scale(gini):scale(unemployment) + scale(ed_attainment) + scale(personal_income) + scale(gdp) + scale(pop_density) + swing | year | 0 | state, data=df)
+
+model.6 = felm(scale(turnout) ~ scale(gini) + scale(unemployment) + scale(epi_within) + scale(epi_between) + scale(gini):scale(unemployment) + scale(sp_epi_between) + scale(sp_epi_within) + scale(ed_attainment) + scale(personal_income) + scale(gdp) + scale(pop_density) + swing | year | 0 | state, data=df)
+
+tbl <- screenreg(
+  list(model.1, model.2, model.3, model.4, model.5, model.6),
+  caption="State-level association of Voting Turnout in the United States (2008-2020). Each model represents a multivariate regression, with year-fixed effects. Standard errors are in brackets and are robustly clustered by state. We standardized both independent and dependent variables to have a mean of zero and a standard deviation of one. Note: ***$p<0.01$, **$p<0.05$, *$p<0.1$.",
+  label="tab:epi_1",
+  stars = c(0.01, 0.05, 0.1),
+  custom.coef.map=vars
+)
+
+tbl
+```
+
+Model for Political Polarization
+
+```{r}
+model.1 = felm(scale(polarization2) ~ scale(gini) + swing | year | 0 | state, data=df)
+
+model.2 = felm(scale(polarization2) ~ scale(unemployment) + swing | year | 0 | state, data=df)
+
+model.3 = felm(scale(polarization2) ~ scale(epi_within) + swing | year | 0 | state, data=df)
+
+model.4 = felm(scale(polarization2) ~ scale(epi_between) + swing | year | 0 | state, data=df)
+
+model.5 = felm(scale(polarization2) ~ scale(gini) + scale(unemployment) + scale(epi_within) + scale(epi_between) + scale(gini):scale(unemployment) + scale(ed_attainment) + scale(personal_income) + scale(gdp) + scale(pop_density) + swing | year | 0 | state, data=df)
+
+model.6 = felm(scale(polarization2) ~ scale(gini) + scale(unemployment) + scale(epi_within) + scale(epi_between) + scale(gini):scale(unemployment) + scale(sp_epi_between) + scale(sp_epi_within) + scale(ed_attainment) + scale(personal_income) + scale(gdp) + scale(pop_density) + swing | year | 0 | state, data=df)
+
+tbl <- texreg(
+  list(model.1, model.2, model.3, model.4, model.5, model.6),
+  caption="State-level association of Political Polarization in the United States (2008-2020). Each model represents a multivariate regression, with year-fixed effects. Standard errors are in brackets and are robustly clustered by state. We standardized both independent and dependent variables to have a mean of zero and a standard deviation of one. Note: ***$p<0.01$, **$p<0.05$, *$p<0.1$.",
+  label="tab:epi_1",
+  stars = c(0.01, 0.05, 0.1),
+  custom.coef.map=vars
+)
+
+tbl
 ```
 
 

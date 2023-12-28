@@ -1,0 +1,19 @@
+1703278729530	geckodriver	INFO	Listening on 127.0.0.1:60193
+1703278732579	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60194" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\cnava\\AppData\\Local\\Temp\\rust_mozprofile6Oaohu"
+1703278761681	geckodriver	INFO	Listening on 127.0.0.1:60271
+1703278764739	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60272" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\cnava\\AppData\\Local\\Temp\\rust_mozprofileLezKDP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1703278765362	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1703278765742	Marionette	INFO	Listening on port 60286
+WebDriver BiDi listening on ws://127.0.0.1:60272
+Read port: 60286
+1703278765891	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60272/devtools/browser/4a8ef857-e0dc-4b6f-9988-6d5d867b7827
+console.error: (new TypeError("linkMap is undefined", "resource://gre/modules/NewTabUtils.sys.mjs", 2001))
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/orchestrate/chl_api/v1?ray=839b49f79c0b2ded, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/orchestrate/chl_api/v1?ray=839b4a3a6cb82ded, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/orchestrate/chl_api/v1?ray=839b4a712bce2ded, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1703278791128	Marionette	INFO	Stopped listening on port 60286
+Dynamically enable window occlusion 1
