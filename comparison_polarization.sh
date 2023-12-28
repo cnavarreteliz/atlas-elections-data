@@ -8,5 +8,5 @@ round="first_round"
 ## now loop through the above array
 for method in "${arr[@]}"
 do
-   python pipeline_files.py -c "$country" -y "$year" -l "$level" -r "$round" -m "$method"
+   python pipeline.py -c "$country" -y "$year" -l "$level" -r "$round" -m "$method"
 done

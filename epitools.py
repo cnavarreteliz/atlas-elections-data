@@ -6,8 +6,7 @@ def get_data(
     country,
     year,
     aggregation,
-    election="runoff",
-    method="nv"
+    election="runoff"
 ):
     output_df = pd.read_csv(
         f"data_curated/{country}/antagonism_{year}_{aggregation}_{election}.csv.gz")
