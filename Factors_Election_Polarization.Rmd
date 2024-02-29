@@ -16,8 +16,8 @@ source("nlstargazer.R")
 source("customstargazer.R")
 ```
 
-
 Reads a DataFrame for the United States (2000-2020)
+
 ```{r}
 df <- read.csv(file = "data_regressions/United_States_sociodemographic.csv")
 #df <- subset(df, state != "DISTRICT OF COLUMBIA")
@@ -31,7 +31,8 @@ df$gdp <- df$gdp / df$population
 df
 ```
 
-Sets a list of variables 
+Sets a list of variables
+
 ```{r}
 vars <- list(
   "epi_1"="EP (t - 1)",
@@ -142,8 +143,6 @@ tbl <- texreg(
 tbl
 ```
 
-
-
 State-level regression analyses with year-fixed effects for EPI.
 
 ```{r}
@@ -157,7 +156,7 @@ model.7 <- felm(epi ~ gini_1 + log(personal_income_1) + log(gdp_1) + log(pop_den
 model.8 <- felm(epi ~ epi_1 + gini_1 + log(personal_income_1) + sp_epi_1 + unemployment_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
 model.9 <- felm(epi ~ epi_1 + gini_1 + ed_attainment_1 + log(personal_income_1) + sp_epi_1 + unemployment_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
 
-# 
+#
 
 
 tbl <- texreg(
@@ -180,7 +179,6 @@ screenreg(
 ```
 
 qs
-
 
 ```{r}
 model.1 <- felm(epi_between ~ epi_between_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
@@ -239,7 +237,6 @@ writeLines(tbl, "Latex_Tables/Within-EPI.tex")
 
 ```
 
-
 ```{r}
 model.1 <- felm(epi ~ gini_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
 model.2 <- felm(epi ~ unemployment_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
@@ -264,7 +261,6 @@ tbl <- texreg(
 writeLines(tbl, "Latex_Tables/EPI-v2.tex")
 ```
 
-
 ```{r}
 model.1 <- felm(epi_between ~ gini_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
 model.2 <- felm(epi_between ~ unemployment_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
@@ -287,7 +283,6 @@ tbl <- texreg(
 writeLines(tbl, "Latex_Tables/Between-EPI-v2.tex")
 ```
 
-
 ```{r}
 model.1 <- felm(epi_within ~ gini_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
 model.2 <- felm(epi_within ~ unemployment_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
@@ -299,7 +294,7 @@ model.7 <- felm(epi_within ~ gini_1 + log(personal_income_1) + sp_epi_within_1 +
 model.8 <- felm(epi_within ~ gini_1 + ed_attainment_1 + log(personal_income_1) + sp_epi_within_1 + unemployment_1 + log(gdp_1) + log(pop_density_1 + 1) | year | 0 | state, data = df)
 
 
-# 
+#
 
 tbl <- texreg(
   list(model.1, model.2, model.3, model.4, model.5, model.6, model.7, model.8),
@@ -313,6 +308,7 @@ writeLines(tbl, "Latex_Tables/Within-EPI-v2.tex")
 ```
 
 Regression analysis
+
 ```{r}
 
 # EPI
@@ -360,7 +356,7 @@ model.12 <- felm(scale(epi_d) ~ scale(gini) + scale(unemployment) + scale(ed_att
 
     #c("State F.E.", " ", "✓", "✓", "✓", " ", "✓", "✓", "✓", " ", "✓","✓", "✓"),
     #c("Year F.E.", " ", "✓", "✓", "✓", " ", "✓", "✓", "✓", " ", "✓","✓", "✓")
-  
+
 
 tbl <- screenreg(
   list(model.1, model.2, model.3, model.4, model.5, model.6, model.7, model.8, model.9, model.10, model.11, model.12),
@@ -378,16 +374,11 @@ tbl
 cor(df[c("personal_income", "gini", "gdp", "pop_density", "unemployment")])
 ```
 
-
-
 ```{r}
 model <- felm(epi_between_r ~ gini_r + unemployment_r + gdp_r, data = df)
 
 screenreg(model, stars = c(0.01, 0.05, 0.1))
 ```
-
-
-
 
 ```{r}
 # EPI
@@ -436,9 +427,7 @@ screenreg(
 )
 ```
 
-
 Associations of EPI with more variables
-
 
 ```{r}
 model.1 <- felm(epi_between ~ epi_between_1 + log(gdp) + log(pop_density + 1) | year | 0 | state, data = df)
@@ -465,6 +454,7 @@ writeLines(tbl, "Latex_Tables/Between-EPI-current.tex")
 ```
 
 Within-EPI
+
 ```{r}
 model.1 <- felm(epi_within ~ epi_within_1 + log(gdp) + log(pop_density + 1) | year | 0 | state, data = df)
 model.2 <- felm(epi_within ~ gini + log(gdp) + log(pop_density + 1) | year | 0 | state, data = df)
@@ -488,12 +478,10 @@ writeLines(tbl, "Latex_Tables/Within-EPI-current.tex")
 
 ```
 
-
-
-
 EPI
 
 Within-EPI
+
 ```{r}
 model.1 <- felm(epi ~ epi_1 + log(gdp) + log(pop_density + 1) | year | 0 | state, data = df)
 model.2 <- felm(epi ~ gini + log(gdp) + log(pop_density + 1) | year | 0 | state, data = df)

@@ -6,6 +6,7 @@ def get_data(
     country,
     year,
     aggregation,
+    candidate="candidate",
     election="runoff"
 ):
     output_df = pd.read_csv(
@@ -18,7 +19,7 @@ def get_data(
     output_within[aggregation] = output_within[aggregation].astype(str)
 
     output_data = pd.merge(output_between, output_within,
-                            on=["candidate", aggregation])
+                            on=[candidate, aggregation])
     
     output_data["ec"] = output_data["antagonism_x"]
     output_data["ep"] = output_data["antagonism_y"]

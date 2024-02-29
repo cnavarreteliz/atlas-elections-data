@@ -5,7 +5,10 @@ import numpy as np
 import seaborn as sns
 
 
-def set_plot(dt, ax, xlabel="", ylabel=""):
+def set_plot(dt, ax, xlabel="", ylabel="", labelkey=None):
+    dt = dt.copy()
+    dt["diff"] = np.absolute(dt["x"] - dt["y"])
+
     sns.set(font_scale=2, style="ticks")
 
     g = sns.scatterplot(
@@ -22,6 +25,7 @@ def set_plot(dt, ax, xlabel="", ylabel=""):
         zorder=2,
         ax=ax
     )
+
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
 
@@ -48,3 +52,9 @@ def set_plot(dt, ax, xlabel="", ylabel=""):
         pos -= 0.05
 
     ax.text(0.025, 0.05, "x=y", transform=ax.transAxes, va="top", fontsize=16)
+
+    if labelkey:
+        for i, item in dt.sort_values("diff", ascending=False).head().iterrows():
+            ax.text(item["x"] + 0.05, item["y"], item[labelkey], va="center", fontsize=16)
+
+    return 

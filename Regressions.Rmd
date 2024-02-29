@@ -1,0 +1,167 @@
+---
+title: "Regressions"
+output: html_document
+date: "2023-12-29"
+---
+
+```{r}
+library(lfe)
+library(plm)       # Panel data analysis library
+library(sjPlot)
+library(texreg)
+library(jtools)
+library(tidyverse)
+library(bife)
+```
+
+
+Reads data from Regressions folder
+```{r}
+df <- read.csv(file = "data_regressions/United_States_sociodemographic.csv")
+df$swing <- df$type == "SWING"
+df$gdp <- df$gdp / df$population
+
+df
+
+```
+Defines the list of variables
+
+```{r}
+vars <- list(
+  "scale(ep)"="EP (t)",
+  "scale(ec)"="EC (t)",
+  "epi_1"="EP (t - 1)",
+  "epi_between_1"="Between-EP (t - 1)",
+  "epi_within_1"="Within-EP (t - 1)",
+  "gini"="Inequality level (t)",
+  "scale(gini)"="Inequality level (t)",
+  "scale(theil)"="Inequality Theil (t)",
+  "scale(atkin05)"="Inequality Atkin05 (t)",
+  "gini_1"="Inequality level (t - 1)",
+  "unemployment"="Unemployment (t)",
+  "scale(unemployment)"="Unemployment (t)",
+  "unemployment_1"="Unemployment (t - 1)",
+  "scale(epi_within)"="Within-EP (t)",
+  "scale(epi_between)"="Between-EP (t)",
+  "scale(gini):scale(unemployment)"="Inequality * Unemployment (t)",
+  "scale(unemployment):scale(gini)"="Inequality * Unemployment (t)",
+  "scale(theil):scale(unemployment)"="Inequality * Unemployment (t)",
+  "scale(unemployment):scale(theil)"="Inequality * Unemployment (t)",
+  "scale(atkin05):scale(unemployment)"="Inequality * Unemployment (t)",
+  "scale(unemployment):scale(atkin05)"="Inequality * Unemployment (t)",
+  "scale(epi_lag)"="Polarization (t - 1)",
+  "sp_epi_1"="Spatial EP (t - 1)",
+  "sp_epi_between_1"="Spatial Between-EP (t - 1)",
+  "sp_epi_within_1"="Spatial Within-EP (t - 1)",
+  "scale(sp_epi_lag)"="Spatial polarization (t)",
+  "scale(sp_epi_within)"="Spatial Within-EP (t)",
+  "scale(sp_epi_between)"="Spatial Between-EP (t)",
+  "scale(sp_epi)"="Spatial EP (t)",
+  "sp_epi_1"="Spatial EP (t - 1)",
+  "sp_epi"="Spatial EP (t)",
+  "ed_attainment"="Ed. Attainment (t)",
+  "scale(ed_attainment)"="Ed. Attainment (t)",
+  "ed_attainment_1"="Ed. Attainment (t - 1)",
+  "log(expenditure)"="Log of expenditure PC (t)",
+  "scale(expenditure)"="Expenditure PC (t)",
+  "log(expenditure_1)"="Expenditure PC (t - 1)",
+  "log(personal_income)"="Log of personal Income PC (t)",
+  "scale(personal_income)"="Personal Income PC (t)",
+  "log(personal_income_1)"="Log of personal Income PC (t - 1)",
+  "log(gdp)"="Log of GDP PC (t)",
+  "scale(gdp)"="GDP PC (t)",
+  "log(gdp_1)"="Log of GDP PC (t - 1)",
+  "log(population)"="Log of population (t)",
+  "scale(population)"="Population (t)",
+  "log(population_1)"="Log of population (t - 1)",
+  "log(pop_density + 1)"="Log of Pop. Density (t)",
+  "scale(pop_density)"="Pop. Density (t)",
+  "log(pop_density_1 + 1)"="Log of Pop. Density (t - 1)",
+  "swing"="Swing State",
+  "(Intercept)"="(Intercept)"
+)
+```
+
+```{r}
+model <- felm(scale(polarization) ~ scale(ec) + scale(ep) + scale(gini) + scale(gdp) + scale(pop_density) + scale(ed_attainment) + swing | year | 0 | state, data = df)
+
+screenreg(
+  list(model),
+  stars = c(0.01, 0.05, 0.1)
+)
+```
+
+```{r}
+model.1 <- felm(scale(polarization) ~ scale(ec) + scale(ep) | year + swing | 0 | state, data = df)
+
+model.2 <- felm(scale(polarization) ~ scale(ec) + scale(ep) + scale(gini)+ scale(unemployment)  + scale(gdp) + scale(pop_density) + scale(ed_attainment) | year + swing | 0 | state, data = df)
+
+model.3 <- felm(scale(turnout) ~ scale(ec) + scale(ep) | year + swing | 0 | state, data = df)
+
+model.4 <- felm(scale(turnout) ~ scale(ec) + scale(ep) + scale(gini) + scale(unemployment) + scale(gdp) + scale(pop_density) + scale(ed_attainment) | year + swing | 0 | state, data = df)
+
+texreg(
+  list(model.1, model.2, model.3, model.4),
+  custom.model.names=c("MP (1)", "MP (2)", "VT (1)", "VT (2)"),
+  stars = c(0.01, 0.05, 0.1),
+  custom.coef.map=vars,
+  caption="State-level association for Mass Polarization (MP) and Voting Turnout (VT) in the United States (2008-2020). Each model represents a multivariate regression, with year-fixed effects. These models represent the ones presented in the main manuscript. Standard errors are in brackets and are robustly clustered by state. We standardized both independent and dependent variables to have a mean of zero and a standard deviation of one.",
+  label="tab:md"
+)
+```
+```{r}
+coefs.1 <- unname(unlist(summary(model.1)$coefficients[,1]))
+pvals.1 <- unname(unlist(summary(model.1)$coefficients[,4]))
+dt.1 <- data.frame(A=coefs.1, B=pvals.1, C=c(7,6,5,4,3,2,1))
+
+coefs.2 <- unname(unlist(summary(model.2)$coefficients[,1]))
+pvals.2 <- unname(unlist(summary(model.2)$coefficients[,4]))
+dt.2 <- data.frame(A=coefs.2, B=pvals.2, C=c(7,6,5,4,3,2,1))
+dt.2
+```
+
+s
+```{r fig.align="center",fig.width=7, fig.height=5, dpi=400}
+library(extrafont)
+loadfonts(device = "win", quiet = F)
+fonts()
+
+plot_summs(model.1, model.2, plot.distributions = FALSE, 
+           model.names = c("Mass Polarization", "Political Interest"),
+           legend.title="Dependent Variable",
+           coefs=c("EC"="scale(ec)", "EP"="scale(ep)", "Gini"="scale(gini)", "Unemployment"="scale(unemployment)", "GDP PC"="scale(gdp)", "Pop Density"="scale(pop_density)", "Ed. Attainment"="scale(ed_attainment)"),
+           colors=c("#d64d4d", "#4d7358")) +
+  theme(
+    panel.border = element_rect(size=1, fill = "transparent", color="#000000"),
+    axis.text.x = element_text(colour = "#000000"),
+    axis.text.y = element_text(colour = "#000000")
+  ) +
+  xlim(-1, 1) +
+  geom_text(data=dt.1, aes(x=A, y=C, label=sprintf("%0.3f", B), vjust=-1.25), color="#d64d4d") +
+  geom_text(data=dt.2, aes(x=A, y=C, label=sprintf("%0.3f", B), vjust=2.15), color="#4d7358") +
+  xlab("Multivariable regression coefficient on standardized measure")
+# 
+
+ggsave("C:/Users/cnava/OneDrive/Documentos/Figures_Papers/ElectionPolarization/Figure4.pdf")
+```
+
+```{r}
+res <- resid(model.1)
+#create Q-Q plot for residuals
+qqnorm(res)
+
+#add a straight diagonal line to the plot
+qqline(res) 
+
+plot(density(res))
+```
+```{r}
+
+library(ShapleyValue)
+y <- df$flip
+x <- df[, c("rate_winner", "rate_loser", "dv_winner", "dv_loser", "en_winner", "en_loser", "flip_neighbors", "polling_winner_fround", "en_dv_winner", "en_dv_loser")]
+
+
+shapleyvalue(y, x)
+```
+

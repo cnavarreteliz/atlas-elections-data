@@ -7,5 +7,5 @@ round="first_round"
 ## now loop through the above array
 for year in "${years[@]}"
 do
-   python pipeline_files.py -c "$country" -y "$year" -l "$level" -r "$round"  -n 2 -m "nv"
+   python pipeline.py -c "$country" -y "$year" -l "$level" -r "$round"  -n 2
 done
