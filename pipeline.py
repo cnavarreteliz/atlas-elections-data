@@ -1,6 +1,4 @@
 import json
-import numpy as np
-import os
 import pandas as pd
 import argparse
 
@@ -18,28 +16,22 @@ _labels = json.load(_labels)
 # SELET DATASET TO USE
 parser = argparse.ArgumentParser()
 # year, country, location_level, election_round, method
+parser.add_argument("-a", "--agg", default="polling_station", type=str, required=False)
+parser.add_argument("-c", "--country", default="France", type=str, required=True)
+parser.add_argument("-cd", "--candidate", default="candidate", type=str, required=False)
+parser.add_argument("-f", "--flag_candidates", default=1, type=int, required=False)
+parser.add_argument("-l", "--level", default="department_id", type=str, required=True)
+parser.add_argument("-n", "--ncandidates", default=2, type=int, required=False)
+parser.add_argument("-r", "--round", default="first_round", type=str, required=False)
 parser.add_argument("-y", "--year", default=2022, type=int, required=True)
-parser.add_argument("-c", "--country", default="France",
-                    type=str, required=True)
-parser.add_argument("-l", "--level", default="department_id",
-                    type=str, required=True)
-parser.add_argument("-r", "--round", default="first_round",
-                    type=str, required=False)
-parser.add_argument("-cd", "--candidate", default="candidate",
-                    type=str, required=False)
-
-parser.add_argument("-n", "--ncandidates", default=2,
-                    type=int, required=False)
-
-parser.add_argument("-f", "--filter", default=1,
-                    type=int, required=False)
 
 args = parser.parse_args()
 
+agg = args.agg
 candidate = args.candidate
 country = args.country
 election_round = args.round
-flag_candidates = args.filter
+flag_candidates = args.flag_candidates
 location_level = args.level
 n_candidates = args.ncandidates
 year = args.year
@@ -56,11 +48,12 @@ def map_antagonism(
     year,
     country,
     location_level,
-    election_round
+    election_round,
+    agg
 ):
 
     df = pd.read_csv(
-        f"data_output/{country}/{year}_{election_round}.csv.gz",
+        f"data_output/{country}/{year}_{election_round}_{agg}.csv.gz",
         compression="gzip"
     )
     df.columns = [x.lower() for x in df.columns]
@@ -69,7 +62,7 @@ def map_antagonism(
         df = df[df["flag_candidates"] == 1].copy()
 
     df_location = pd.read_csv(
-        f"data_output/{country}/{year}_{election_round}_location.csv.gz", compression="gzip")
+        f"data_output/{country}/{year}_{election_round}_{agg}_location.csv.gz", compression="gzip")
 
     data = pd.merge(df_location[[location_level, "polling_id"]].drop_duplicates(
     ), df.copy(), on="polling_id", how="right").copy()
@@ -129,5 +122,6 @@ map_antagonism(
     year,
     country,
     location_level,
-    election_round
+    election_round,
+    agg
 )
