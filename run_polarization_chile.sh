@@ -1,5 +1,5 @@
 ## declare an array variable
-years=("1989" "1993" "1999" "2005" "2009" "2013" "2017" "2021")
+years=("2017")
 country="Chile"
 level="region_id"
 round="first_round"
