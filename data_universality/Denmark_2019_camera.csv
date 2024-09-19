@@ -1,0 +1,901 @@
+candidate,party_id,district_id,value,N,Q,vQ/N
+A. Alexander Grandt,The Social Democratic Party,Fyns Storkreds,2327,51566,8,0.36101307062793314
+A. Bjørn Brandenborg,The Social Democratic Party,Fyns Storkreds,6837,51566,8,1.0606989101345847
+A. Dan Jørgensen,The Social Democratic Party,Fyns Storkreds,15443,51566,8,2.395842221618896
+A. Erik Christensen,The Social Democratic Party,Fyns Storkreds,3441,51566,8,0.5338401272156071
+A. Jan Johansen,The Social Democratic Party,Fyns Storkreds,6786,51566,8,1.052786719931738
+A. Julie Skovsby,The Social Democratic Party,Fyns Storkreds,3943,51566,8,0.6117209013691192
+A. Kim Aas,The Social Democratic Party,Fyns Storkreds,2195,51566,8,0.34053446069115306
+A. Trine Bramsen,The Social Democratic Party,Fyns Storkreds,10594,51566,8,1.6435635884109685
+A. Anders Andreasen,The Social Democratic Party,Vestjyllands Storkreds,663,44163,11,0.1651382378914476
+A. Anne Paulin,The Social Democratic Party,Vestjyllands Storkreds,6814,44163,11,1.6972125987817857
+A. Annette Lind,The Social Democratic Party,Vestjyllands Storkreds,12184,44163,11,3.034757602517945
+A. Flemming Libner,The Social Democratic Party,Vestjyllands Storkreds,124,44163,11,0.030885582954056565
+A. Karin Gaardsted,The Social Democratic Party,Vestjyllands Storkreds,5082,44163,11,1.2658107465525439
+A. Lars Fibæk,The Social Democratic Party,Vestjyllands Storkreds,225,44163,11,0.056042388424699406
+A. Mette Nielsen,The Social Democratic Party,Vestjyllands Storkreds,3418,44163,11,0.8513461494916559
+A. Mogens Jensen,The Social Democratic Party,Vestjyllands Storkreds,6961,44163,11,1.733826959219256
+A. Palle Lykke Ravn,The Social Democratic Party,Vestjyllands Storkreds,1310,44163,11,0.3262912392726943
+A. Peter Kempf Pedersen,The Social Democratic Party,Vestjyllands Storkreds,190,44163,11,0.047324683558635054
+A. Thomas Jensen,The Social Democratic Party,Vestjyllands Storkreds,7192,44163,11,1.7913638113352808
+A. Anders Kronborg,The Social Democratic Party,Sydjyllands Storkreds,8607,58438,13,1.914695917040282
+A. Benny Engelbrecht,The Social Democratic Party,Sydjyllands Storkreds,12267,58438,13,2.728892159211472
+A. Birgitte Vind,The Social Democratic Party,Sydjyllands Storkreds,7012,58438,13,1.5598754235257881
+A. Christian Rabjerg Madsen,The Social Democratic Party,Sydjyllands Storkreds,6319,58438,13,1.4057120366884561
+A. Henny Fiskbæk,The Social Democratic Party,Sydjyllands Storkreds,1834,58438,13,0.407987953044252
+A. Jens Jonatan Steen,The Social Democratic Party,Sydjyllands Storkreds,3131,58438,13,0.6965159656387967
+A. Jesper Petersen,The Social Democratic Party,Sydjyllands Storkreds,7175,58438,13,1.5961360758410623
+A. Kim Printz Ringbæk,The Social Democratic Party,Sydjyllands Storkreds,701,58438,13,0.15594305075464596
+A. Niels Ole Beck,The Social Democratic Party,Sydjyllands Storkreds,1238,58438,13,0.27540299120435335
+A. Ove Jensen,The Social Democratic Party,Sydjyllands Storkreds,175,58438,13,0.03893014819124542
+A. René Vilstrup-Bie,The Social Democratic Party,Sydjyllands Storkreds,480,58438,13,0.10677983503884458
+A. Theis Kylling Hommeltoft,The Social Democratic Party,Sydjyllands Storkreds,2364,58438,13,0.5258906875663096
+A. Troels Ravn,The Social Democratic Party,Sydjyllands Storkreds,7135,58438,13,1.587237756254492
+A. Ane Halsboe-Jørgensen,The Social Democratic Party,Nordjyllands Storkreds,4977,97835,9,0.4578422854806562
+A. Bjarne Laustsen,The Social Democratic Party,Nordjyllands Storkreds,11997,97835,9,1.103623447641437
+A. Flemming Møller Mortensen,The Social Democratic Party,Nordjyllands Storkreds,7152,97835,9,0.6579240558082485
+A. Mette Frederiksen,The Social Democratic Party,Nordjyllands Storkreds,43489,97835,9,4.000623498747892
+A. Orla Hav,The Social Democratic Party,Nordjyllands Storkreds,5694,97835,9,0.5238002759748557
+A. Per Husted,The Social Democratic Party,Nordjyllands Storkreds,3358,97835,9,0.30890785506209434
+A. Rasmus Prehn,The Social Democratic Party,Nordjyllands Storkreds,5692,97835,9,0.5236162927377728
+A. Simon Kollerup,The Social Democratic Party,Nordjyllands Storkreds,11577,97835,9,1.06498696785404
+A. Søren Valgreen Knudsen,The Social Democratic Party,Nordjyllands Storkreds,3899,97835,9,0.3586753206930035
+A. Anne Madsen,The Social Democratic Party,Sjællands Storkreds,2735,81309,12,0.40364535291296166
+A. Astrid Krag,The Social Democratic Party,Sjællands Storkreds,17810,81309,12,2.6284913109249897
+A. Brian Bressendorff,The Social Democratic Party,Sjællands Storkreds,3141,81309,12,0.46356491901265545
+A. Henrik Sass Larsen,The Social Democratic Party,Sjællands Storkreds,4017,81309,12,0.5928495000553444
+A. Kaare Dybvad Bek,The Social Democratic Party,Sjællands Storkreds,6118,81309,12,0.9029258753643508
+A. Kasper Roug,The Social Democratic Party,Sjællands Storkreds,5249,81309,12,0.774674390288898
+A. Lennart Damsbo-Andersen,The Social Democratic Party,Sjællands Storkreds,5648,81309,12,0.8335608604213556
+A. Magnus Heunicke,The Social Democratic Party,Sjællands Storkreds,18214,81309,12,2.6881157067483303
+A. Mette Gjerskov,The Social Democratic Party,Sjællands Storkreds,5211,81309,12,0.7690661550381876
+A. Rasmus Horn Langhoff,The Social Democratic Party,Sjællands Storkreds,5812,81309,12,0.8577648230823156
+A. Tanja Larsson,The Social Democratic Party,Sjællands Storkreds,4197,81309,12,0.6194148249271298
+A. Tom Block,The Social Democratic Party,Sjællands Storkreds,3157,81309,12,0.4659262812234808
+A. Anne Sina,The Social Democratic Party,Københavns Omegns Storkreds,2656,39069,8,0.5438583019785508
+A. Jeppe Bruus,The Social Democratic Party,Københavns Omegns Storkreds,4397,39069,8,0.9003557807980752
+A. Kasper Sand Kjær,The Social Democratic Party,Københavns Omegns Storkreds,3065,39069,8,0.6276075661010008
+A. Malthe Johan Poulsen,The Social Democratic Party,Københavns Omegns Storkreds,1024,39069,8,0.2096803091965497
+A. Maria Durhuus,The Social Democratic Party,Københavns Omegns Storkreds,2907,39069,8,0.5952545496429394
+A. Mattias Tesfaye,The Social Democratic Party,Københavns Omegns Storkreds,15345,39069,8,3.142133149043999
+A. Morten Bødskov,The Social Democratic Party,Københavns Omegns Storkreds,8597,39069,8,1.7603726739870487
+A. Simon Pihl Sørensen,The Social Democratic Party,Københavns Omegns Storkreds,1078,39069,8,0.2207376692518365
+A. Camilla Fabricius,The Social Democratic Party,Østjyllands Storkreds,6506,70175,11,1.0198218738867117
+A. Christen Sørensen,The Social Democratic Party,Østjyllands Storkreds,1893,70175,11,0.2967296045600285
+A. Daniel Toft Jakobsen,The Social Democratic Party,Østjyllands Storkreds,4615,70175,11,0.7234057712860705
+A. Dorthe Hindborg,The Social Democratic Party,Østjyllands Storkreds,3745,70175,11,0.5870324189526185
+A. Henrik Dam Kristensen,The Social Democratic Party,Østjyllands Storkreds,7450,70175,11,1.167794798717492
+A. Iben Sønderup,The Social Democratic Party,Østjyllands Storkreds,2641,70175,11,0.41397933737085857
+A. Jens Joel,The Social Democratic Party,Østjyllands Storkreds,6126,70175,11,0.960256501603135
+A. Leif Lahn Jensen,The Social Democratic Party,Østjyllands Storkreds,8001,70175,11,1.2541645885286783
+A. Malte Larsen,The Social Democratic Party,Østjyllands Storkreds,5708,70175,11,0.8947345920912005
+A. Nicolai Wammen,The Social Democratic Party,Østjyllands Storkreds,23427,70175,11,3.672205201282508
+A. Thyge Risvig,The Social Democratic Party,Østjyllands Storkreds,63,70175,11,0.009875311720698254
+A. Claus Hasselmann,The Social Democratic Party,Københavns Storkreds,642,34906,12,0.22070704176932332
+A. Jørgen Mørup Pedersen,The Social Democratic Party,Københavns Storkreds,67,34906,12,0.023033289405832807
+A. Lars Aslan Rasmussen,The Social Democratic Party,Københavns Storkreds,4279,34906,12,1.4710364980232624
+A. Lone Larsen,The Social Democratic Party,Københavns Storkreds,307,34906,12,0.10554059474015928
+A. Mette Reissmann,The Social Democratic Party,Københavns Storkreds,3779,34906,12,1.299146278576749
+A. Niels E. Bjerrum,The Social Democratic Party,Københavns Storkreds,1162,34906,12,0.39947286999369735
+A. Pernille Rosenkrantz-Theil,The Social Democratic Party,Københavns Storkreds,12998,34906,12,4.4684581447315646
+A. Peter Hummelgaard,The Social Democratic Party,Københavns Storkreds,5302,34906,12,1.822723887010829
+A. Simon Simonsen,The Social Democratic Party,Københavns Storkreds,1325,34906,12,0.45550908153326075
+A. Sine Heltberg,The Social Democratic Party,Københavns Storkreds,1361,34906,12,0.46788517733340973
+A. Verner Sand Kirk,The Social Democratic Party,Københavns Storkreds,685,34906,12,0.23548960064172347
+A. Yildiz Akdogan,The Social Democratic Party,Københavns Storkreds,2999,34906,12,1.030997536240188
+A. Claus Larsen-Jensen,The Social Democratic Party,Bornholms Storkreds,591,5842,3,0.3034919548099966
+A. Lars Goldschmidt,The Social Democratic Party,Bornholms Storkreds,192,5842,3,0.09859637110578569
+A. Lea Wermelin,The Social Democratic Party,Bornholms Storkreds,5059,5842,3,2.5979116740842176
+A. David Trads,The Social Democratic Party,Nordsjællands Storkreds,2779,28536,7,0.6817003083823941
+A. Henrik Møller,The Social Democratic Party,Nordsjællands Storkreds,4223,28536,7,1.035919540229885
+A. Maria Gudme,The Social Democratic Party,Nordsjællands Storkreds,3176,28536,7,0.7790860667227362
+A. Miki Dam Larsen,The Social Democratic Party,Nordsjællands Storkreds,1299,28536,7,0.31865012615643395
+A. Nick Hækkerup,The Social Democratic Party,Nordsjællands Storkreds,11016,28536,7,2.702270815811606
+A. Per Frost Henriksen,The Social Democratic Party,Nordsjællands Storkreds,1502,28536,7,0.36844687412391364
+A. Rasmus Stoklund,The Social Democratic Party,Nordsjællands Storkreds,4541,28536,7,1.1139262685730305
+B. Abbas Razvi,The Danish Social-Liberal Party,Københavns Omegns Storkreds,1504,14995,8,0.8024008002667555
+B. Dennis Schmock,The Danish Social-Liberal Party,Københavns Omegns Storkreds,158,14995,8,0.08429476492164055
+B. Jeanné Vetling,The Danish Social-Liberal Party,Københavns Omegns Storkreds,363,14995,8,0.1936645548516172
+B. Mads Høj Jørgensen,The Danish Social-Liberal Party,Københavns Omegns Storkreds,651,14995,8,0.34731577192397467
+B. Petar Socevic,The Danish Social-Liberal Party,Københavns Omegns Storkreds,1104,14995,8,0.5889963321107036
+B. Sofie Carsten Nielsen,The Danish Social-Liberal Party,Københavns Omegns Storkreds,8955,14995,8,4.777592530843615
+B. Stinus Lindgreen,The Danish Social-Liberal Party,Københavns Omegns Storkreds,1746,14995,8,0.931510503501167
+B. Susanne Wad Leth,The Danish Social-Liberal Party,Københavns Omegns Storkreds,514,14995,8,0.27422474158052684
+B. Amalie Mørkøre Højsholt,The Danish Social-Liberal Party,Nordjyllands Storkreds,618,8558,9,0.649918205188128
+B. Casper Hedegaard,The Danish Social-Liberal Party,Nordjyllands Storkreds,998,8558,9,1.049544286048142
+B. Daniel Nyboe Andersen,The Danish Social-Liberal Party,Nordjyllands Storkreds,1388,8558,9,1.4596868427202618
+B. Gitte Lopdrup,The Danish Social-Liberal Party,Nordjyllands Storkreds,506,8558,9,0.532133676092545
+B. Helle Sommer Kjærgaard,The Danish Social-Liberal Party,Nordjyllands Storkreds,333,8558,9,0.35019864454311755
+B. Marianne Jelved,The Danish Social-Liberal Party,Nordjyllands Storkreds,2657,8558,9,2.7942276232764667
+B. Marianne Mulle Jensen,The Danish Social-Liberal Party,Nordjyllands Storkreds,1360,8558,9,1.430240710446366
+B. Niels Arbøl,The Danish Social-Liberal Party,Nordjyllands Storkreds,485,8558,9,0.5100490768871232
+B. Rikke-Marie Jørgensen,The Danish Social-Liberal Party,Nordjyllands Storkreds,213,8558,9,0.22400093479784997
+B. Andreas Pourkamali,The Danish Social-Liberal Party,Københavns Storkreds,613,40459,12,0.18181368793099187
+B. Ida Auken,The Danish Social-Liberal Party,Københavns Storkreds,21723,40459,12,6.442966954200549
+B. Jens Rohde,The Danish Social-Liberal Party,Københavns Storkreds,6175,40459,12,1.8314837242640698
+B. Jeppe Fransson,The Danish Social-Liberal Party,Københavns Storkreds,202,40459,12,0.059912504016411676
+B. Jesper Abildgaard,The Danish Social-Liberal Party,Københavns Storkreds,371,40459,12,0.11003732173311254
+B. Lartey Lawson,The Danish Social-Liberal Party,Københavns Storkreds,618,40459,12,0.18329667070367534
+B. Louise Vinther Alis,The Danish Social-Liberal Party,Københavns Storkreds,730,40459,12,0.21651548481178476
+B. Mette Annelie Rasmussen,The Danish Social-Liberal Party,Københavns Storkreds,1687,40459,12,0.5003583875033984
+B. Ruben Kidde,The Danish Social-Liberal Party,Københavns Storkreds,2510,40459,12,0.7444573518870956
+B. Rune Scharff Andreasen,The Danish Social-Liberal Party,Københavns Storkreds,1003,40459,12,0.29748634420030157
+B. Samira Nawa,The Danish Social-Liberal Party,Københavns Storkreds,4657,40459,12,1.381250154477372
+B. Thomas Maare,The Danish Social-Liberal Party,Københavns Storkreds,170,40459,12,0.05042141427123755
+B. Andreas Steenberg,The Danish Social-Liberal Party,Vestjyllands Storkreds,4444,8285,7,3.7547374773687388
+B. Hanne Ringgaard Møller,The Danish Social-Liberal Party,Vestjyllands Storkreds,561,8285,7,0.4739891369945685
+B. Hanne Roed,The Danish Social-Liberal Party,Vestjyllands Storkreds,632,8285,7,0.5339770669885335
+B. Josefine Schlosser,The Danish Social-Liberal Party,Vestjyllands Storkreds,942,8285,7,0.795896197948099
+B. Poul Elmegård,The Danish Social-Liberal Party,Vestjyllands Storkreds,1023,8285,7,0.864333132166566
+B. Rasmus Bach Krabbe,The Danish Social-Liberal Party,Vestjyllands Storkreds,466,8285,7,0.3937235968617984
+B. Thomas Sloth,The Danish Social-Liberal Party,Vestjyllands Storkreds,217,8285,7,0.18334339167169583
+B. Anne Skau Styrishave,The Danish Social-Liberal Party,Fyns Storkreds,2885,11046,4,1.044722071338041
+B. Camilla Hersom,The Danish Social-Liberal Party,Fyns Storkreds,3233,11046,4,1.1707405395618324
+B. Rasmus Helveg Petersen,The Danish Social-Liberal Party,Fyns Storkreds,3763,11046,4,1.3626652181785261
+B. Søren Hillers,The Danish Social-Liberal Party,Fyns Storkreds,1165,11046,4,0.42187217092160056
+B. Anne Sophie Callesen,The Danish Social-Liberal Party,Østjyllands Storkreds,1926,29848,11,0.7097963012597159
+B. Bassam El-Daoud,The Danish Social-Liberal Party,Østjyllands Storkreds,1035,29848,11,0.38143259179844546
+B. Henrik Vinther,The Danish Social-Liberal Party,Østjyllands Storkreds,1414,29848,11,0.5211069418386491
+B. Karen Melchior,The Danish Social-Liberal Party,Østjyllands Storkreds,1041,29848,11,0.3836437952291611
+B. Katrine Robsøe,The Danish Social-Liberal Party,Østjyllands Storkreds,3430,29848,11,1.2640712945590995
+B. Michael Skaaning Johansen,The Danish Social-Liberal Party,Østjyllands Storkreds,761,29848,11,0.2804543017957652
+B. Morten Kjær Sørensen,The Danish Social-Liberal Party,Østjyllands Storkreds,535,29848,11,0.19716563923880998
+B. Morten Østergaard,The Danish Social-Liberal Party,Østjyllands Storkreds,17781,29848,11,6.552901366925757
+B. Susan Kronborg,The Danish Social-Liberal Party,Østjyllands Storkreds,1522,29848,11,0.5609086035915304
+B. Søren Bo Pedersen,The Danish Social-Liberal Party,Østjyllands Storkreds,275,29848,11,0.10134682390779952
+B. Tom Brøcher Jakobsen,The Danish Social-Liberal Party,Østjyllands Storkreds,128,29848,11,0.047172339855266684
+B. Bente Johansen,The Danish Social-Liberal Party,Bornholms Storkreds,161,315,2,1.0222222222222221
+B. Matilde Lissau,The Danish Social-Liberal Party,Bornholms Storkreds,154,315,2,0.9777777777777777
+B. Bo Nygaard Larsen,The Danish Social-Liberal Party,Sjællands Storkreds,483,15032,9,0.2891830761043108
+B. Henriette Bødewadt,The Danish Social-Liberal Party,Sjællands Storkreds,258,15032,9,0.15447046301224054
+B. Jeppe Sørensen,The Danish Social-Liberal Party,Sjællands Storkreds,536,15032,9,0.320915380521554
+B. Jeppe Trolle,The Danish Social-Liberal Party,Sjællands Storkreds,1356,15032,9,0.8118680149015434
+B. Kathrine Olldag,The Danish Social-Liberal Party,Sjællands Storkreds,1595,15032,9,0.9549627461415646
+B. Line Krogh Lay,The Danish Social-Liberal Party,Sjællands Storkreds,1016,15032,9,0.6083022884513039
+B. Troels Brandt,The Danish Social-Liberal Party,Sjællands Storkreds,997,15032,9,0.5969265566790847
+B. Vibeke Grønbæk,The Danish Social-Liberal Party,Sjællands Storkreds,420,15032,9,0.25146354443853114
+B. Zenia Stampe,The Danish Social-Liberal Party,Sjællands Storkreds,8371,15032,9,5.011907929749867
+B. Camilla Kampmann,The Danish Social-Liberal Party,Nordsjællands Storkreds,1373,19583,6,0.4206709901445131
+B. Christina Thorholm,The Danish Social-Liberal Party,Nordsjællands Storkreds,1524,19583,6,0.4669356074145943
+B. Jacob Netteberg,The Danish Social-Liberal Party,Nordsjællands Storkreds,632,19583,6,0.1936373385078895
+B. Kristian Hegaard,The Danish Social-Liberal Party,Nordsjællands Storkreds,1945,19583,6,0.5959250370219068
+B. Martin Lidegaard,The Danish Social-Liberal Party,Nordsjællands Storkreds,12703,19583,6,3.8920492263698105
+B. Rikke Mortensen,The Danish Social-Liberal Party,Nordsjællands Storkreds,1406,19583,6,0.4307818005412858
+B. Daisy Nykjær-Andersen,The Danish Social-Liberal Party,Sydjyllands Storkreds,674,10344,9,0.5864269141531323
+B. Gitte Reimer,The Danish Social-Liberal Party,Sydjyllands Storkreds,303,10344,9,0.263631090487239
+B. Jonna Buch Andersen,The Danish Social-Liberal Party,Sydjyllands Storkreds,312,10344,9,0.271461716937355
+B. Karl Erik Olesen,The Danish Social-Liberal Party,Sydjyllands Storkreds,338,10344,9,0.29408352668213456
+B. Lotte Rod,The Danish Social-Liberal Party,Sydjyllands Storkreds,4872,10344,9,4.238979118329467
+B. Nanna Nørholm,The Danish Social-Liberal Party,Sydjyllands Storkreds,693,10344,9,0.6029582366589327
+B. Nils Sjøberg,The Danish Social-Liberal Party,Sydjyllands Storkreds,1411,10344,9,1.2276682134570767
+B. Ole Lynggaard Jørgensen,The Danish Social-Liberal Party,Sydjyllands Storkreds,622,10344,9,0.5411832946635731
+B. Rune Christiansen,The Danish Social-Liberal Party,Sydjyllands Storkreds,1119,10344,9,0.9736078886310905
+C. Ali Aminali,The Conservative Peoples Party,Østjyllands Storkreds,793,11079,10,0.7157685711706833
+C. Anders Krojgaard Lund,The Conservative Peoples Party,Østjyllands Storkreds,514,11079,10,0.4639407888798628
+C. Charlotte Green,The Conservative Peoples Party,Østjyllands Storkreds,2367,11079,10,2.1364744110479283
+C. David Munk-Bogballe,The Conservative Peoples Party,Østjyllands Storkreds,239,11079,10,0.21572344074374944
+C. Jane Christensen,The Conservative Peoples Party,Østjyllands Storkreds,770,11079,10,0.6950085747811174
+C. Jens Salling,The Conservative Peoples Party,Østjyllands Storkreds,691,11079,10,0.6237025002256521
+C. Lars Jensen,The Conservative Peoples Party,Østjyllands Storkreds,444,11079,10,0.4007581911724885
+C. Mona Juul,The Conservative Peoples Party,Østjyllands Storkreds,3846,11079,10,3.4714324397508802
+C. Niels Rosenberg,The Conservative Peoples Party,Østjyllands Storkreds,967,11079,10,0.8728224569004422
+C. Victoria D. Kilpatrick,The Conservative Peoples Party,Østjyllands Storkreds,448,11079,10,0.4043686253271956
+C. Anders Johansson,The Conservative Peoples Party,Københavns Storkreds,368,8412,8,0.34997622444127435
+C. Caspar Stefani,The Conservative Peoples Party,Københavns Storkreds,972,8412,8,0.9243937232524965
+C. Helle Bonnesen,The Conservative Peoples Party,Københavns Storkreds,1495,8412,8,1.421778411792677
+C. Katarina Ammitzbøll,The Conservative Peoples Party,Københavns Storkreds,2261,8412,8,2.150261531145982
+C. Lasse Vogel Andersen,The Conservative Peoples Party,Københavns Storkreds,201,8412,8,0.19115549215406563
+C. Marie Høgh,The Conservative Peoples Party,Københavns Storkreds,867,8412,8,0.8245363766048502
+C. Nikolaj Bøgh,The Conservative Peoples Party,Københavns Storkreds,1687,8412,8,1.604374702805516
+C. Peter Stakemann,The Conservative Peoples Party,Københavns Storkreds,561,8412,8,0.5335235378031383
+C. Anette Abildgaard Larsen,The Conservative Peoples Party,Sydjyllands Storkreds,1272,8083,8,1.2589385129283681
+C. David Gulløv,The Conservative Peoples Party,Sydjyllands Storkreds,317,8083,8,0.313744896696771
+C. Frederik Bloch Münster,The Conservative Peoples Party,Sydjyllands Storkreds,1016,8083,8,1.0055672398861808
+C. Katri Søgaard,The Conservative Peoples Party,Sydjyllands Storkreds,353,8083,8,0.3493752319683286
+C. Klaus Juhl,The Conservative Peoples Party,Sydjyllands Storkreds,237,8083,8,0.23456637387108747
+C. Knud Erik Langhoff,The Conservative Peoples Party,Sydjyllands Storkreds,812,8083,8,0.8036620066806879
+C. Niels Flemming Hansen,The Conservative Peoples Party,Sydjyllands Storkreds,3780,8083,8,3.741185203513547
+C. Søren Tylvad Andersen,The Conservative Peoples Party,Sydjyllands Storkreds,296,8083,8,0.29296053445502906
+C. Birgitte Bergman,The Conservative Peoples Party,Nordsjællands Storkreds,2524,15620,7,1.131113956466069
+C. Egil Hulgaard,The Conservative Peoples Party,Nordsjællands Storkreds,1173,15620,7,0.5256722151088348
+C. Erik Lund,The Conservative Peoples Party,Nordsjællands Storkreds,1021,15620,7,0.45755441741357233
+C. Kjeld Haslund,The Conservative Peoples Party,Nordsjællands Storkreds,436,15620,7,0.19539052496798975
+C. Lars Arne Christensen,The Conservative Peoples Party,Nordsjællands Storkreds,846,15620,7,0.3791293213828425
+C. Mette Abildgaard,The Conservative Peoples Party,Nordsjællands Storkreds,9101,15620,7,4.0785531370038415
+C. Otto B. Christiansen,The Conservative Peoples Party,Nordsjællands Storkreds,519,15620,7,0.2325864276568502
+C. Brigitte Klintskov Jerkel,The Conservative Peoples Party,Sjællands Storkreds,3485,16538,7,1.4750876768654009
+C. Daniel Blak Pedersen,The Conservative Peoples Party,Sjællands Storkreds,291,16538,7,0.12317087918732615
+C. Jesper Wienmann Hansen,The Conservative Peoples Party,Sjællands Storkreds,471,16538,7,0.19935905188051758
+C. Mads Andersen,The Conservative Peoples Party,Sjællands Storkreds,3158,16538,7,1.3366791631394364
+C. Michael Suhr,The Conservative Peoples Party,Sjællands Storkreds,802,16538,7,0.3394606361107752
+C. Naser Khader,The Conservative Peoples Party,Sjællands Storkreds,7337,16538,7,3.1055145724996978
+C. Stine Pilt Olsen,The Conservative Peoples Party,Sjællands Storkreds,994,16538,7,0.42072802031684603
+C. Camilla Lydiksen,The Conservative Peoples Party,Fyns Storkreds,600,11267,6,0.3195171740481051
+C. Caroline Lauritsen,The Conservative Peoples Party,Fyns Storkreds,174,11267,6,0.09265998047395048
+C. Jørgen Nielsen,The Conservative Peoples Party,Fyns Storkreds,772,11267,6,0.4111120972752285
+C. Kristian Guldfeldt,The Conservative Peoples Party,Fyns Storkreds,1232,11267,6,0.6560752640454425
+C. Mai Mercado,The Conservative Peoples Party,Fyns Storkreds,7877,11267,6,4.194727966628206
+C. Roya Moore,The Conservative Peoples Party,Fyns Storkreds,612,11267,6,0.3259075175290672
+C. Hanne Bjørn-Klausen,The Conservative Peoples Party,Københavns Omegns Storkreds,766,15286,6,0.30066727724715425
+C. Henrik Sørensen,The Conservative Peoples Party,Københavns Omegns Storkreds,354,15286,6,0.13895067381918094
+C. Lisa Skov,The Conservative Peoples Party,Københavns Omegns Storkreds,348,15286,6,0.13659557765275415
+C. Merete Scheelsbeck,The Conservative Peoples Party,Københavns Omegns Storkreds,3091,15286,6,1.2132670417375375
+C. Rasmus Jarlov,The Conservative Peoples Party,Københavns Omegns Storkreds,10267,15286,6,4.029962056783986
+C. Steffen Mølgaard,The Conservative Peoples Party,Københavns Omegns Storkreds,460,15286,6,0.18055737275938769
+C. Henrik Dalgaard,The Conservative Peoples Party,Nordjyllands Storkreds,803,9382,10,0.8558942656150075
+C. Jens Kindberg,The Conservative Peoples Party,Nordjyllands Storkreds,364,9382,10,0.3879769771903645
+C. Jens-Henrik Kirk,The Conservative Peoples Party,Nordjyllands Storkreds,1131,9382,10,1.2054998934129184
+C. Karsten Skov Petersen,The Conservative Peoples Party,Nordjyllands Storkreds,121,9382,10,0.1289703687913025
+C. Mia Tang,The Conservative Peoples Party,Nordjyllands Storkreds,1409,9382,10,1.501811980387977
+C. Morten Thiessen,The Conservative Peoples Party,Nordjyllands Storkreds,772,9382,10,0.8228522703048391
+C. Per Larsen,The Conservative Peoples Party,Nordjyllands Storkreds,1625,9382,10,1.7320400767426989
+C. Per Møller,The Conservative Peoples Party,Nordjyllands Storkreds,1612,9382,10,1.7181837561287572
+C. Peter E. Nielsen,The Conservative Peoples Party,Nordjyllands Storkreds,374,9382,10,0.398635685354935
+C. Torben Overgaard,The Conservative Peoples Party,Nordjyllands Storkreds,1171,9382,10,1.2481347260712001
+C. Joachim Hjorting,The Conservative Peoples Party,Bornholms Storkreds,103,103,1,1.0
+C. Line Damgaard Lauritsen,The Conservative Peoples Party,Vestjyllands Storkreds,457,26472,7,0.12084466606225445
+C. Margrethe Agerup Præst,The Conservative Peoples Party,Vestjyllands Storkreds,548,26472,7,0.14490782713810818
+C. Orla Østerby,The Conservative Peoples Party,Vestjyllands Storkreds,1098,26472,7,0.29034451495920216
+C. Pia Olivia Christensen,The Conservative Peoples Party,Vestjyllands Storkreds,503,26472,7,0.13300846177092776
+C. Rasmus Norup,The Conservative Peoples Party,Vestjyllands Storkreds,1038,26472,7,0.2744786944696283
+C. René Nord Hansen,The Conservative Peoples Party,Vestjyllands Storkreds,605,26472,7,0.1599803566032034
+C. Søren Pape Poulsen,The Conservative Peoples Party,Vestjyllands Storkreds,22223,26472,7,5.876435478996676
+Chresten H. Ibsen,ependent candidates,Østjyllands Storkreds,489,549,2,1.7814207650273224
+Hans Schultz,ependent candidates,Østjyllands Storkreds,60,549,2,0.2185792349726776
+Christian B. Olesen,ependent candidates,Københavns Omegns Storkreds,59,885,2,0.13333333333333333
+Mads Palsvig,ependent candidates,Københavns Omegns Storkreds,826,885,2,1.8666666666666667
+D. Anahita Malakians,The New Right,Københavns Omegns Storkreds,532,1760,6,1.8136363636363637
+D. Claus Bøgh Svenningsen,The New Right,Københavns Omegns Storkreds,116,1760,6,0.39545454545454545
+D. Hans Blaaberg,The New Right,Københavns Omegns Storkreds,229,1760,6,0.7806818181818181
+D. Jeppe Juhl,The New Right,Københavns Omegns Storkreds,521,1760,6,1.7761363636363636
+D. Lone Madsen,The New Right,Københavns Omegns Storkreds,273,1760,6,0.9306818181818182
+D. Renee Funder,The New Right,Københavns Omegns Storkreds,89,1760,6,0.3034090909090909
+D. Anne Marie Buch,The New Right,Sydjyllands Storkreds,77,14136,8,0.04357668364459536
+D. Anton Kudsk,The New Right,Sydjyllands Storkreds,135,14136,8,0.07640067911714771
+D. Bo Kleis Christensen,The New Right,Sydjyllands Storkreds,120,14136,8,0.06791171477079797
+D. Jan Køpke Christensen,The New Right,Sydjyllands Storkreds,218,14136,8,0.12337294850028296
+D. Mikkel Bjørn Sørensen,The New Right,Sydjyllands Storkreds,46,14136,8,0.02603282399547255
+D. Morten Filipsen,The New Right,Sydjyllands Storkreds,53,14136,8,0.029994340690435765
+D. Per B. Frostholm,The New Right,Sydjyllands Storkreds,96,14136,8,0.05432937181663837
+D. Pernille Vermund,The New Right,Sydjyllands Storkreds,13391,14136,8,7.578381437464629
+D. Annette Skov Andersson,The New Right,Fyns Storkreds,458,1361,3,1.0095518001469508
+D. Benny Bindslev,The New Right,Fyns Storkreds,344,1361,3,0.7582659808963997
+D. Klaus Kroll,The New Right,Fyns Storkreds,559,1361,3,1.2321822189566496
+D. Bo Erik Hansen,The New Right,Sjællands Storkreds,94,3465,12,0.3255411255411255
+D. Bob Richard Nielsen,The New Right,Sjællands Storkreds,143,3465,12,0.49523809523809526
+D. Henrik Engel Elborough,The New Right,Sjællands Storkreds,54,3465,12,0.18701298701298702
+D. Janni Walies,The New Right,Sjællands Storkreds,402,3465,12,1.3922077922077922
+D. Josh Bjørkman,The New Right,Sjællands Storkreds,161,3465,12,0.5575757575757576
+D. Jørn Rasmussen,The New Right,Sjællands Storkreds,65,3465,12,0.22510822510822512
+D. Klaus Juel Hansen,The New Right,Sjællands Storkreds,215,3465,12,0.7445887445887446
+D. Martin Knudsen,The New Right,Sjællands Storkreds,165,3465,12,0.5714285714285714
+D. Peter Seier Christensen,The New Right,Sjællands Storkreds,1850,3465,12,6.406926406926407
+D. Thomas Vesth,The New Right,Sjællands Storkreds,173,3465,12,0.5991341991341992
+D. Tonny Voldby Pedersen,The New Right,Sjællands Storkreds,79,3465,12,0.2735930735930736
+D. Ulrik Nick Lassen,The New Right,Sjællands Storkreds,64,3465,12,0.22164502164502164
+D. Caroline Mathilde Reitzel,The New Right,Østjyllands Storkreds,237,3108,7,0.5337837837837838
+D. Inger-Marie Tryde Martensen,The New Right,Østjyllands Storkreds,143,3108,7,0.32207207207207206
+D. Lars Axel Nielsen,The New Right,Østjyllands Storkreds,88,3108,7,0.1981981981981982
+D. Lars Boje Mathiesen,The New Right,Østjyllands Storkreds,2396,3108,7,5.396396396396397
+D. Niels Børge Eriksen,The New Right,Østjyllands Storkreds,60,3108,7,0.13513513513513514
+D. Niels-Christian Braad,The New Right,Østjyllands Storkreds,104,3108,7,0.23423423423423423
+D. Ulrik Hermann,The New Right,Østjyllands Storkreds,80,3108,7,0.18018018018018017
+D. Cherif Tomra Ayouty,The New Right,Københavns Storkreds,172,1412,4,0.48725212464589235
+D. Helle Rosenvig,The New Right,Københavns Storkreds,409,1412,4,1.158640226628895
+D. Ketil Wathne Rasmussen,The New Right,Københavns Storkreds,328,1412,4,0.9291784702549575
+D. Tom Andkjær,The New Right,Københavns Storkreds,503,1412,4,1.424929178470255
+D. Ditlev Otte-Trojel,The New Right,Nordsjællands Storkreds,83,4925,7,0.11796954314720812
+D. Jesper Hammer,The New Right,Nordsjællands Storkreds,111,4925,7,0.15776649746192895
+D. Leif Barbré Knudsen,The New Right,Nordsjællands Storkreds,50,4925,7,0.07106598984771574
+D. Lene Kattrup,The New Right,Nordsjællands Storkreds,126,4925,7,0.17908629441624366
+D. Mette Thiesen,The New Right,Nordsjællands Storkreds,4354,4925,7,6.188426395939087
+D. Nina Froberg,The New Right,Nordsjællands Storkreds,74,4925,7,0.10517766497461929
+D. Ulla Kokfelt,The New Right,Nordsjællands Storkreds,127,4925,7,0.18050761421319797
+D. Frode Larsen,The New Right,Nordjyllands Storkreds,390,2127,4,0.7334273624823695
+D. John Bjerg,The New Right,Nordjyllands Storkreds,504,2127,4,0.9478138222849083
+D. Niels M. Christensen,The New Right,Nordjyllands Storkreds,292,2127,4,0.5491302303714152
+D. Poul Højlund,The New Right,Nordjyllands Storkreds,941,2127,4,1.769628584861307
+D. Gitte Keller,The New Right,Vestjyllands Storkreds,268,1342,6,1.1982116244411327
+D. Helge Hoffmann,The New Right,Vestjyllands Storkreds,113,1342,6,0.5052160953800298
+D. Nick Mogensen,The New Right,Vestjyllands Storkreds,448,1342,6,2.0029806259314458
+D. Peter Grydehøj,The New Right,Vestjyllands Storkreds,75,1342,6,0.3353204172876304
+D. Thomas Bachmann,The New Right,Vestjyllands Storkreds,252,1342,6,1.126676602086438
+D. Tina Hedegaard Pedersen,The New Right,Vestjyllands Storkreds,186,1342,6,0.8315946348733234
+D. Philip W. Brandt,The New Right,Bornholms Storkreds,71,96,2,1.4791666666666667
+D. Robert Dam,The New Right,Bornholms Storkreds,25,96,2,0.5208333333333334
+E. Anette Prang,Klaus Riskær Pedersen,Københavns Omegns Storkreds,69,152,2,0.9078947368421053
+E. Peter Hjorth,Klaus Riskær Pedersen,Københavns Omegns Storkreds,83,152,2,1.0921052631578947
+E. Birger Niemann,Klaus Riskær Pedersen,Sjællands Storkreds,237,475,2,0.9978947368421053
+E. Martin Nordstjerne Rasmussen,Klaus Riskær Pedersen,Sjællands Storkreds,238,475,2,1.0021052631578948
+E. Brian Schou Brandt,Klaus Riskær Pedersen,Bornholms Storkreds,31,31,1,1.0
+E. Dennis Kronborg,Klaus Riskær Pedersen,Østjyllands Storkreds,96,280,2,0.6857142857142857
+E. Mogens Birkelund,Klaus Riskær Pedersen,Østjyllands Storkreds,184,280,2,1.3142857142857143
+E. Gert Dyrn,Klaus Riskær Pedersen,Fyns Storkreds,209,209,1,1.0
+E. Kim Durup,Klaus Riskær Pedersen,Vestjyllands Storkreds,228,228,1,1.0
+E. Klaus Riskær Pedersen,Klaus Riskær Pedersen,Københavns Storkreds,3067,3117,2,1.9679178697465511
+E. Manja Aarslev Sørensen,Klaus Riskær Pedersen,Københavns Storkreds,50,3117,2,0.03208213025344883
+E. Maria Terese Fog Bartholdy,Klaus Riskær Pedersen,Nordjyllands Storkreds,182,535,2,0.680373831775701
+E. Rune Frøsig Osmundsen,Klaus Riskær Pedersen,Nordjyllands Storkreds,353,535,2,1.3196261682242991
+E. Peter Martin Pedersen,Klaus Riskær Pedersen,Sydjyllands Storkreds,153,332,2,0.9216867469879518
+E. Torben Østergaard Christoffersen,Klaus Riskær Pedersen,Sydjyllands Storkreds,179,332,2,1.0783132530120483
+E. Søren Søfelt,Klaus Riskær Pedersen,Nordsjællands Storkreds,170,170,1,1.0
+F. Aleksander Myrhøj,The Socialist Peoples Party,Østjyllands Storkreds,1191,17993,10,0.661924081587284
+F. Anna Brændemose,The Socialist Peoples Party,Østjyllands Storkreds,1607,17993,10,0.8931251042071917
+F. Charlotte Broman Mølbæk,The Socialist Peoples Party,Østjyllands Storkreds,2641,17993,10,1.46779303062302
+F. Charlotte Vindeløv,The Socialist Peoples Party,Østjyllands Storkreds,1597,17993,10,0.88756738731729
+F. Jan Tidemand,The Socialist Peoples Party,Østjyllands Storkreds,467,17993,10,0.25954537875840605
+F. Kirsten Normann Andersen,The Socialist Peoples Party,Østjyllands Storkreds,7885,17993,10,4.382259767687434
+F. Morten Siig Henriksen,The Socialist Peoples Party,Østjyllands Storkreds,460,17993,10,0.2556549769354749
+F. Niels Callesøe,The Socialist Peoples Party,Østjyllands Storkreds,498,17993,10,0.2767743011171011
+F. Paw Amdisen,The Socialist Peoples Party,Østjyllands Storkreds,825,17993,10,0.45851164341688433
+F. Theis Rubinke Sørensen,The Socialist Peoples Party,Østjyllands Storkreds,822,17993,10,0.45684432834991384
+F. Allan Norré Pedersen,The Socialist Peoples Party,Nordjyllands Storkreds,273,8634,9,0.2845726198749131
+F. Henning Jørgensen,The Socialist Peoples Party,Nordjyllands Storkreds,357,8634,9,0.372133425990271
+F. Jacob Klivager,The Socialist Peoples Party,Nordjyllands Storkreds,725,8634,9,0.755733148019458
+F. Janni Platz Sthyr,The Socialist Peoples Party,Nordjyllands Storkreds,441,8634,9,0.45969423210562893
+F. Karl H. Bornhøft,The Socialist Peoples Party,Nordjyllands Storkreds,530,8634,9,0.5524669909659485
+F. Lene Linnemann,The Socialist Peoples Party,Nordjyllands Storkreds,843,8634,9,0.878735232800556
+F. Lisbeth Bech Poulsen,The Socialist Peoples Party,Nordjyllands Storkreds,2645,8634,9,2.7571230020847812
+F. Theresa Berg Andersen,The Socialist Peoples Party,Nordjyllands Storkreds,2516,8634,9,2.622654621264767
+F. Thorkil Olesen,The Socialist Peoples Party,Nordjyllands Storkreds,304,8634,9,0.31688672689367614
+F. Anders Bøge,The Socialist Peoples Party,Vestjyllands Storkreds,602,10059,9,0.5386221294363257
+F. Anders Udengaard,The Socialist Peoples Party,Vestjyllands Storkreds,195,10059,9,0.17447062332239785
+F. Andreas Albertsen,The Socialist Peoples Party,Vestjyllands Storkreds,380,10059,9,0.33999403519236504
+F. Bente Refslund,The Socialist Peoples Party,Vestjyllands Storkreds,454,10059,9,0.40620339994035193
+F. Emma Thorup Jacobsen,The Socialist Peoples Party,Vestjyllands Storkreds,388,10059,9,0.3471518043543096
+F. Hanne D. Jacobsen,The Socialist Peoples Party,Vestjyllands Storkreds,261,10059,9,0.23352221890844022
+F. Karsten Filsø,The Socialist Peoples Party,Vestjyllands Storkreds,1075,10059,9,0.9618252311362958
+F. Peter Nowack,The Socialist Peoples Party,Vestjyllands Storkreds,419,10059,9,0.3748881598568446
+F. Signe Munk,The Socialist Peoples Party,Vestjyllands Storkreds,6285,10059,9,5.623322397852669
+F. Anders Funch Engelstad,The Socialist Peoples Party,Fyns Storkreds,570,9442,7,0.42257996187248464
+F. Dennis Ørsted Petersen,The Socialist Peoples Party,Fyns Storkreds,159,9442,7,0.11787756831179835
+F. Ditte Helene Rasmussen,The Socialist Peoples Party,Fyns Storkreds,959,9442,7,0.7109722516416014
+F. Karsten Hønge,The Socialist Peoples Party,Fyns Storkreds,4146,9442,7,3.073713196356704
+F. Line Mørk,The Socialist Peoples Party,Fyns Storkreds,2848,9442,7,2.1114170726540986
+F. Pia Havgaard Henriksen,The Socialist Peoples Party,Fyns Storkreds,391,9442,7,0.28987502647744123
+F. Rasmus Peter Henriksen,The Socialist Peoples Party,Fyns Storkreds,369,9442,7,0.2735649226858716
+F. Anna Ockelmann,The Socialist Peoples Party,Nordsjællands Storkreds,456,8039,5,0.28361736534394827
+F. Dorte Nørbo,The Socialist Peoples Party,Nordsjællands Storkreds,677,8039,5,0.42107227267073016
+F. Lise Müller,The Socialist Peoples Party,Nordsjællands Storkreds,2014,8039,5,1.252643363602438
+F. Lucas Antonio Madsen,The Socialist Peoples Party,Nordsjællands Storkreds,585,8039,5,0.3638512252767757
+F. Trine Torp,The Socialist Peoples Party,Nordsjællands Storkreds,4307,8039,5,2.6788157731061077
+F. Anne Valentina Berthelsen,The Socialist Peoples Party,Sjællands Storkreds,1304,29759,10,0.438186767028462
+F. Annemette Schønberg Johnsen,The Socialist Peoples Party,Sjællands Storkreds,713,29759,10,0.23959138411909003
+F. Astrid Carøe,The Socialist Peoples Party,Sjællands Storkreds,2550,29759,10,0.8568836318424679
+F. Charlotte Poulsen,The Socialist Peoples Party,Sjællands Storkreds,165,29759,10,0.05544541147215968
+F. Jacob Mark,The Socialist Peoples Party,Sjællands Storkreds,23213,29759,10,7.800329312140865
+F. Jan Bjergskov Larsen,The Socialist Peoples Party,Sjællands Storkreds,696,29759,10,0.23387882657347356
+F. Jonas Ghiyati,The Socialist Peoples Party,Sjællands Storkreds,450,29759,10,0.1512147585604355
+F. Judith Frederiksen,The Socialist Peoples Party,Sjællands Storkreds,407,29759,10,0.1367653482979939
+F. Michael Graakjær,The Socialist Peoples Party,Sjællands Storkreds,106,29759,10,0.035619476460902584
+F. Mogens Stig Møller,The Socialist Peoples Party,Sjællands Storkreds,155,29759,10,0.052085083504150004
+F. Balder Mørk Andersen,The Socialist Peoples Party,Københavns Storkreds,1104,28146,10,0.3922404604561927
+F. Carl Valentin,The Socialist Peoples Party,Københavns Storkreds,2074,28146,10,0.7368720244439707
+F. Ebbe A. Hansen,The Socialist Peoples Party,Københavns Storkreds,70,28146,10,0.02487031905066439
+F. Halime Oguz,The Socialist Peoples Party,Københavns Storkreds,1278,28146,10,0.4540609678107013
+F. Kasper Nordborg Kiær,The Socialist Peoples Party,Københavns Storkreds,993,28146,10,0.35280324024728205
+F. Louise Tuxen Romsdal,The Socialist Peoples Party,Københavns Storkreds,816,28146,10,0.28991686207631634
+F. Melissa Skovgaard Jensen,The Socialist Peoples Party,Københavns Storkreds,297,28146,10,0.1055212108292475
+F. Pia Olsen Dyhr,The Socialist Peoples Party,Københavns Storkreds,20047,28146,10,7.12250408583813
+F. Rasmus Steenberger,The Socialist Peoples Party,Københavns Storkreds,806,28146,10,0.28636395935479286
+F. Rikke Lauritsen,The Socialist Peoples Party,Københavns Storkreds,661,28146,10,0.23484686989270234
+F. Betina Skovby,The Socialist Peoples Party,Københavns Omegns Storkreds,579,13031,8,0.3554600567876602
+F. Henrik Lund,The Socialist Peoples Party,Københavns Omegns Storkreds,255,13031,8,0.1565497659427519
+F. Ina Strøjer-Schmidt,The Socialist Peoples Party,Københavns Omegns Storkreds,4512,13031,8,2.770009976210575
+F. Joachim Schiødt,The Socialist Peoples Party,Københavns Omegns Storkreds,333,13031,8,0.2044355767017113
+F. Marianne Bigum,The Socialist Peoples Party,Københavns Omegns Storkreds,1766,13031,8,1.0841838692349013
+F. Niels Christian Barkholt,The Socialist Peoples Party,Københavns Omegns Storkreds,641,13031,8,0.39352313713452536
+F. Serdal Benli,The Socialist Peoples Party,Københavns Omegns Storkreds,3048,13031,8,1.871230143503952
+F. Vivi Nør Jacobsen,The Socialist Peoples Party,Københavns Omegns Storkreds,1897,13031,8,1.164607474483923
+F. Britta Bitsch,The Socialist Peoples Party,Sydjyllands Storkreds,412,10476,8,0.3146239022527682
+F. Gunner Poulsen,The Socialist Peoples Party,Sydjyllands Storkreds,117,10476,8,0.08934707903780069
+F. Henrik Boye,The Socialist Peoples Party,Sydjyllands Storkreds,116,10476,8,0.08858342878961435
+F. Karina Lorentzen Dehnhardt,The Socialist Peoples Party,Sydjyllands Storkreds,4698,10476,8,3.5876288659793816
+F. Lars Olesen,The Socialist Peoples Party,Sydjyllands Storkreds,162,10476,8,0.12371134020618557
+F. Mathilde Ziefeldt,The Socialist Peoples Party,Sydjyllands Storkreds,155,10476,8,0.11836578846888125
+F. Mikkel Ammitzbøll,The Socialist Peoples Party,Sydjyllands Storkreds,1107,10476,8,0.845360824742268
+F. Nanna Bonde,The Socialist Peoples Party,Sydjyllands Storkreds,3709,10476,8,2.8323787705231003
+F. Leif Olsen,The Socialist Peoples Party,Bornholms Storkreds,239,239,1,1.0
+Gert Lassen,ependent candidates,Nordsjællands Storkreds,259,282,2,1.8368794326241136
+Hans Frederik Brobjerg,ependent candidates,Nordsjællands Storkreds,23,282,2,0.16312056737588654
+I. Alex Vanopslagh,Liberal Alliance,Vestjyllands Storkreds,3337,4028,8,6.627606752730884
+I. Jannie Leth Christensen,Liberal Alliance,Vestjyllands Storkreds,92,4028,8,0.182720953326713
+I. Lene Foged,Liberal Alliance,Vestjyllands Storkreds,173,4028,8,0.3435948361469712
+I. Nicolaj Dupont-Mersing,Liberal Alliance,Vestjyllands Storkreds,86,4028,8,0.1708043694141013
+I. Rune Leth Svenninggaard,Liberal Alliance,Vestjyllands Storkreds,32,4028,8,0.06355511420059583
+I. Sine Rahbek,Liberal Alliance,Vestjyllands Storkreds,113,4028,8,0.22442899702085403
+I. Steffen Troldtoft,Liberal Alliance,Vestjyllands Storkreds,50,4028,8,0.09930486593843098
+I. Søren Lodahl,Liberal Alliance,Vestjyllands Storkreds,145,4028,8,0.28798411122144985
+I. Anders Samuelsen,Liberal Alliance,Nordsjællands Storkreds,6004,6732,4,3.5674390968508614
+I. May-Britt Kattrup,Liberal Alliance,Nordsjællands Storkreds,478,6732,4,0.28401663695781343
+I. Ole F. Holleufer,Liberal Alliance,Nordsjællands Storkreds,126,6732,4,0.0748663101604278
+I. Steffen Sjørslev,Liberal Alliance,Nordsjællands Storkreds,124,6732,4,0.0736779560308972
+I. Bo Ritterbusch,Liberal Alliance,Nordjyllands Storkreds,352,2761,5,0.6374501992031872
+I. Christina Egelund,Liberal Alliance,Nordjyllands Storkreds,2026,2761,5,3.668960521550163
+I. Claus Hermansen,Liberal Alliance,Nordjyllands Storkreds,59,2761,5,0.10684534588917059
+I. Jacob Høfler,Liberal Alliance,Nordjyllands Storkreds,133,2761,5,0.24085476276711337
+I. Martin K. Madsen,Liberal Alliance,Nordjyllands Storkreds,191,2761,5,0.34588917059036584
+I. Carsten Bach,Liberal Alliance,Fyns Storkreds,734,1468,6,3.0
+I. Frederik Nilausen Dam,Liberal Alliance,Fyns Storkreds,89,1468,6,0.3637602179836512
+I. Jonas Møller Simonsen,Liberal Alliance,Fyns Storkreds,161,1468,6,0.6580381471389646
+I. Ken Nørregaard,Liberal Alliance,Fyns Storkreds,134,1468,6,0.547683923705722
+I. Lars Christensen,Liberal Alliance,Fyns Storkreds,75,1468,6,0.3065395095367847
+I. Maria Dahl Hedegaard,Liberal Alliance,Fyns Storkreds,275,1468,6,1.1239782016348774
+I. Claus Hansen,Liberal Alliance,Sydjyllands Storkreds,65,3589,7,0.12677626079687934
+I. Henrik Dahl,Liberal Alliance,Sydjyllands Storkreds,1737,3589,7,3.3878517692950685
+I. John Rasmussen,Liberal Alliance,Sydjyllands Storkreds,183,3589,7,0.35692393424352187
+I. Martin Boye,Liberal Alliance,Sydjyllands Storkreds,308,3589,7,0.6007244357759821
+I. Pernille Schwaner,Liberal Alliance,Sydjyllands Storkreds,362,3589,7,0.706046252438005
+I. Steen Holm Iversen,Liberal Alliance,Sydjyllands Storkreds,837,3589,7,1.6324881582613542
+I. Søren Peder Stensgård Sørensen,Liberal Alliance,Sydjyllands Storkreds,97,3589,7,0.1891891891891892
+I. Danny Malkowski,Liberal Alliance,Københavns Storkreds,658,4086,6,0.9662261380323054
+I. David Bertelsen,Liberal Alliance,Københavns Storkreds,43,4086,6,0.0631424375917768
+I. Jacob Rosenberg,Liberal Alliance,Københavns Storkreds,296,4086,6,0.434654919236417
+I. Lars Berg Andersen,Liberal Alliance,Københavns Storkreds,172,4086,6,0.2525697503671072
+I. Martin Ancher,Liberal Alliance,Københavns Storkreds,202,4086,6,0.2966226138032305
+I. Simon Emil Ammitzbøll-Bille,Liberal Alliance,Københavns Storkreds,2715,4086,6,3.986784140969163
+I. Emil Blücher,Liberal Alliance,Sjællands Storkreds,409,3356,7,0.8530989272943981
+I. Frederik Damgaard,Liberal Alliance,Sjællands Storkreds,145,3356,7,0.3024433849821216
+I. Henrik Boye,Liberal Alliance,Sjællands Storkreds,132,3356,7,0.27532777115613827
+I. Jeppe H. Lindberg,Liberal Alliance,Sjællands Storkreds,109,3356,7,0.2273539928486293
+I. John Axelsen,Liberal Alliance,Sjællands Storkreds,149,3356,7,0.31078665077473183
+I. Knud Damgaard,Liberal Alliance,Sjællands Storkreds,71,3356,7,0.14809296781883194
+I. Laura Lindahl,Liberal Alliance,Sjællands Storkreds,2341,3356,7,4.882896305125149
+I. Iben Høiaas Jeppesen,Liberal Alliance,Østjyllands Storkreds,523,5592,5,0.4676323319027182
+I. Ida Bihl,Liberal Alliance,Østjyllands Storkreds,844,5592,5,0.7546494992846924
+I. Jakob Rixen,Liberal Alliance,Østjyllands Storkreds,674,5592,5,0.6026466380543634
+I. Jens Meilvang,Liberal Alliance,Østjyllands Storkreds,1531,5592,5,1.368919885550787
+I. Ole Birk Olesen,Liberal Alliance,Østjyllands Storkreds,2020,5592,5,1.806151645207439
+I. Joachim B. Olsen,Liberal Alliance,Københavns Omegns Storkreds,3226,3632,5,4.441079295154185
+I. Michael Melchert,Liberal Alliance,Københavns Omegns Storkreds,113,3632,5,0.15556167400881057
+I. Morten Kristoffer Hansen,Liberal Alliance,Københavns Omegns Storkreds,62,3632,5,0.08535242290748898
+I. Nikolaj Vester,Liberal Alliance,Københavns Omegns Storkreds,98,3632,5,0.13491189427312775
+I. Steffen Larsen,Liberal Alliance,Københavns Omegns Storkreds,133,3632,5,0.18309471365638766
+I. Kenny Olsen,Liberal Alliance,Bornholms Storkreds,73,73,1,1.0
+John Erik Wagner,ependent candidates,Københavns Storkreds,33,607,5,0.27182866556836904
+John Jørgensen,ependent candidates,Københavns Storkreds,80,607,5,0.6589785831960461
+Pierre Tavares,ependent candidates,Københavns Storkreds,305,607,5,2.5123558484349258
+Tom Gillesberg,ependent candidates,Københavns Storkreds,167,607,5,1.3756177924217463
+Tommy Schou Christesen,ependent candidates,Københavns Storkreds,22,607,5,0.1812191103789127
+K. Andreas Peters-Lehm,Christian Democrats,Nordsjællands Storkreds,170,626,3,0.8146964856230032
+K. Britta Glønborg Kristensen,Christian Democrats,Nordsjællands Storkreds,270,626,3,1.293929712460064
+K. Martin Rask Olsen,Christian Democrats,Nordsjællands Storkreds,186,626,3,0.8913738019169329
+K. Anja Smedstrup Christensen,Christian Democrats,Østjyllands Storkreds,37,8801,9,0.03783660947619589
+K. Birgit Jakobsen,Christian Democrats,Østjyllands Storkreds,411,8801,9,0.4202931485058516
+K. Esper Thidemann,Christian Democrats,Østjyllands Storkreds,71,8801,9,0.07260538575161914
+K. Isabella Arendt,Christian Democrats,Østjyllands Storkreds,8091,8801,9,8.273946142483808
+K. Jens Jul Nielsen,Christian Democrats,Østjyllands Storkreds,31,8801,9,0.03170094307465061
+K. Kristian Søndergaard Larsen,Christian Democrats,Østjyllands Storkreds,57,8801,9,0.05828883081468015
+K. Nils-Erik Mulvad,Christian Democrats,Østjyllands Storkreds,45,8801,9,0.046017498011589594
+K. Simon Overby Kristensen,Christian Democrats,Østjyllands Storkreds,33,8801,9,0.03374616520849903
+K. Sven-Erik F. Jørgensen,Christian Democrats,Østjyllands Storkreds,25,8801,9,0.02556527667310533
+K. Anne Grønlund,Christian Democrats,Københavns Storkreds,98,744,5,0.6586021505376344
+K. Anne-Lise Wagner,Christian Democrats,Københavns Storkreds,54,744,5,0.3629032258064516
+K. Bess Serner-Pedersen,Christian Democrats,Københavns Storkreds,67,744,5,0.45026881720430106
+K. Nanna Bock,Christian Democrats,Københavns Storkreds,106,744,5,0.7123655913978495
+K. Stig Grenov,Christian Democrats,Københavns Storkreds,419,744,5,2.8158602150537635
+K. Anne-Marie Jørgensen,Christian Democrats,Nordjyllands Storkreds,322,1739,6,1.1109833237492812
+K. Britta Eckhardt,Christian Democrats,Nordjyllands Storkreds,537,1739,6,1.852788959171938
+K. David Jakobsen,Christian Democrats,Nordjyllands Storkreds,343,1739,6,1.183438757906843
+K. Inger Ottesen,Christian Democrats,Nordjyllands Storkreds,271,1739,6,0.9350201265094882
+K. Piratheep Krishnapalan,Christian Democrats,Nordjyllands Storkreds,231,1739,6,0.79700977573318
+K. Robert Thomsen,Christian Democrats,Nordjyllands Storkreds,35,1739,6,0.12075905692926969
+K. Annemarie Bjerre,Christian Democrats,Vestjyllands Storkreds,198,13202,10,0.14997727617027723
+K. Frits Hammershøj,Christian Democrats,Vestjyllands Storkreds,51,13202,10,0.03863051052870777
+K. Hanne Simonsen,Christian Democrats,Vestjyllands Storkreds,86,13202,10,0.06514164520527192
+K. Henrik Dideriksen,Christian Democrats,Vestjyllands Storkreds,127,13202,10,0.09619754582638994
+K. Jens Erik Thomey Damgaard,Christian Democrats,Vestjyllands Storkreds,187,13202,10,0.1416452052719285
+K. Jens Kr. Mølby Nielsen,Christian Democrats,Vestjyllands Storkreds,316,13202,10,0.23935767307983638
+K. Karen-Margrethe Lysholm,Christian Democrats,Vestjyllands Storkreds,212,13202,10,0.1605817300409029
+K. Karlo Brondbjerg,Christian Democrats,Vestjyllands Storkreds,183,13202,10,0.1386153613088926
+K. Kristian Andersen,Christian Democrats,Vestjyllands Storkreds,10890,13202,10,8.248750189365248
+K. Simon Skals,Christian Democrats,Vestjyllands Storkreds,952,13202,10,0.721102863202545
+K. Bjarne Hartung Kirkegaard,Christian Democrats,Bornholms Storkreds,256,499,3,1.5390781563126252
+K. Jacob Hellwing,Christian Democrats,Bornholms Storkreds,9,499,3,0.05410821643286573
+K. Niels Chresten Andersen,Christian Democrats,Bornholms Storkreds,234,499,3,1.406813627254509
+K. Britta Thomsen,Christian Democrats,Sydjyllands Storkreds,150,3647,9,0.37016726076227036
+K. Gert Brennalt,Christian Democrats,Sydjyllands Storkreds,38,3647,9,0.09377570605977516
+K. Henri Nissen,Christian Democrats,Sydjyllands Storkreds,347,3647,9,0.8563202632300521
+K. Inge Marie Jensen,Christian Democrats,Sydjyllands Storkreds,102,3647,9,0.25171373731834384
+K. Jackie D. Hansen,Christian Democrats,Sydjyllands Storkreds,137,3647,9,0.3380860981628736
+K. Jesper Nissen Brogaard-Radoor,Christian Democrats,Sydjyllands Storkreds,65,3647,9,0.1604058129969838
+K. Marianne Karlsmose,Christian Democrats,Sydjyllands Storkreds,2617,3647,9,6.45818480943241
+K. Merete Mogensen,Christian Democrats,Sydjyllands Storkreds,62,3647,9,0.15300246778173843
+K. Søren Lydeking Pedersen,Christian Democrats,Sydjyllands Storkreds,129,3647,9,0.3183438442555525
+K. Bruno Skibbild,Christian Democrats,Sjællands Storkreds,34,743,7,0.3203230148048452
+K. Eva Guldfred,Christian Democrats,Sjællands Storkreds,331,743,7,3.1184387617765816
+K. Henning Østergaard-Christensen,Christian Democrats,Sjællands Storkreds,97,743,7,0.9138627187079408
+K. Lasse Rasmussen,Christian Democrats,Sjællands Storkreds,22,743,7,0.2072678331090175
+K. Lisbeth Rask Nielsen,Christian Democrats,Sjællands Storkreds,160,743,7,1.5074024226110363
+K. Per Kristensen,Christian Democrats,Sjællands Storkreds,52,743,7,0.4899057873485868
+K. Tage Sørensen,Christian Democrats,Sjællands Storkreds,47,743,7,0.4427994616419919
+K. Gert Broxgaard,Christian Democrats,Fyns Storkreds,32,805,9,0.3577639751552795
+K. Jenan Jamel Bozo,Christian Democrats,Fyns Storkreds,70,805,9,0.782608695652174
+K. Jens Ole Madsen,Christian Democrats,Fyns Storkreds,67,805,9,0.7490683229813665
+K. Kim Slott,Christian Democrats,Fyns Storkreds,50,805,9,0.5590062111801242
+K. Margit Lund-Cramer,Christian Democrats,Fyns Storkreds,322,805,9,3.6
+K. Michael Jensen,Christian Democrats,Fyns Storkreds,69,805,9,0.7714285714285715
+K. Per Nansted,Christian Democrats,Fyns Storkreds,101,805,9,1.129192546583851
+K. Rise Eskildsen,Christian Democrats,Fyns Storkreds,46,805,9,0.5142857142857142
+K. Simon Lavdal,Christian Democrats,Fyns Storkreds,48,805,9,0.5366459627329192
+K. Jacob Rabjerg,Christian Democrats,Københavns Omegns Storkreds,103,747,5,0.6894243641231593
+K. Johnnie Gregersen,Christian Democrats,Københavns Omegns Storkreds,65,747,5,0.4350736278447122
+K. Kim Grenov,Christian Democrats,Københavns Omegns Storkreds,113,747,5,0.7563587684069611
+K. Lars Sejergaard,Christian Democrats,Københavns Omegns Storkreds,92,747,5,0.6157965194109772
+K. Sara Sejergaard,Christian Democrats,Københavns Omegns Storkreds,374,747,5,2.50334672021419
+Michael Thomsen,ependent candidates,Sydjyllands Storkreds,289,289,1,1.0
+O. Alex Ahrendtsen,The Danish Peoples Party,Fyns Storkreds,2656,10714,8,1.983199551988053
+O. Betina Signe Stick,The Danish Peoples Party,Fyns Storkreds,450,10714,8,0.3360089602389397
+O. Carsten Kudsk,The Danish Peoples Party,Fyns Storkreds,961,10714,8,0.7175658017547134
+O. Eva Jørgensen,The Danish Peoples Party,Fyns Storkreds,682,10714,8,0.5092402464065708
+O. Jens Henrik W. Thulesen Dahl,The Danish Peoples Party,Fyns Storkreds,2913,10714,8,2.175098002613403
+O. Lars Kolling,The Danish Peoples Party,Fyns Storkreds,755,10714,8,0.5637483666231099
+O. Pernille Bendixen,The Danish Peoples Party,Fyns Storkreds,1492,10714,8,1.1140563748366623
+O. René Jørgensen,The Danish Peoples Party,Fyns Storkreds,805,10714,8,0.6010826955385477
+O. Alex Rosenbæk,The Danish Peoples Party,Vestjyllands Storkreds,201,11311,11,0.1954734329413845
+O. Anette Svindborg,The Danish Peoples Party,Vestjyllands Storkreds,677,11311,11,0.658385642295111
+O. Bo Sand Kristensen,The Danish Peoples Party,Vestjyllands Storkreds,520,11311,11,0.5057024135797011
+O. Christian Langballe,The Danish Peoples Party,Vestjyllands Storkreds,1680,11311,11,1.6338077977190346
+O. Dennis Flydtkjær,The Danish Peoples Party,Vestjyllands Storkreds,4622,11311,11,4.494916453010344
+O. Jakob Kjærsgaard,The Danish Peoples Party,Vestjyllands Storkreds,323,11311,11,0.3141189992043144
+O. Jette Lund,The Danish Peoples Party,Vestjyllands Storkreds,642,11311,11,0.624347979842631
+O. Karina Due,The Danish Peoples Party,Vestjyllands Storkreds,1565,11311,11,1.5219697639466006
+O. Kuno F. Danielsen,The Danish Peoples Party,Vestjyllands Storkreds,217,11311,11,0.2110335072053753
+O. Liselotte Lynge Jensen,The Danish Peoples Party,Vestjyllands Storkreds,665,11311,11,0.6467155865971178
+O. Richardt Graakjær Bostrup Møller,The Danish Peoples Party,Vestjyllands Storkreds,199,11311,11,0.19352842365838563
+O. Anette Skafte,The Danish Peoples Party,Københavns Omegns Storkreds,382,13256,8,0.23053711526855764
+O. Asbjørn Gerting Olsson,The Danish Peoples Party,Københavns Omegns Storkreds,51,13256,8,0.030778515389257695
+O. Danni Olsen,The Danish Peoples Party,Københavns Omegns Storkreds,273,13256,8,0.1647555823777912
+O. Kenneth Kristensen Berth,The Danish Peoples Party,Københavns Omegns Storkreds,937,13256,8,0.5654797827398914
+O. Kim Hammer,The Danish Peoples Party,Københavns Omegns Storkreds,190,13256,8,0.11466505733252867
+O. Mette Qwinten,The Danish Peoples Party,Københavns Omegns Storkreds,611,13256,8,0.3687386843693422
+O. Mikkel Dencker,The Danish Peoples Party,Københavns Omegns Storkreds,859,13256,8,0.5184067592033796
+O. Pia Kjærsgaard,The Danish Peoples Party,Københavns Omegns Storkreds,9953,13256,8,6.006638503319252
+O. Annette Tandrup Beier Andersen,The Danish Peoples Party,Sydjyllands Storkreds,856,33303,13,0.3341440711047053
+O. Ida Smed,The Danish Peoples Party,Sydjyllands Storkreds,895,33303,13,0.3493679248115785
+O. Jan Rytkjær Callesen,The Danish Peoples Party,Sydjyllands Storkreds,1056,33303,13,0.41221511575533737
+O. Jan Voss Hansen,The Danish Peoples Party,Sydjyllands Storkreds,417,33303,13,0.1627781280965679
+O. Julie Gottschalk,The Danish Peoples Party,Sydjyllands Storkreds,464,33303,13,0.1811248235894664
+O. Karina Adsbøl,The Danish Peoples Party,Sydjyllands Storkreds,1526,33303,13,0.5956820706843228
+O. Karsten Brønnum,The Danish Peoples Party,Sydjyllands Storkreds,126,33303,13,0.049184758129898205
+O. Kenneth Fredslund Petersen,The Danish Peoples Party,Sydjyllands Storkreds,406,33303,13,0.1584842206407831
+O. Kristian Thulesen Dahl,The Danish Peoples Party,Sydjyllands Storkreds,23142,33303,13,9.033600576524638
+O. Marie Krarup,The Danish Peoples Party,Sydjyllands Storkreds,1618,33303,13,0.6315947512236135
+O. Susanne Dyreborg,The Danish Peoples Party,Sydjyllands Storkreds,1082,33303,13,0.4223643515599195
+O. Susanne Eilersen,The Danish Peoples Party,Sydjyllands Storkreds,1373,33303,13,0.5359577215265892
+O. Torbjørn Fristed,The Danish Peoples Party,Sydjyllands Storkreds,342,33303,13,0.13350148635258086
+O. Bent Bøgsted,The Danish Peoples Party,Nordjyllands Storkreds,3418,14139,9,2.1756842775302356
+O. Erik Høgh-Sørensen,The Danish Peoples Party,Nordjyllands Storkreds,1022,14139,9,0.6505410566518142
+O. Hans Henrik Sørensen,The Danish Peoples Party,Nordjyllands Storkreds,447,14139,9,0.28453214513049013
+O. Ib Poulsen,The Danish Peoples Party,Nordjyllands Storkreds,1399,14139,9,0.890515595162317
+O. Kim Edberg Andersen,The Danish Peoples Party,Nordjyllands Storkreds,2019,14139,9,1.2851686823679185
+O. Lise Bech,The Danish Peoples Party,Nordjyllands Storkreds,2306,14139,9,1.4678548695098663
+O. Morten Marinus,The Danish Peoples Party,Nordjyllands Storkreds,1953,14139,9,1.2431572246976448
+O. Peter Sørensen,The Danish Peoples Party,Nordjyllands Storkreds,811,14139,9,0.5162316995544239
+O. Tommy Degn,The Danish Peoples Party,Nordjyllands Storkreds,764,14139,9,0.4863144493952896
+O. Brian Borglund Bruun,The Danish Peoples Party,Københavns Storkreds,119,9056,12,0.15768551236749118
+O. Carsten Ullmann Andersen,The Danish Peoples Party,Københavns Storkreds,57,9056,12,0.07553003533568904
+O. Cheanne Nielsen,The Danish Peoples Party,Københavns Storkreds,61,9056,12,0.08083038869257951
+O. Julie Jacobsen,The Danish Peoples Party,Københavns Storkreds,124,9056,12,0.16431095406360424
+O. Laila Sortland,The Danish Peoples Party,Københavns Storkreds,162,9056,12,0.2146643109540636
+O. Lars Vestergaard,The Danish Peoples Party,Københavns Storkreds,228,9056,12,0.30212014134275617
+O. Martin Henriksen,The Danish Peoples Party,Københavns Storkreds,2632,9056,12,3.487632508833922
+O. Paw Karslund,The Danish Peoples Party,Københavns Storkreds,496,9056,12,0.657243816254417
+O. Per Brix,The Danish Peoples Party,Københavns Storkreds,48,9056,12,0.0636042402826855
+O. Peter Skaarup,The Danish Peoples Party,Københavns Storkreds,4875,9056,12,6.459805653710247
+O. Susanne Damsgaard,The Danish Peoples Party,Københavns Storkreds,197,9056,12,0.26104240282685515
+O. Søren Hald Christensen,The Danish Peoples Party,Københavns Storkreds,57,9056,12,0.07553003533568904
+O. Brian Mørch,The Danish Peoples Party,Sjællands Storkreds,1213,23240,12,0.6263339070567986
+O. Githa Nelander,The Danish Peoples Party,Sjællands Storkreds,701,23240,12,0.36196213425129087
+O. Henrik Brodersen,The Danish Peoples Party,Sjællands Storkreds,997,23240,12,0.514802065404475
+O. Jeppe Jakobsen,The Danish Peoples Party,Sjællands Storkreds,1216,23240,12,0.6278829604130809
+O. Karin Nødgaard,The Danish Peoples Party,Sjællands Storkreds,2142,23240,12,1.106024096385542
+O. Kim Errebo,The Danish Peoples Party,Sjællands Storkreds,519,23240,12,0.267986230636833
+O. Lars Schmidt,The Danish Peoples Party,Sjællands Storkreds,781,23240,12,0.40327022375215144
+O. Liselott Blixt,The Danish Peoples Party,Sjællands Storkreds,2427,23240,12,1.253184165232358
+O. Merete Dea Larsen,The Danish Peoples Party,Sjællands Storkreds,1696,23240,12,0.8757314974182444
+O. René Christensen,The Danish Peoples Party,Sjællands Storkreds,5175,23240,12,2.672117039586919
+O. Søren Espersen,The Danish Peoples Party,Sjællands Storkreds,5930,23240,12,3.061962134251291
+O. Thomas Palmskov,The Danish Peoples Party,Sjællands Storkreds,443,23240,12,0.22874354561101548
+O. Claus Kvist Hansen,The Danish Peoples Party,Østjyllands Storkreds,917,12877,11,0.7833346276306593
+O. Hans Kristian Skibby,The Danish Peoples Party,Østjyllands Storkreds,2834,12877,11,2.4209054904092566
+O. Jakob Søgaard Clausen,The Danish Peoples Party,Østjyllands Storkreds,667,12877,11,0.5697755688436748
+O. Kim Christiansen,The Danish Peoples Party,Østjyllands Storkreds,1156,12877,11,0.9874970878310165
+O. Knud N. Mathiesen,The Danish Peoples Party,Østjyllands Storkreds,869,12877,11,0.7423312883435583
+O. Mette Hjermind Dencker,The Danish Peoples Party,Østjyllands Storkreds,2348,12877,11,2.0057466801273587
+O. Michael Nedersøe,The Danish Peoples Party,Østjyllands Storkreds,778,12877,11,0.6645957909450959
+O. Nick Zimmermann,The Danish Peoples Party,Østjyllands Storkreds,980,12877,11,0.8371515104449794
+O. Ole Revsgaard Andersen,The Danish Peoples Party,Østjyllands Storkreds,316,12877,11,0.26993865030674846
+O. Steen Thomsen,The Danish Peoples Party,Østjyllands Storkreds,1412,12877,11,1.2061815640288887
+O. Steffen Graff Daugaard,The Danish Peoples Party,Østjyllands Storkreds,600,12877,11,0.5125417410887629
+O. Glen Madsen,The Danish Peoples Party,Nordsjællands Storkreds,528,10369,6,0.3055260873758318
+O. Jan Erik Messmann,The Danish Peoples Party,Nordsjællands Storkreds,399,10369,6,0.23088050921014563
+O. Marlene Harpsøe,The Danish Peoples Party,Nordsjællands Storkreds,1677,10369,6,0.9703925161539203
+O. Morten Messerschmidt,The Danish Peoples Party,Nordsjællands Storkreds,7554,10369,6,4.371106181888321
+O. Poul Cullura,The Danish Peoples Party,Nordsjællands Storkreds,83,10369,6,0.04802777509885235
+O. Preben Andersen,The Danish Peoples Party,Nordsjællands Storkreds,128,10369,6,0.07406693027292892
+O. Jess Christian Persson,The Danish Peoples Party,Bornholms Storkreds,822,1164,3,2.118556701030928
+O. Knud Henrik Folkmann,The Danish Peoples Party,Bornholms Storkreds,103,1164,3,0.2654639175257732
+O. Sabine Nicoline Lyngberg,The Danish Peoples Party,Bornholms Storkreds,239,1164,3,0.615979381443299
+P. Anitta Nørgaard Johansen,Hard Line,Østjyllands Storkreds,350,1630,3,0.6441717791411042
+P. Helmuth Nyborg,Hard Line,Østjyllands Storkreds,1047,1630,3,1.9269938650306748
+P. René Paw Christensen,Hard Line,Østjyllands Storkreds,233,1630,3,0.4288343558282209
+P. August Jeberg,Hard Line,Vestjyllands Storkreds,195,778,3,0.7519280205655527
+P. Emil Normann Munk,Hard Line,Vestjyllands Storkreds,403,778,3,1.5539845758354756
+P. Thomas Schack,Hard Line,Vestjyllands Storkreds,180,778,3,0.6940874035989717
+P. Bjarke Rosenkilde,Hard Line,Københavns Omegns Storkreds,92,633,3,0.43601895734597157
+P. Henrik Westermann Søndergård,Hard Line,Københavns Omegns Storkreds,413,633,3,1.957345971563981
+P. Kim Jessen,Hard Line,Københavns Omegns Storkreds,128,633,3,0.6066350710900474
+P. Carsten Normann Munk,Hard Line,Sydjyllands Storkreds,890,1231,3,2.1689683184402924
+P. Emil Jensen,Hard Line,Sydjyllands Storkreds,174,1231,3,0.4240454914703493
+P. Mike Iversen,Hard Line,Sydjyllands Storkreds,167,1231,3,0.40698619008935827
+P. Casper Hansen,Hard Line,Nordsjællands Storkreds,306,761,2,0.8042049934296978
+P. Iben Thranholm,Hard Line,Nordsjællands Storkreds,455,761,2,1.1957950065703022
+P. Chang Claus Lembirk,Hard Line,Sjællands Storkreds,66,10383,4,0.02542617740537417
+P. Pernille Pedersen,Hard Line,Sjællands Storkreds,144,10383,4,0.055475296157180005
+P. Rasmus Paludan,Hard Line,Sjællands Storkreds,9959,10383,4,3.836656072426081
+P. Søren Grinderslev,Hard Line,Sjællands Storkreds,214,10383,4,0.08244245401136473
+P. Danni Pedersen,Hard Line,Nordjyllands Storkreds,393,1091,2,0.7204399633363886
+P. Uwe Max Jensen,Hard Line,Nordjyllands Storkreds,698,1091,2,1.2795600366636113
+P. Gerhard Andersen,Hard Line,Bornholms Storkreds,146,146,1,1.0
+P. Lemmy Lundquist,Hard Line,Københavns Storkreds,100,645,2,0.31007751937984496
+P. Martin Skriver,Hard Line,Københavns Storkreds,545,645,2,1.689922480620155
+P. Martin Christensen,Hard Line,Fyns Storkreds,840,972,2,1.728395061728395
+P. Mikkel Brinck Søberg,Hard Line,Fyns Storkreds,132,972,2,0.2716049382716049
+Pinki Karin Yvonne Jensen,ependent candidates,Sjællands Storkreds,162,162,1,1.0
+V. Anders G. Christensen,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,3193,64229,11,0.546840212365131
+V. Birte M. Andersen,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,1970,64229,11,0.33738653879088887
+V. Britt Bager,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,10490,64229,11,1.7965405035108752
+V. Fatma Øktem,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,5130,64229,11,0.8785750984757664
+V. Gustav Juul,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,871,64229,11,0.14916937831820518
+V. Heidi Bank,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,2943,64229,11,0.5040246617571502
+V. Jakob Ellemann-Jensen,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,19388,64229,11,3.3204315807501286
+V. Karina Rohrberg Jessen,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,578,64229,11,0.09898955300565165
+V. Michael Aastrup Jensen,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,12297,64229,11,2.1060113033053605
+V. Simon Ø. Simonsen,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,589,64229,11,0.10087343723240282
+V. Troels Lund Poulsen,"Venstre, Denmarks Liberal Party",Østjyllands Storkreds,6780,64229,11,1.16115773248844
+V. Anders G. Jacobsen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,1691,72926,11,0.25506678002358557
+V. Bent Jensen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,285,72926,11,0.04298878315004251
+V. Carsten Kissmeyer,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,7245,72926,11,1.0928201190247648
+V. Gitte Willumsen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,2722,72926,11,0.4105805885418095
+V. Holger Laustsen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,89,72926,11,0.013424567369662398
+V. Inger Støjberg,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,28420,72926,11,4.286811288155116
+V. Kenneth Mikkelsen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,4659,72926,11,0.7027534761264844
+V. Kristian Jensen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,10759,72926,11,1.6228642733730083
+V. Kristian Pihl Lorentzen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,6963,72926,11,1.050283849381565
+V. Natascha Joof,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,1267,72926,11,0.19111153772317144
+V. Thomas Danielsen,"Venstre, Denmarks Liberal Party",Vestjyllands Storkreds,8826,72926,11,1.3312947371307902
+V. Anna Libak,"Venstre, Denmarks Liberal Party",Nordsjællands Storkreds,6260,33764,6,1.1124274375074044
+V. Claus Hjort Frederiksen,"Venstre, Denmarks Liberal Party",Nordsjællands Storkreds,6405,33764,6,1.1381945267148441
+V. Hans Andersen,"Venstre, Denmarks Liberal Party",Nordsjællands Storkreds,7444,33764,6,1.3228290486909133
+V. Kristian N. Jensen,"Venstre, Denmarks Liberal Party",Nordsjællands Storkreds,1513,33764,6,0.26886624807487264
+V. Sophie Løhde,"Venstre, Denmarks Liberal Party",Nordsjællands Storkreds,11637,33764,6,2.067942186944675
+V. Thomas Bak,"Venstre, Denmarks Liberal Party",Nordsjællands Storkreds,505,33764,6,0.0897405520672906
+V. Anne Honoré Østergaard,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,4104,66044,9,0.5592635212888377
+V. Henrik Buchhave,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,1760,66044,9,0.23984010659560293
+V. Henrik Jørgensen,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,1425,66044,9,0.19418872266973533
+V. Karsten Lauritzen,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,18335,66044,9,2.498561565017261
+V. Maja Torp,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,4192,66044,9,0.5712555266186179
+V. Marie Bjerre,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,8627,66044,9,1.1756253406819697
+V. Preben Bang Henriksen,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,18459,66044,9,2.515459390709224
+V. Thomas Thomsen,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,540,66044,9,0.0735873054327418
+V. Torsten Schack Pedersen,"Venstre, Denmarks Liberal Party",Nordjyllands Storkreds,8602,66044,9,1.1722185209860094
+V. Anne Rasmussen,"Venstre, Denmarks Liberal Party",Københavns Storkreds,545,36993,12,0.17679020355202335
+V. Bjarke Kværnø,"Venstre, Denmarks Liberal Party",Københavns Storkreds,96,36993,12,0.03114102668072338
+V. Bo Sandroos,"Venstre, Denmarks Liberal Party",Københavns Storkreds,226,36993,12,0.07331116697753629
+V. Casper Pedersen,"Venstre, Denmarks Liberal Party",Københavns Storkreds,68,36993,12,0.02205822723217906
+V. Jan E. Jørgensen,"Venstre, Denmarks Liberal Party",Københavns Storkreds,4597,36993,12,1.4912010380342227
+V. Jens-Kristian Lütken,"Venstre, Denmarks Liberal Party",Københavns Storkreds,257,36993,12,0.08336712350985322
+V. Kasper Kristensen,"Venstre, Denmarks Liberal Party",Københavns Storkreds,1133,36993,12,0.36752899197145406
+V. Martin Geertsen,"Venstre, Denmarks Liberal Party",Københavns Storkreds,2404,36993,12,0.7798232097964479
+V. Michael Lange,"Venstre, Denmarks Liberal Party",Københavns Storkreds,1147,36993,12,0.3720703916957262
+V. Sven Aage Schlosrich,"Venstre, Denmarks Liberal Party",Københavns Storkreds,49,36993,12,0.01589489903495256
+V. Søren Sørensen,"Venstre, Denmarks Liberal Party",Københavns Storkreds,51,36993,12,0.016543670424134297
+V. Tommy Ahlers,"Venstre, Denmarks Liberal Party",Københavns Storkreds,26420,36993,12,8.570270051090747
+V. Anni Matthiesen,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,11308,74402,13,1.9758071019596248
+V. Christoffer Aagaard Melson,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,7550,74402,13,1.3191849681460175
+V. Claus Christensen,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,3522,74402,13,0.6153866831536786
+V. Ellen Trane Nørby,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,13477,74402,13,2.354788849762103
+V. Eva Kjer Hansen,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,9531,74402,13,1.665318136609231
+V. Hans Christian Schmidt,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,11126,74402,13,1.9440068815354425
+V. Hans Nissen Rosenberg,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,261,74402,13,0.04560361280610736
+V. Lene Ravn Rasmussen,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,673,74402,13,0.11759092497513508
+V. Mogens Dall,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,4028,74402,13,0.7037982849923389
+V. Philip Tietje,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,2310,74402,13,0.40361818230692725
+V. Tobias Jørgensen,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,1912,74402,13,0.3340770409397597
+V. Tom Eriksen,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,1730,74402,13,0.3022768205155775
+V. Ulla Tørnæs,"Venstre, Denmarks Liberal Party",Sydjyllands Storkreds,6974,74402,13,1.2185425122980564
+V. Araz Khan,"Venstre, Denmarks Liberal Party",Fyns Storkreds,1090,38556,8,0.22616453989003008
+V. Bo Libergren,"Venstre, Denmarks Liberal Party",Fyns Storkreds,1688,38556,8,0.3502438012241934
+V. Erling Bonnesen,"Venstre, Denmarks Liberal Party",Fyns Storkreds,8522,38556,8,1.7682332192136114
+V. Jane Heitmann,"Venstre, Denmarks Liberal Party",Fyns Storkreds,4420,38556,8,0.9171075837742504
+V. Lars Chr. Lilleholt,"Venstre, Denmarks Liberal Party",Fyns Storkreds,9930,38556,8,2.060379707438531
+V. Mark Grossmann,"Venstre, Denmarks Liberal Party",Fyns Storkreds,2600,38556,8,0.5394750492789708
+V. Marlene Ambo-Rasmussen,"Venstre, Denmarks Liberal Party",Fyns Storkreds,6312,38556,8,1.3096794273264862
+V. Ole Pedersen,"Venstre, Denmarks Liberal Party",Fyns Storkreds,3994,38556,8,0.8287166718539267
+V. Bertel Haarder,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,5308,88435,12,0.7202578164753773
+V. Charlotte Bisserup Bechfeldt,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,2835,88435,12,0.3846893198394301
+V. Jacob Jensen,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,7412,88435,12,1.0057556397353988
+V. Jacob Panton,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,2213,88435,12,0.30028834737377735
+V. Lars Løkke Rasmussen,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,40745,88435,12,5.528806468027365
+V. Lars-Christian Brask,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,2345,88435,12,0.3181998077684175
+V. Louise Schack Elholm,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,4229,88435,12,0.5738451970373721
+V. Marcus Knuth,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,9523,88435,12,1.2922033131678634
+V. Morten Dahlin,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,6471,88435,12,0.8780686379826992
+V. Rasmus Brandstrup Larsen,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,1352,88435,12,0.18345677616328376
+V. Sebastian Mylsted-Schenstrøm,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,1133,88435,12,0.15374003505399447
+V. Stén Knuth,"Venstre, Denmarks Liberal Party",Sjællands Storkreds,4869,88435,12,0.6606886413750213
+V. Charlotte Munch,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,996,18908,8,0.4214089274381214
+V. Christine Dal,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,1358,18908,8,0.5745716099005712
+V. Colette Brix,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,394,18908,8,0.1667019251110641
+V. Flemming Andersen,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,578,18908,8,0.24455257034059658
+V. Karen Ellemann,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,8238,18908,8,3.485508779352655
+V. Kim Valentin,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,3448,18908,8,1.4588533953881955
+V. Mads Fuglede,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,3622,18908,8,1.532473027290036
+V. Mikkel Molin,"Venstre, Denmarks Liberal Party",Københavns Omegns Storkreds,274,18908,8,0.11592976517876032
+V. Jens Rathmann Hansen,"Venstre, Denmarks Liberal Party",Bornholms Storkreds,105,4968,3,0.06340579710144928
+V. Peter Juel-Jensen,"Venstre, Denmarks Liberal Party",Bornholms Storkreds,4640,4968,3,2.8019323671497585
+V. Sandra Hjorth Folmand,"Venstre, Denmarks Liberal Party",Bornholms Storkreds,223,4968,3,0.13466183574879226
+Å. Allon Hein Sørensen,The Alternative,Nordsjællands Storkreds,221,3493,6,0.3796163756083596
+Å. Bina Seff,The Alternative,Nordsjællands Storkreds,106,3493,6,0.1820784425994847
+Å. Christian Poll,The Alternative,Nordsjællands Storkreds,1162,3493,6,1.9959919839679359
+Å. Julie Herdal Molbech,The Alternative,Nordsjællands Storkreds,411,3493,6,0.7059833953621529
+Å. Susan Kjeldgaard,The Alternative,Nordsjællands Storkreds,326,3493,6,0.5599770970512453
+Å. Theresa Scavenius,The Alternative,Nordsjællands Storkreds,1267,3493,6,2.176352705410822
+Å. Anders Stjernholm,The Alternative,Københavns Omegns Storkreds,603,4629,7,0.9118600129617628
+Å. Ken Patrick Petersson,The Alternative,Københavns Omegns Storkreds,126,4629,7,0.19053791315618923
+Å. Kim Christiansen,The Alternative,Københavns Omegns Storkreds,97,4629,7,0.14668394901706633
+Å. Marianne Victor Hansen,The Alternative,Københavns Omegns Storkreds,438,4629,7,0.662346079066753
+Å. Sikandar Siddique,The Alternative,Københavns Omegns Storkreds,2154,4629,7,3.257290991574854
+Å. Sofie Groth,The Alternative,Københavns Omegns Storkreds,1015,4629,7,1.5348887448693023
+Å. Thomas Anker,The Alternative,Københavns Omegns Storkreds,196,4629,7,0.2963923093540722
+Å. Andreas Skielboe,The Alternative,Vestjyllands Storkreds,67,2236,6,0.17978533094812166
+Å. Brian Bruhn,The Alternative,Vestjyllands Storkreds,475,2236,6,1.2745974955277282
+Å. Laura Emilie Hollænder Jensen,The Alternative,Vestjyllands Storkreds,196,2236,6,0.5259391771019678
+Å. Nicklas Stampe Raabjerg,The Alternative,Vestjyllands Storkreds,107,2236,6,0.28711985688729874
+Å. Stine Isaksen,The Alternative,Vestjyllands Storkreds,961,2236,6,2.57871198568873
+Å. Tatjana Stenvad,The Alternative,Vestjyllands Storkreds,430,2236,6,1.1538461538461537
+Å. Anne Grete Kamilles,The Alternative,Sjællands Storkreds,122,3939,11,0.34069560802234067
+Å. Charlotte Birk Bruun,The Alternative,Sjællands Storkreds,83,3939,11,0.23178471693323177
+Å. Claus Jansson,The Alternative,Sjællands Storkreds,98,3939,11,0.27367352119827365
+Å. Joan Kragh,The Alternative,Sjællands Storkreds,236,3939,11,0.659050520436659
+Å. Kirsten Kock,The Alternative,Sjællands Storkreds,166,3939,11,0.46356943386646354
+Å. Kristian Gylling,The Alternative,Sjællands Storkreds,121,3939,11,0.3379030210713379
+Å. Lars Birger Nielsen,The Alternative,Sjællands Storkreds,207,3939,11,0.5780654988575781
+Å. Peter Kjær Hansen,The Alternative,Sjællands Storkreds,132,3939,11,0.3686214775323686
+Å. Rasmus Nordqvist,The Alternative,Sjællands Storkreds,1499,3939,11,4.186087839553186
+Å. Sascha Faxe,The Alternative,Sjællands Storkreds,1192,3939,11,3.3287636455953287
+Å. Ulla Munksgaard,The Alternative,Sjællands Storkreds,83,3939,11,0.23178471693323177
+Å. Anne-Louise L. Bøttger-Rasmussen,The Alternative,Nordjyllands Storkreds,418,2398,8,1.3944954128440368
+Å. Camilla Bundgaard,The Alternative,Nordjyllands Storkreds,316,2398,8,1.0542118432026688
+Å. Christian Gade Bjerrum,The Alternative,Nordjyllands Storkreds,333,2398,8,1.1109257714762302
+Å. Gustav Sieg Sørensen,The Alternative,Nordjyllands Storkreds,37,2398,8,0.12343619683069225
+Å. Lars Rosenkvist,The Alternative,Nordjyllands Storkreds,102,2398,8,0.3402835696413678
+Å. Simon Leed Krøs,The Alternative,Nordjyllands Storkreds,301,2398,8,1.0041701417848208
+Å. Susanne Zimmer,The Alternative,Nordjyllands Storkreds,774,2398,8,2.5821517931609677
+Å. Ulla Gram Larsen,The Alternative,Nordjyllands Storkreds,117,2398,8,0.390325271059216
+Å. Asbjørn Ammitzbøll Flügge,The Alternative,Københavns Storkreds,252,16002,12,0.1889763779527559
+Å. Carolina Magdalene Maier,The Alternative,Københavns Storkreds,2673,16002,12,2.0044994375703036
+Å. Henrik Marstal,The Alternative,Københavns Storkreds,246,16002,12,0.1844769403824522
+Å. Jan Kristoffersen,The Alternative,Københavns Storkreds,316,16002,12,0.23697037870266216
+Å. Jonathan Ries,The Alternative,Københavns Storkreds,492,16002,12,0.3689538807649044
+Å. Kashif Ahmad,The Alternative,Københavns Storkreds,1258,16002,12,0.943382077240345
+Å. Kåre Traberg Smidt,The Alternative,Københavns Storkreds,1084,16002,12,0.8128983877015373
+Å. Mette Rose Nielsen,The Alternative,Københavns Storkreds,368,16002,12,0.275965504311961
+Å. Nina Svane-Mikkelsen,The Alternative,Københavns Storkreds,542,16002,12,0.40644919385076866
+Å. Rolf Bjerre,The Alternative,Københavns Storkreds,307,16002,12,0.2302212223472066
+Å. Shahzad Riaz,The Alternative,Københavns Storkreds,877,16002,12,0.6576677915260593
+Å. Uffe Elbæk,The Alternative,Københavns Storkreds,7587,16002,12,5.689538807649044
+Å. Bertram Kjær Johansen,The Alternative,Bornholms Storkreds,139,352,2,0.7897727272727273
+Å. Maria Hach,The Alternative,Bornholms Storkreds,213,352,2,1.2102272727272727
+Å. Birgitte Kehler Holst,The Alternative,Østjyllands Storkreds,486,5935,11,0.9007582139848357
+Å. Carsten Borup,The Alternative,Østjyllands Storkreds,120,5935,11,0.22240943555181128
+Å. HC Molbech,The Alternative,Østjyllands Storkreds,548,5935,11,1.0156697556866048
+Å. Helle Wium,The Alternative,Østjyllands Storkreds,588,5935,11,1.0898062342038752
+Å. Line Aaen,The Alternative,Østjyllands Storkreds,633,5935,11,1.1732097725358046
+Å. Mira Issa Bloch,The Alternative,Østjyllands Storkreds,1332,5935,11,2.4687447346251052
+Å. Niels Christiansen,The Alternative,Østjyllands Storkreds,62,5935,11,0.11491154170176916
+Å. Nilas Bay-Foged,The Alternative,Østjyllands Storkreds,250,5935,11,0.4633529907329402
+Å. Peter Barner Steinbrenner,The Alternative,Østjyllands Storkreds,89,5935,11,0.1649536647009267
+Å. Rasmus Foged,The Alternative,Østjyllands Storkreds,444,5935,11,0.8229149115417018
+Å. Torsten Gejl,The Alternative,Østjyllands Storkreds,1383,5935,11,2.563268744734625
+Å. Bjarne Aasø,The Alternative,Sydjyllands Storkreds,92,1990,9,0.41608040201005025
+Å. Ditte Madvig Evald,The Alternative,Sydjyllands Storkreds,136,1990,9,0.6150753768844222
+Å. Edvard Korsbæk,The Alternative,Sydjyllands Storkreds,75,1990,9,0.3391959798994975
+Å. Karin Rohr Genz,The Alternative,Sydjyllands Storkreds,642,1990,9,2.9035175879396986
+Å. Mette Bram,The Alternative,Sydjyllands Storkreds,147,1990,9,0.6648241206030151
+Å. Rune Ranaivo Bjerremand,The Alternative,Sydjyllands Storkreds,312,1990,9,1.4110552763819095
+Å. Stefan S. Kirkegaard-Kronborg,The Alternative,Sydjyllands Storkreds,60,1990,9,0.271356783919598
+Å. Søren Haastrup,The Alternative,Sydjyllands Storkreds,341,1990,9,1.542211055276382
+Å. Tina Brixen,The Alternative,Sydjyllands Storkreds,185,1990,9,0.8366834170854272
+Å. Fabian Munkholm Davidsen,The Alternative,Fyns Storkreds,543,3536,7,1.074943438914027
+Å. Karl Magnus Bidstrup,The Alternative,Fyns Storkreds,243,3536,7,0.48105203619909503
+Å. Line Gessø Hansen,The Alternative,Fyns Storkreds,242,3536,7,0.47907239819004527
+Å. Mette Rahbek,The Alternative,Fyns Storkreds,445,3536,7,0.8809389140271493
+Å. Mikkel Holm-Pedersen,The Alternative,Fyns Storkreds,238,3536,7,0.47115384615384615
+Å. Stine B. Helles,The Alternative,Fyns Storkreds,1645,3536,7,3.256504524886878
+Å. Tine Busk,The Alternative,Fyns Storkreds,180,3536,7,0.3563348416289593
+Ø. Aksel Rosager Johansen,The Red-Green Alliance,Vestjyllands Storkreds,201,3197,9,0.5658429777916797
+Ø. Ditte Stage Kroman,The Red-Green Alliance,Vestjyllands Storkreds,866,3197,9,2.4379105411323114
+Ø. Jakob Lindell Ruggaard,The Red-Green Alliance,Vestjyllands Storkreds,80,3197,9,0.22521113543947452
+Ø. Jakob Sølvhøj,The Red-Green Alliance,Vestjyllands Storkreds,913,3197,9,2.570222083203003
+Ø. Johnny Zaar,The Red-Green Alliance,Vestjyllands Storkreds,73,3197,9,0.2055051610885205
+Ø. Lars Dohn,The Red-Green Alliance,Vestjyllands Storkreds,136,3197,9,0.38285893024710665
+Ø. Lea Kielsholm,The Red-Green Alliance,Vestjyllands Storkreds,395,3197,9,1.1119799812324054
+Ø. Malte Bang,The Red-Green Alliance,Vestjyllands Storkreds,262,3197,9,0.737566468564279
+Ø. Mehmet Akbina,The Red-Green Alliance,Vestjyllands Storkreds,271,3197,9,0.7629027213012199
+Ø. Anna Aaen,The Red-Green Alliance,Nordjyllands Storkreds,754,4658,8,1.2949763847144697
+Ø. Berit Raldin,The Red-Green Alliance,Nordjyllands Storkreds,437,4658,8,0.7505367110347789
+Ø. Finn Grøn Nielsen,The Red-Green Alliance,Nordjyllands Storkreds,165,4658,8,0.28338342636324604
+Ø. Peder Hvelplund,The Red-Green Alliance,Nordjyllands Storkreds,1028,4658,8,1.7655646200085873
+Ø. Poul-Erik Andersen,The Red-Green Alliance,Nordjyllands Storkreds,151,4658,8,0.25933877200515243
+Ø. Sinem Demir,The Red-Green Alliance,Nordjyllands Storkreds,1248,4658,8,2.1434091884929156
+Ø. Susanne Flydtkjær,The Red-Green Alliance,Nordjyllands Storkreds,743,4658,8,1.2760841562902534
+Ø. Torsten Ringgaard,The Red-Green Alliance,Nordjyllands Storkreds,132,4658,8,0.22670674109059682
+Ø. Anna Berg,The Red-Green Alliance,Københavns Omegns Storkreds,1125,7258,8,1.2400110223201983
+Ø. Annika Holm Nielsen,The Red-Green Alliance,Københavns Omegns Storkreds,504,7258,8,0.5555249379994489
+Ø. Helge Bo Jensen,The Red-Green Alliance,Københavns Omegns Storkreds,234,7258,8,0.25792229264260125
+Ø. Ibrahim Benli,The Red-Green Alliance,Københavns Omegns Storkreds,1587,7258,8,1.7492422154863598
+Ø. Jeanne Toxværd,The Red-Green Alliance,Københavns Omegns Storkreds,384,7258,8,0.42325709561862773
+Ø. Stine Rahbek Pedersen,The Red-Green Alliance,Københavns Omegns Storkreds,731,7258,8,0.8057316065031689
+Ø. Søren Søndergaard,The Red-Green Alliance,Københavns Omegns Storkreds,2490,7258,8,2.744557729402039
+Ø. Tobias Clausen,The Red-Green Alliance,Københavns Omegns Storkreds,203,7258,8,0.2237531000275558
+Ø. Anne Hegelund,The Red-Green Alliance,Østjyllands Storkreds,3032,11028,11,3.0243017772941605
+Ø. Else Kayser,The Red-Green Alliance,Østjyllands Storkreds,648,11028,11,0.6463547334058759
+Ø. Helle Nielsen,The Red-Green Alliance,Østjyllands Storkreds,265,11028,11,0.2643271672107363
+Ø. Jesper Yde Knudsen,The Red-Green Alliance,Østjyllands Storkreds,435,11028,11,0.43389553862894453
+Ø. Karina Hjorth,The Red-Green Alliance,Østjyllands Storkreds,517,11028,11,0.5156873413130214
+Ø. Maja W. Albrechtsen,The Red-Green Alliance,Østjyllands Storkreds,1106,11028,11,1.1031918752266956
+Ø. Malene Erenskjold,The Red-Green Alliance,Østjyllands Storkreds,562,11028,11,0.5605730866884294
+Ø. Maria Temponeras,The Red-Green Alliance,Østjyllands Storkreds,856,11028,11,0.8538266231410954
+Ø. Nikolaj Villumsen,The Red-Green Alliance,Østjyllands Storkreds,1896,11028,11,1.8911860718171927
+Ø. Peder Meyhoff,The Red-Green Alliance,Østjyllands Storkreds,258,11028,11,0.2573449401523395
+Ø. Søren Egge Rasmussen,The Red-Green Alliance,Østjyllands Storkreds,1453,11028,11,1.4493108451215089
+Ø. Annie Hagel,The Red-Green Alliance,Nordsjællands Storkreds,361,4681,6,0.46272164067506943
+Ø. Casper Pedersen,The Red-Green Alliance,Nordsjællands Storkreds,212,4681,6,0.271736808374279
+Ø. Helena Jørgensen,The Red-Green Alliance,Nordsjællands Storkreds,666,4681,6,0.8536637470625935
+Ø. Mai Villadsen,The Red-Green Alliance,Nordsjællands Storkreds,2572,4681,6,3.2967314676351207
+Ø. Tormod Olsen,The Red-Green Alliance,Nordsjællands Storkreds,180,4681,6,0.23071993163853877
+Ø. Øjvind Vilsholm,The Red-Green Alliance,Nordsjællands Storkreds,690,4681,6,0.8844264046143986
+Ø. Benny Dall,The Red-Green Alliance,Sydjyllands Storkreds,201,6051,12,0.3986117997025285
+Ø. Flemming Leer Jakobsen,The Red-Green Alliance,Sydjyllands Storkreds,131,6051,12,0.2597917699553793
+Ø. Helene Hellesøe Appel,The Red-Green Alliance,Sydjyllands Storkreds,396,6051,12,0.7853247397124442
+Ø. Henning Hyllested,The Red-Green Alliance,Sydjyllands Storkreds,2349,6051,12,4.658403569657907
+Ø. Kirsten Cordtz,The Red-Green Alliance,Sydjyllands Storkreds,272,6051,12,0.5394149727317799
+Ø. Lene Dalsgaard,The Red-Green Alliance,Sydjyllands Storkreds,656,6051,12,1.3009419930589985
+Ø. Martin Schmidt Konradsen,The Red-Green Alliance,Sydjyllands Storkreds,119,6051,12,0.23599405057015369
+Ø. Mathias D. Christiansen,The Red-Green Alliance,Sydjyllands Storkreds,209,6051,12,0.4144769459593456
+Ø. Maya Ryom,The Red-Green Alliance,Sydjyllands Storkreds,396,6051,12,0.7853247397124442
+Ø. Rasmus Vestergaard Madsen,The Red-Green Alliance,Sydjyllands Storkreds,821,6051,12,1.6281606346058504
+Ø. Sabrina Louise Christiansen,The Red-Green Alliance,Sydjyllands Storkreds,214,6051,12,0.42439266236985623
+Ø. Sarah Nørris,The Red-Green Alliance,Sydjyllands Storkreds,287,6051,12,0.5691621219633118
+Ø. Bruno Jerup,The Red-Green Alliance,Sjællands Storkreds,189,8555,9,0.1988310929281122
+Ø. Christian Juhl,The Red-Green Alliance,Sjællands Storkreds,1178,8555,9,1.2392752776154297
+Ø. Christian Tastrup,The Red-Green Alliance,Sjællands Storkreds,169,8555,9,0.1777907656341321
+Ø. Eva Flyvholm,The Red-Green Alliance,Sjællands Storkreds,3740,8555,9,3.934541203974284
+Ø. Linda Havanna Hansen,The Red-Green Alliance,Sjællands Storkreds,999,8555,9,1.0509643483343074
+Ø. Martin Graff Jørgensen,The Red-Green Alliance,Sjællands Storkreds,481,8555,9,0.5060198714202221
+Ø. Mathilde Vinther,The Red-Green Alliance,Sjællands Storkreds,929,8555,9,0.977323202805377
+Ø. Mehmet Zeki Dogru,The Red-Green Alliance,Sjællands Storkreds,440,8555,9,0.4628872004675628
+Ø. Sejer Folke,The Red-Green Alliance,Sjællands Storkreds,430,8555,9,0.4523670368205728
+Ø. Camille Hvillum,The Red-Green Alliance,Fyns Storkreds,599,6572,7,0.6380097382836275
+Ø. Jesper Kiel,The Red-Green Alliance,Fyns Storkreds,1864,6572,7,1.985392574558734
+Ø. Jonas Hulgaard Ammundsen,The Red-Green Alliance,Fyns Storkreds,231,6572,7,0.2460438222763238
+Ø. Kasper Philbert,The Red-Green Alliance,Fyns Storkreds,150,6572,7,0.15976871576384663
+Ø. Reza Javid,The Red-Green Alliance,Fyns Storkreds,446,6572,7,0.47504564820450396
+Ø. Vibeke Syppli Enrum,The Red-Green Alliance,Fyns Storkreds,519,6572,7,0.5527997565429094
+Ø. Victoria Velasquez,The Red-Green Alliance,Fyns Storkreds,2763,6572,7,2.942939744370055
+Ø. David Rønne,The Red-Green Alliance,Københavns Storkreds,216,41856,12,0.06192660550458716
+Ø. Dorthe Hecht,The Red-Green Alliance,Københavns Storkreds,225,41856,12,0.06450688073394495
+Ø. Jakob Nerup,The Red-Green Alliance,Københavns Storkreds,295,41856,12,0.0845756880733945
+Ø. Jette Gottlieb,The Red-Green Alliance,Københavns Storkreds,1318,41856,12,0.37786697247706424
+Ø. Jonathan Simmel,The Red-Green Alliance,Københavns Storkreds,675,41856,12,0.19352064220183487
+Ø. Karen Skærlund Risvig,The Red-Green Alliance,Københavns Storkreds,169,41856,12,0.04845183486238532
+Ø. Louis Jacobsen,The Red-Green Alliance,Københavns Storkreds,391,41856,12,0.11209862385321101
+Ø. Mette Bang Larsen,The Red-Green Alliance,Københavns Storkreds,370,41856,12,0.10607798165137615
+Ø. Michael Neumann,The Red-Green Alliance,Københavns Storkreds,363,41856,12,0.10407110091743119
+Ø. Pernille Skipper,The Red-Green Alliance,Københavns Storkreds,33024,41856,12,9.46788990825688
+Ø. Rosa Lund,The Red-Green Alliance,Københavns Storkreds,3653,41856,12,1.0473050458715596
+Ø. Rune Lund,The Red-Green Alliance,Københavns Storkreds,1157,41856,12,0.33170871559633025
+Ø. Morten Riis,The Red-Green Alliance,Bornholms Storkreds,857,985,2,1.7401015228426395
+Ø. Niclas Fick,The Red-Green Alliance,Bornholms Storkreds,128,985,2,0.2598984771573604
