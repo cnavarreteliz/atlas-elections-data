@@ -1,0 +1,426 @@
+candidate,party_id,district_id,value,N,Q,vQ/N
+Adrian Billerbeck,Junge Schweizerische Volkspartei,Arlesheim,358,1677,7,1.494335122242099
+Cédric Wernli,Junge Schweizerische Volkspartei,Arlesheim,222,1677,7,0.9266547406082289
+Fabian Cueni,Junge Schweizerische Volkspartei,Arlesheim,223,1677,7,0.9308288610614192
+Jessica Sarah Sumi,Junge Schweizerische Volkspartei,Arlesheim,183,1677,7,0.7638640429338104
+Marc Stöcklin,Junge Schweizerische Volkspartei,Arlesheim,127,1677,7,0.530113297555158
+Michel Mamie,Junge Schweizerische Volkspartei,Arlesheim,349,1677,7,1.456768038163387
+Victor-Tobias Guillén,Junge Schweizerische Volkspartei,Arlesheim,215,1677,7,0.8974358974358975
+Adrian Billerbeck,Junge Schweizerische Volkspartei,Laufen,25,372,7,0.47043010752688175
+Cédric Wernli,Junge Schweizerische Volkspartei,Laufen,21,372,7,0.3951612903225806
+Fabian Cueni,Junge Schweizerische Volkspartei,Laufen,225,372,7,4.233870967741935
+Jessica Sarah Sumi,Junge Schweizerische Volkspartei,Laufen,19,372,7,0.3575268817204301
+Marc Stöcklin,Junge Schweizerische Volkspartei,Laufen,15,372,7,0.28225806451612906
+Michel Mamie,Junge Schweizerische Volkspartei,Laufen,41,372,7,0.771505376344086
+Victor-Tobias Guillén,Junge Schweizerische Volkspartei,Laufen,26,372,7,0.489247311827957
+Adrian Billerbeck,Junge Schweizerische Volkspartei,Liestal,86,574,7,1.048780487804878
+Cédric Wernli,Junge Schweizerische Volkspartei,Liestal,61,574,7,0.7439024390243902
+Fabian Cueni,Junge Schweizerische Volkspartei,Liestal,77,574,7,0.9390243902439024
+Jessica Sarah Sumi,Junge Schweizerische Volkspartei,Liestal,118,574,7,1.4390243902439024
+Marc Stöcklin,Junge Schweizerische Volkspartei,Liestal,54,574,7,0.6585365853658537
+Michel Mamie,Junge Schweizerische Volkspartei,Liestal,112,574,7,1.3658536585365855
+Victor-Tobias Guillén,Junge Schweizerische Volkspartei,Liestal,66,574,7,0.8048780487804879
+Adrian Billerbeck,Junge Schweizerische Volkspartei,Sissach,60,406,7,1.0344827586206897
+Cédric Wernli,Junge Schweizerische Volkspartei,Sissach,30,406,7,0.5172413793103449
+Fabian Cueni,Junge Schweizerische Volkspartei,Sissach,52,406,7,0.896551724137931
+Jessica Sarah Sumi,Junge Schweizerische Volkspartei,Sissach,81,406,7,1.396551724137931
+Marc Stöcklin,Junge Schweizerische Volkspartei,Sissach,67,406,7,1.1551724137931034
+Michel Mamie,Junge Schweizerische Volkspartei,Sissach,71,406,7,1.2241379310344827
+Victor-Tobias Guillén,Junge Schweizerische Volkspartei,Sissach,45,406,7,0.7758620689655172
+Adrian Billerbeck,Junge Schweizerische Volkspartei,Waldenburg,33,213,7,1.0845070422535212
+Cédric Wernli,Junge Schweizerische Volkspartei,Waldenburg,25,213,7,0.8215962441314554
+Fabian Cueni,Junge Schweizerische Volkspartei,Waldenburg,35,213,7,1.1502347417840375
+Jessica Sarah Sumi,Junge Schweizerische Volkspartei,Waldenburg,39,213,7,1.2816901408450705
+Marc Stöcklin,Junge Schweizerische Volkspartei,Waldenburg,22,213,7,0.7230046948356808
+Michel Mamie,Junge Schweizerische Volkspartei,Waldenburg,41,213,7,1.3474178403755868
+Victor-Tobias Guillén,Junge Schweizerische Volkspartei,Waldenburg,18,213,7,0.5915492957746479
+Andrea Camenzind,Schweizerische Volkspartei,Arlesheim,10556,84771,7,0.8716660178598813
+Caspar Baader,Schweizerische Volkspartei,Arlesheim,16327,84771,7,1.3482087034481132
+Christian Miesch,Schweizerische Volkspartei,Arlesheim,14131,84771,7,1.1668731051892747
+Dieter Völlmin,Schweizerische Volkspartei,Arlesheim,10796,84771,7,0.8914841160302462
+Georges Thüring,Schweizerische Volkspartei,Arlesheim,10248,84771,7,0.8462327918745798
+Hans-Jürgen Ringgenberg,Schweizerische Volkspartei,Arlesheim,10019,84771,7,0.8273230232036899
+Thomas de Courten,Schweizerische Volkspartei,Arlesheim,12694,84771,7,1.048212242394215
+Andrea Camenzind,Schweizerische Volkspartei,Laufen,1243,11514,7,0.7556887267674136
+Caspar Baader,Schweizerische Volkspartei,Laufen,2089,11514,7,1.2700191071738753
+Christian Miesch,Schweizerische Volkspartei,Laufen,1800,11514,7,1.0943199583116205
+Dieter Völlmin,Schweizerische Volkspartei,Laufen,1245,11514,7,0.7569046378322043
+Georges Thüring,Schweizerische Volkspartei,Laufen,2515,11514,7,1.529008163974292
+Hans-Jürgen Ringgenberg,Schweizerische Volkspartei,Laufen,1165,11514,7,0.7082681952405767
+Thomas de Courten,Schweizerische Volkspartei,Laufen,1457,11514,7,0.8857912107000173
+Andrea Camenzind,Schweizerische Volkspartei,Liestal,3755,33667,7,0.7807348442094633
+Caspar Baader,Schweizerische Volkspartei,Liestal,6754,33667,7,1.4042831259096444
+Christian Miesch,Schweizerische Volkspartei,Liestal,5982,33667,7,1.243769863664716
+Dieter Völlmin,Schweizerische Volkspartei,Liestal,5009,33667,7,1.0414649359907329
+Georges Thüring,Schweizerische Volkspartei,Liestal,3695,33667,7,0.7682597202007901
+Hans-Jürgen Ringgenberg,Schweizerische Volkspartei,Liestal,3262,33667,7,0.6782309086048653
+Thomas de Courten,Schweizerische Volkspartei,Liestal,5210,33667,7,1.083256601419788
+Andrea Camenzind,Schweizerische Volkspartei,Sissach,2800,26594,7,0.7370083477476123
+Caspar Baader,Schweizerische Volkspartei,Sissach,6110,26594,7,1.608257501692111
+Christian Miesch,Schweizerische Volkspartei,Sissach,4919,26594,7,1.294765736632323
+Dieter Völlmin,Schweizerische Volkspartei,Sissach,3505,26594,7,0.9225765210197789
+Georges Thüring,Schweizerische Volkspartei,Sissach,2510,26594,7,0.6606753403023238
+Hans-Jürgen Ringgenberg,Schweizerische Volkspartei,Sissach,2298,26594,7,0.6048732796871474
+Thomas de Courten,Schweizerische Volkspartei,Sissach,4452,26594,7,1.1718432729187034
+Andrea Camenzind,Schweizerische Volkspartei,Waldenburg,1476,14031,7,0.7363694676074407
+Caspar Baader,Schweizerische Volkspartei,Waldenburg,2922,14031,7,1.457772076117169
+Christian Miesch,Schweizerische Volkspartei,Waldenburg,2999,14031,7,1.4961870144679639
+Dieter Völlmin,Schweizerische Volkspartei,Waldenburg,1819,14031,7,0.907490556624617
+Georges Thüring,Schweizerische Volkspartei,Waldenburg,1523,14031,7,0.7598175468605232
+Hans-Jürgen Ringgenberg,Schweizerische Volkspartei,Waldenburg,1267,14031,7,0.6321003492267123
+Thomas de Courten,Schweizerische Volkspartei,Waldenburg,2025,14031,7,1.010262989095574
+Andreas Seiler,Die Jungfreisinnigen,Arlesheim,323,3030,7,0.7462046204620462
+David De Pretto,Die Jungfreisinnigen,Arlesheim,359,3030,7,0.8293729372937294
+Gisela Oreiller,Die Jungfreisinnigen,Arlesheim,393,3030,7,0.907920792079208
+Melanie Blaser,Die Jungfreisinnigen,Arlesheim,656,3030,7,1.5155115511551156
+Milo Graf,Die Jungfreisinnigen,Arlesheim,277,3030,7,0.63993399339934
+Nicolas Poupon,Die Jungfreisinnigen,Arlesheim,356,3030,7,0.8224422442244225
+Siro Imber,Die Jungfreisinnigen,Arlesheim,666,3030,7,1.5386138613861386
+Andreas Seiler,Die Jungfreisinnigen,Laufen,27,131,7,1.4427480916030535
+David De Pretto,Die Jungfreisinnigen,Laufen,16,131,7,0.8549618320610687
+Gisela Oreiller,Die Jungfreisinnigen,Laufen,17,131,7,0.9083969465648855
+Melanie Blaser,Die Jungfreisinnigen,Laufen,27,131,7,1.4427480916030535
+Milo Graf,Die Jungfreisinnigen,Laufen,16,131,7,0.8549618320610687
+Nicolas Poupon,Die Jungfreisinnigen,Laufen,9,131,7,0.48091603053435117
+Siro Imber,Die Jungfreisinnigen,Laufen,19,131,7,1.015267175572519
+Andreas Seiler,Die Jungfreisinnigen,Liestal,150,941,7,1.1158342189160468
+David De Pretto,Die Jungfreisinnigen,Liestal,91,941,7,0.6769394261424017
+Gisela Oreiller,Die Jungfreisinnigen,Liestal,119,941,7,0.8852284803400637
+Melanie Blaser,Die Jungfreisinnigen,Liestal,140,941,7,1.0414452709883104
+Milo Graf,Die Jungfreisinnigen,Liestal,269,941,7,2.0010626992561105
+Nicolas Poupon,Die Jungfreisinnigen,Liestal,81,941,7,0.6025504782146652
+Siro Imber,Die Jungfreisinnigen,Liestal,91,941,7,0.6769394261424017
+Andreas Seiler,Die Jungfreisinnigen,Sissach,51,380,7,0.9394736842105263
+David De Pretto,Die Jungfreisinnigen,Sissach,32,380,7,0.5894736842105263
+Gisela Oreiller,Die Jungfreisinnigen,Sissach,48,380,7,0.8842105263157894
+Melanie Blaser,Die Jungfreisinnigen,Sissach,88,380,7,1.6210526315789473
+Milo Graf,Die Jungfreisinnigen,Sissach,84,380,7,1.5473684210526315
+Nicolas Poupon,Die Jungfreisinnigen,Sissach,37,380,7,0.6815789473684211
+Siro Imber,Die Jungfreisinnigen,Sissach,40,380,7,0.7368421052631579
+Andreas Seiler,Die Jungfreisinnigen,Waldenburg,32,187,7,1.1978609625668448
+David De Pretto,Die Jungfreisinnigen,Waldenburg,15,187,7,0.5614973262032086
+Gisela Oreiller,Die Jungfreisinnigen,Waldenburg,18,187,7,0.6737967914438503
+Melanie Blaser,Die Jungfreisinnigen,Waldenburg,45,187,7,1.6844919786096257
+Milo Graf,Die Jungfreisinnigen,Waldenburg,33,187,7,1.2352941176470589
+Nicolas Poupon,Die Jungfreisinnigen,Waldenburg,17,187,7,0.6363636363636364
+Siro Imber,Die Jungfreisinnigen,Waldenburg,27,187,7,1.0106951871657754
+Anina Weber,Sozialdemokratische Partei und Gewerkschaften,Arlesheim,8541,89901,7,0.665031534688157
+Claude Janiak,Sozialdemokratische Partei und Gewerkschaften,Arlesheim,20523,89901,7,1.5979911235692594
+Daniel Münger,Sozialdemokratische Partei und Gewerkschaften,Arlesheim,8972,89901,7,0.6985906719613797
+Eric Nussbaumer,Sozialdemokratische Partei und Gewerkschaften,Arlesheim,13681,89901,7,1.0652495522852916
+Oberholzer Susanne Leutenegger,Sozialdemokratische Partei und Gewerkschaften,Arlesheim,17987,89901,7,1.4005294713073269
+Pia Fankhauser,Sozialdemokratische Partei und Gewerkschaften,Arlesheim,10076,89901,7,0.7845518959744608
+Urs Hintermann,Sozialdemokratische Partei und Gewerkschaften,Arlesheim,10121,89901,7,0.7880557502141244
+Anina Weber,Sozialdemokratische Partei und Gewerkschaften,Laufen,599,6433,7,0.6517954298150164
+Claude Janiak,Sozialdemokratische Partei und Gewerkschaften,Laufen,1612,6433,7,1.7540805223068552
+Daniel Münger,Sozialdemokratische Partei und Gewerkschaften,Laufen,622,6433,7,0.676822633297062
+Eric Nussbaumer,Sozialdemokratische Partei und Gewerkschaften,Laufen,922,6433,7,1.0032644178454841
+Oberholzer Susanne Leutenegger,Sozialdemokratische Partei und Gewerkschaften,Laufen,1315,6433,7,1.4309031556039173
+Pia Fankhauser,Sozialdemokratische Partei und Gewerkschaften,Laufen,700,6433,7,0.7616974972796517
+Urs Hintermann,Sozialdemokratische Partei und Gewerkschaften,Laufen,663,6433,7,0.721436343852013
+Anina Weber,Sozialdemokratische Partei und Gewerkschaften,Liestal,2497,28756,7,0.607838364167478
+Claude Janiak,Sozialdemokratische Partei und Gewerkschaften,Liestal,6724,28756,7,1.6368062317429406
+Daniel Münger,Sozialdemokratische Partei und Gewerkschaften,Liestal,2503,28756,7,0.6092989289191821
+Eric Nussbaumer,Sozialdemokratische Partei und Gewerkschaften,Liestal,5693,28756,7,1.3858325219084713
+Oberholzer Susanne Leutenegger,Sozialdemokratische Partei und Gewerkschaften,Liestal,5889,28756,7,1.4335443037974684
+Pia Fankhauser,Sozialdemokratische Partei und Gewerkschaften,Liestal,2852,28756,7,0.6942551119766309
+Urs Hintermann,Sozialdemokratische Partei und Gewerkschaften,Liestal,2598,28756,7,0.6324245374878287
+Anina Weber,Sozialdemokratische Partei und Gewerkschaften,Sissach,1330,17187,7,0.541688485483214
+Claude Janiak,Sozialdemokratische Partei und Gewerkschaften,Sissach,4505,17187,7,1.834817012858556
+Daniel Münger,Sozialdemokratische Partei und Gewerkschaften,Sissach,1351,17187,7,0.5502414615697911
+Eric Nussbaumer,Sozialdemokratische Partei und Gewerkschaften,Sissach,3417,17187,7,1.3916913946587537
+Oberholzer Susanne Leutenegger,Sozialdemokratische Partei und Gewerkschaften,Sissach,3668,17187,7,1.4939198231221271
+Pia Fankhauser,Sozialdemokratische Partei und Gewerkschaften,Sissach,1593,17187,7,0.648804328853203
+Urs Hintermann,Sozialdemokratische Partei und Gewerkschaften,Sissach,1323,17187,7,0.538837493454355
+Anina Weber,Sozialdemokratische Partei und Gewerkschaften,Waldenburg,596,7245,7,0.5758454106280193
+Claude Janiak,Sozialdemokratische Partei und Gewerkschaften,Waldenburg,1838,7245,7,1.7758454106280193
+Daniel Münger,Sozialdemokratische Partei und Gewerkschaften,Waldenburg,594,7245,7,0.5739130434782609
+Eric Nussbaumer,Sozialdemokratische Partei und Gewerkschaften,Waldenburg,1428,7245,7,1.3797101449275362
+Oberholzer Susanne Leutenegger,Sozialdemokratische Partei und Gewerkschaften,Waldenburg,1525,7245,7,1.4734299516908214
+Pia Fankhauser,Sozialdemokratische Partei und Gewerkschaften,Waldenburg,634,7245,7,0.6125603864734299
+Urs Hintermann,Sozialdemokratische Partei und Gewerkschaften,Waldenburg,630,7245,7,0.6086956521739131
+Benjamin van Vulpen,Junge Grüne,Arlesheim,450,3956,7,0.7962588473205258
+Erika Milena Franc,Junge Grüne,Arlesheim,841,3956,7,1.4881193124368048
+Lukas Gomez,Junge Grüne,Arlesheim,406,3956,7,0.71840242669363
+Michele Stämpfli,Junge Grüne,Arlesheim,546,3956,7,0.9661274014155713
+Samuel Blapp,Junge Grüne,Arlesheim,493,3956,7,0.8723458038422649
+Simon Trinkler,Junge Grüne,Arlesheim,625,3956,7,1.1059150657229524
+Yamenah Gomez,Junge Grüne,Arlesheim,595,3956,7,1.0528311425682508
+Benjamin van Vulpen,Junge Grüne,Laufen,49,582,7,0.5893470790378007
+Erika Milena Franc,Junge Grüne,Laufen,263,582,7,3.163230240549828
+Lukas Gomez,Junge Grüne,Laufen,39,582,7,0.4690721649484536
+Michele Stämpfli,Junge Grüne,Laufen,59,582,7,0.7096219931271478
+Samuel Blapp,Junge Grüne,Laufen,64,582,7,0.7697594501718213
+Simon Trinkler,Junge Grüne,Laufen,49,582,7,0.5893470790378007
+Yamenah Gomez,Junge Grüne,Laufen,59,582,7,0.7096219931271478
+Benjamin van Vulpen,Junge Grüne,Liestal,159,1125,7,0.9893333333333333
+Erika Milena Franc,Junge Grüne,Liestal,262,1125,7,1.6302222222222222
+Lukas Gomez,Junge Grüne,Liestal,106,1125,7,0.6595555555555556
+Michele Stämpfli,Junge Grüne,Liestal,138,1125,7,0.8586666666666667
+Samuel Blapp,Junge Grüne,Liestal,165,1125,7,1.0266666666666666
+Simon Trinkler,Junge Grüne,Liestal,126,1125,7,0.784
+Yamenah Gomez,Junge Grüne,Liestal,169,1125,7,1.0515555555555556
+Benjamin van Vulpen,Junge Grüne,Sissach,106,769,7,0.9648894668400521
+Erika Milena Franc,Junge Grüne,Sissach,151,769,7,1.374512353706112
+Lukas Gomez,Junge Grüne,Sissach,48,769,7,0.43693107932379716
+Michele Stämpfli,Junge Grüne,Sissach,87,769,7,0.7919375812743823
+Samuel Blapp,Junge Grüne,Sissach,195,769,7,1.7750325097529258
+Simon Trinkler,Junge Grüne,Sissach,83,769,7,0.7555266579973993
+Yamenah Gomez,Junge Grüne,Sissach,99,769,7,0.9011703511053316
+Benjamin van Vulpen,Junge Grüne,Waldenburg,50,375,7,0.9333333333333333
+Erika Milena Franc,Junge Grüne,Waldenburg,87,375,7,1.624
+Lukas Gomez,Junge Grüne,Waldenburg,28,375,7,0.5226666666666666
+Michele Stämpfli,Junge Grüne,Waldenburg,34,375,7,0.6346666666666667
+Samuel Blapp,Junge Grüne,Waldenburg,91,375,7,1.6986666666666668
+Simon Trinkler,Junge Grüne,Waldenburg,38,375,7,0.7093333333333334
+Yamenah Gomez,Junge Grüne,Waldenburg,47,375,7,0.8773333333333333
+Brigitte Meyer,Eidgenössisch-Demokratische Union,Arlesheim,186,1255,7,1.0374501992031873
+Hansjürg Bichsel,Eidgenössisch-Demokratische Union,Arlesheim,196,1255,7,1.093227091633466
+Markus Burri,Eidgenössisch-Demokratische Union,Arlesheim,235,1255,7,1.3107569721115537
+Mirjam Gerber,Eidgenössisch-Demokratische Union,Arlesheim,175,1255,7,0.9760956175298805
+Olga Gerber,Eidgenössisch-Demokratische Union,Arlesheim,152,1255,7,0.847808764940239
+Ruth Forster,Eidgenössisch-Demokratische Union,Arlesheim,166,1255,7,0.9258964143426295
+Traugott von Allmen,Eidgenössisch-Demokratische Union,Arlesheim,145,1255,7,0.8087649402390438
+Brigitte Meyer,Eidgenössisch-Demokratische Union,Laufen,15,110,7,0.9545454545454546
+Hansjürg Bichsel,Eidgenössisch-Demokratische Union,Laufen,19,110,7,1.209090909090909
+Markus Burri,Eidgenössisch-Demokratische Union,Laufen,21,110,7,1.3363636363636364
+Mirjam Gerber,Eidgenössisch-Demokratische Union,Laufen,14,110,7,0.8909090909090909
+Olga Gerber,Eidgenössisch-Demokratische Union,Laufen,13,110,7,0.8272727272727273
+Ruth Forster,Eidgenössisch-Demokratische Union,Laufen,12,110,7,0.7636363636363637
+Traugott von Allmen,Eidgenössisch-Demokratische Union,Laufen,16,110,7,1.018181818181818
+Brigitte Meyer,Eidgenössisch-Demokratische Union,Liestal,99,700,7,0.99
+Hansjürg Bichsel,Eidgenössisch-Demokratische Union,Liestal,115,700,7,1.15
+Markus Burri,Eidgenössisch-Demokratische Union,Liestal,128,700,7,1.28
+Mirjam Gerber,Eidgenössisch-Demokratische Union,Liestal,114,700,7,1.14
+Olga Gerber,Eidgenössisch-Demokratische Union,Liestal,83,700,7,0.83
+Ruth Forster,Eidgenössisch-Demokratische Union,Liestal,83,700,7,0.83
+Traugott von Allmen,Eidgenössisch-Demokratische Union,Liestal,78,700,7,0.78
+Brigitte Meyer,Eidgenössisch-Demokratische Union,Sissach,72,506,7,0.9960474308300395
+Hansjürg Bichsel,Eidgenössisch-Demokratische Union,Sissach,109,506,7,1.507905138339921
+Markus Burri,Eidgenössisch-Demokratische Union,Sissach,113,506,7,1.5632411067193677
+Mirjam Gerber,Eidgenössisch-Demokratische Union,Sissach,64,506,7,0.8853754940711462
+Olga Gerber,Eidgenössisch-Demokratische Union,Sissach,47,506,7,0.650197628458498
+Ruth Forster,Eidgenössisch-Demokratische Union,Sissach,52,506,7,0.7193675889328063
+Traugott von Allmen,Eidgenössisch-Demokratische Union,Sissach,49,506,7,0.6778656126482213
+Brigitte Meyer,Eidgenössisch-Demokratische Union,Waldenburg,44,344,7,0.8953488372093024
+Hansjürg Bichsel,Eidgenössisch-Demokratische Union,Waldenburg,68,344,7,1.3837209302325582
+Markus Burri,Eidgenössisch-Demokratische Union,Waldenburg,62,344,7,1.2616279069767442
+Mirjam Gerber,Eidgenössisch-Demokratische Union,Waldenburg,49,344,7,0.997093023255814
+Olga Gerber,Eidgenössisch-Demokratische Union,Waldenburg,34,344,7,0.6918604651162791
+Ruth Forster,Eidgenössisch-Demokratische Union,Waldenburg,37,344,7,0.752906976744186
+Traugott von Allmen,Eidgenössisch-Demokratische Union,Waldenburg,50,344,7,1.0174418604651163
+Christian Steiner-Biri,Christlichdemokratische Volkspartei,Arlesheim,3370,41578,7,0.5673673577372649
+Elisabeth Schneider-Schneiter,Christlichdemokratische Volkspartei,Arlesheim,8469,41578,7,1.425826158064361
+Franziska Stadelmann-Meyer,Christlichdemokratische Volkspartei,Arlesheim,4648,41578,7,0.7825292221848092
+Georg Gremmelspacher,Christlichdemokratische Volkspartei,Arlesheim,3950,41578,7,0.6650151522439752
+Gregor Gschwind,Christlichdemokratische Volkspartei,Arlesheim,6538,41578,7,1.100726345663572
+Kathrin Amacker-Amann  Dr.,Christlichdemokratische Volkspartei,Arlesheim,10646,41578,7,1.7923421039973062
+Simon Oberbeck,Christlichdemokratische Volkspartei,Arlesheim,3957,41578,7,0.6661936601087113
+Christian Steiner-Biri,Christlichdemokratische Volkspartei,Laufen,2670,9015,7,2.0732113144758735
+Elisabeth Schneider-Schneiter,Christlichdemokratische Volkspartei,Laufen,1350,9015,7,1.0482529118136439
+Franziska Stadelmann-Meyer,Christlichdemokratische Volkspartei,Laufen,834,9015,7,0.6475873544093178
+Georg Gremmelspacher,Christlichdemokratische Volkspartei,Laufen,802,9015,7,0.6227398779811425
+Gregor Gschwind,Christlichdemokratische Volkspartei,Laufen,1177,9015,7,0.9139212423738214
+Kathrin Amacker-Amann  Dr.,Christlichdemokratische Volkspartei,Laufen,1447,9015,7,1.1235718247365503
+Simon Oberbeck,Christlichdemokratische Volkspartei,Laufen,735,9015,7,0.5707154742096506
+Christian Steiner-Biri,Christlichdemokratische Volkspartei,Liestal,674,7805,7,0.6044843049327354
+Elisabeth Schneider-Schneiter,Christlichdemokratische Volkspartei,Liestal,1398,7805,7,1.2538116591928252
+Franziska Stadelmann-Meyer,Christlichdemokratische Volkspartei,Liestal,797,7805,7,0.7147982062780269
+Georg Gremmelspacher,Christlichdemokratische Volkspartei,Liestal,778,7805,7,0.6977578475336322
+Gregor Gschwind,Christlichdemokratische Volkspartei,Liestal,1123,7805,7,1.0071748878923767
+Kathrin Amacker-Amann  Dr.,Christlichdemokratische Volkspartei,Liestal,2296,7805,7,2.0591928251121074
+Simon Oberbeck,Christlichdemokratische Volkspartei,Liestal,739,7805,7,0.662780269058296
+Christian Steiner-Biri,Christlichdemokratische Volkspartei,Sissach,249,3832,7,0.4548538622129436
+Elisabeth Schneider-Schneiter,Christlichdemokratische Volkspartei,Sissach,532,3832,7,0.9718162839248434
+Franziska Stadelmann-Meyer,Christlichdemokratische Volkspartei,Sissach,291,3832,7,0.5315762004175365
+Georg Gremmelspacher,Christlichdemokratische Volkspartei,Sissach,350,3832,7,0.6393528183716075
+Gregor Gschwind,Christlichdemokratische Volkspartei,Sissach,1133,3832,7,2.0696764091858038
+Kathrin Amacker-Amann  Dr.,Christlichdemokratische Volkspartei,Sissach,1006,3832,7,1.8376826722338204
+Simon Oberbeck,Christlichdemokratische Volkspartei,Sissach,271,3832,7,0.49504175365344466
+Christian Steiner-Biri,Christlichdemokratische Volkspartei,Waldenburg,154,2034,7,0.5299901671583087
+Elisabeth Schneider-Schneiter,Christlichdemokratische Volkspartei,Waldenburg,292,2034,7,1.0049164208456245
+Franziska Stadelmann-Meyer,Christlichdemokratische Volkspartei,Waldenburg,166,2034,7,0.5712881022615536
+Georg Gremmelspacher,Christlichdemokratische Volkspartei,Waldenburg,165,2034,7,0.5678466076696165
+Gregor Gschwind,Christlichdemokratische Volkspartei,Waldenburg,586,2034,7,2.016715830875123
+Kathrin Amacker-Amann  Dr.,Christlichdemokratische Volkspartei,Waldenburg,522,2034,7,1.7964601769911503
+Simon Oberbeck,Christlichdemokratische Volkspartei,Waldenburg,149,2034,7,0.5127826941986234
+Christine Mangold-Bürgin,Freisinnig-Demokratische Partei,Arlesheim,5547,53713,7,0.7228976225494759
+Fritz Britt,Freisinnig-Demokratische Partei,Arlesheim,5679,53713,7,0.740100161971962
+Hans Rudolf Gysin,Freisinnig-Demokratische Partei,Arlesheim,13974,53713,7,1.8211233779531957
+Paul Kurrus,Freisinnig-Demokratische Partei,Arlesheim,9565,53713,7,1.246532496788487
+Petra Studer,Freisinnig-Demokratische Partei,Arlesheim,5542,53713,7,0.722246011207715
+Urs Steiner,Freisinnig-Demokratische Partei,Arlesheim,7310,53713,7,0.952655781654348
+Werner Rufi-Märki,Freisinnig-Demokratische Partei,Arlesheim,6096,53713,7,0.7944445478748161
+Christine Mangold-Bürgin,Freisinnig-Demokratische Partei,Laufen,504,7693,7,0.4585987261146497
+Fritz Britt,Freisinnig-Demokratische Partei,Laufen,490,7693,7,0.445859872611465
+Hans Rudolf Gysin,Freisinnig-Demokratische Partei,Laufen,1374,7693,7,1.2502274795268427
+Paul Kurrus,Freisinnig-Demokratische Partei,Laufen,911,7693,7,0.8289353958143767
+Petra Studer,Freisinnig-Demokratische Partei,Laufen,1308,7693,7,1.1901728844404003
+Urs Steiner,Freisinnig-Demokratische Partei,Laufen,2610,7693,7,2.3748862602365786
+Werner Rufi-Märki,Freisinnig-Demokratische Partei,Laufen,496,7693,7,0.451319381255687
+Christine Mangold-Bürgin,Freisinnig-Demokratische Partei,Liestal,2282,19375,7,0.8244645161290323
+Fritz Britt,Freisinnig-Demokratische Partei,Liestal,2161,19375,7,0.7807483870967742
+Hans Rudolf Gysin,Freisinnig-Demokratische Partei,Liestal,5290,19375,7,1.911225806451613
+Paul Kurrus,Freisinnig-Demokratische Partei,Liestal,3284,19375,7,1.1864774193548386
+Petra Studer,Freisinnig-Demokratische Partei,Liestal,1739,19375,7,0.628283870967742
+Urs Steiner,Freisinnig-Demokratische Partei,Liestal,3115,19375,7,1.1254193548387097
+Werner Rufi-Märki,Freisinnig-Demokratische Partei,Liestal,1504,19375,7,0.5433806451612904
+Christine Mangold-Bürgin,Freisinnig-Demokratische Partei,Sissach,3293,12177,7,1.8929949905559662
+Fritz Britt,Freisinnig-Demokratische Partei,Sissach,951,12177,7,0.5466863759546686
+Hans Rudolf Gysin,Freisinnig-Demokratische Partei,Sissach,2911,12177,7,1.6734006734006734
+Paul Kurrus,Freisinnig-Demokratische Partei,Sissach,1968,12177,7,1.1313131313131313
+Petra Studer,Freisinnig-Demokratische Partei,Sissach,876,12177,7,0.5035723084503573
+Urs Steiner,Freisinnig-Demokratische Partei,Sissach,1507,12177,7,0.8663053297199639
+Werner Rufi-Märki,Freisinnig-Demokratische Partei,Sissach,671,12177,7,0.3857271906052394
+Christine Mangold-Bürgin,Freisinnig-Demokratische Partei,Waldenburg,632,5104,7,0.8667711598746082
+Fritz Britt,Freisinnig-Demokratische Partei,Waldenburg,409,5104,7,0.5609326018808778
+Hans Rudolf Gysin,Freisinnig-Demokratische Partei,Waldenburg,1449,5104,7,1.9872648902821317
+Paul Kurrus,Freisinnig-Demokratische Partei,Waldenburg,979,5104,7,1.3426724137931034
+Petra Studer,Freisinnig-Demokratische Partei,Waldenburg,397,5104,7,0.544474921630094
+Urs Steiner,Freisinnig-Demokratische Partei,Waldenburg,952,5104,7,1.3056426332288402
+Werner Rufi-Märki,Freisinnig-Demokratische Partei,Waldenburg,286,5104,7,0.3922413793103448
+Edna Baumgartner,JungsozialistInnen,Arlesheim,359,2598,7,0.9672825250192456
+Erdal Atici,JungsozialistInnen,Arlesheim,351,2598,7,0.9457274826789839
+Joelle Meschberger,JungsozialistInnen,Arlesheim,635,2598,7,1.7109314857582756
+Lisa Degen,JungsozialistInnen,Arlesheim,308,2598,7,0.829869130100077
+Reto Wyss,JungsozialistInnen,Arlesheim,370,2598,7,0.9969207082371054
+Sebastian Dändliker,JungsozialistInnen,Arlesheim,233,2598,7,0.6277906081601232
+Stephan Börlin,JungsozialistInnen,Arlesheim,342,2598,7,0.9214780600461894
+Edna Baumgartner,JungsozialistInnen,Laufen,28,216,7,0.9074074074074074
+Erdal Atici,JungsozialistInnen,Laufen,26,216,7,0.8425925925925926
+Joelle Meschberger,JungsozialistInnen,Laufen,44,216,7,1.4259259259259258
+Lisa Degen,JungsozialistInnen,Laufen,39,216,7,1.2638888888888888
+Reto Wyss,JungsozialistInnen,Laufen,27,216,7,0.875
+Sebastian Dändliker,JungsozialistInnen,Laufen,24,216,7,0.7777777777777778
+Stephan Börlin,JungsozialistInnen,Laufen,28,216,7,0.9074074074074074
+Edna Baumgartner,JungsozialistInnen,Liestal,148,1081,7,0.9583718778908418
+Erdal Atici,JungsozialistInnen,Liestal,209,1081,7,1.3533765032377427
+Joelle Meschberger,JungsozialistInnen,Liestal,175,1081,7,1.1332099907493063
+Lisa Degen,JungsozialistInnen,Liestal,136,1081,7,0.8806660499537465
+Reto Wyss,JungsozialistInnen,Liestal,216,1081,7,1.398704902867715
+Sebastian Dändliker,JungsozialistInnen,Liestal,85,1081,7,0.5504162812210915
+Stephan Börlin,JungsozialistInnen,Liestal,112,1081,7,0.7252543940795559
+Edna Baumgartner,JungsozialistInnen,Sissach,111,768,7,1.01171875
+Erdal Atici,JungsozialistInnen,Sissach,68,768,7,0.6197916666666666
+Joelle Meschberger,JungsozialistInnen,Sissach,95,768,7,0.8658854166666666
+Lisa Degen,JungsozialistInnen,Sissach,135,768,7,1.23046875
+Reto Wyss,JungsozialistInnen,Sissach,274,768,7,2.4973958333333335
+Sebastian Dändliker,JungsozialistInnen,Sissach,37,768,7,0.3372395833333333
+Stephan Börlin,JungsozialistInnen,Sissach,48,768,7,0.4375
+Edna Baumgartner,JungsozialistInnen,Waldenburg,25,238,7,0.7352941176470589
+Erdal Atici,JungsozialistInnen,Waldenburg,29,238,7,0.8529411764705882
+Joelle Meschberger,JungsozialistInnen,Waldenburg,46,238,7,1.3529411764705883
+Lisa Degen,JungsozialistInnen,Waldenburg,41,238,7,1.2058823529411764
+Reto Wyss,JungsozialistInnen,Waldenburg,41,238,7,1.2058823529411764
+Sebastian Dändliker,JungsozialistInnen,Waldenburg,23,238,7,0.6764705882352942
+Stephan Börlin,JungsozialistInnen,Waldenburg,33,238,7,0.9705882352941176
+Elisabeth Augstburger-Schaffner,Evangelische Volkspartei,Arlesheim,1497,8246,7,1.2707979626485568
+Esther Leu-Plüss,Evangelische Volkspartei,Arlesheim,1240,8246,7,1.0526315789473684
+Martin Geiser-Meyer,Evangelische Volkspartei,Arlesheim,1039,8246,7,0.8820033955857386
+Paul Rohrbach-Eglin,Evangelische Volkspartei,Arlesheim,1250,8246,7,1.061120543293718
+Sara Fritz,Evangelische Volkspartei,Arlesheim,1167,8246,7,0.9906621392190152
+Stephan Seitzinger-Maron,Evangelische Volkspartei,Arlesheim,1234,8246,7,1.0475382003395586
+Tobias Valentin-Graf,Evangelische Volkspartei,Arlesheim,819,8246,7,0.6952461799660441
+Elisabeth Augstburger-Schaffner,Evangelische Volkspartei,Laufen,77,385,7,1.4
+Esther Leu-Plüss,Evangelische Volkspartei,Laufen,58,385,7,1.0545454545454545
+Martin Geiser-Meyer,Evangelische Volkspartei,Laufen,46,385,7,0.8363636363636363
+Paul Rohrbach-Eglin,Evangelische Volkspartei,Laufen,52,385,7,0.9454545454545454
+Sara Fritz,Evangelische Volkspartei,Laufen,52,385,7,0.9454545454545454
+Stephan Seitzinger-Maron,Evangelische Volkspartei,Laufen,62,385,7,1.1272727272727272
+Tobias Valentin-Graf,Evangelische Volkspartei,Laufen,38,385,7,0.6909090909090909
+Elisabeth Augstburger-Schaffner,Evangelische Volkspartei,Liestal,1120,4324,7,1.81313598519889
+Esther Leu-Plüss,Evangelische Volkspartei,Liestal,501,4324,7,0.811054579093432
+Martin Geiser-Meyer,Evangelische Volkspartei,Liestal,488,4324,7,0.790009250693802
+Paul Rohrbach-Eglin,Evangelische Volkspartei,Liestal,736,4324,7,1.1914893617021276
+Sara Fritz,Evangelische Volkspartei,Liestal,436,4324,7,0.7058279370952821
+Stephan Seitzinger-Maron,Evangelische Volkspartei,Liestal,474,4324,7,0.7673450508788159
+Tobias Valentin-Graf,Evangelische Volkspartei,Liestal,569,4324,7,0.9211378353376504
+Elisabeth Augstburger-Schaffner,Evangelische Volkspartei,Sissach,483,2555,7,1.3232876712328767
+Esther Leu-Plüss,Evangelische Volkspartei,Sissach,266,2555,7,0.7287671232876712
+Martin Geiser-Meyer,Evangelische Volkspartei,Sissach,413,2555,7,1.1315068493150684
+Paul Rohrbach-Eglin,Evangelische Volkspartei,Sissach,605,2555,7,1.6575342465753424
+Sara Fritz,Evangelische Volkspartei,Sissach,256,2555,7,0.7013698630136986
+Stephan Seitzinger-Maron,Evangelische Volkspartei,Sissach,258,2555,7,0.7068493150684931
+Tobias Valentin-Graf,Evangelische Volkspartei,Sissach,274,2555,7,0.7506849315068493
+Elisabeth Augstburger-Schaffner,Evangelische Volkspartei,Waldenburg,270,1579,7,1.1969601013299556
+Esther Leu-Plüss,Evangelische Volkspartei,Waldenburg,168,1579,7,0.7447751741608613
+Martin Geiser-Meyer,Evangelische Volkspartei,Waldenburg,173,1579,7,0.7669411019632679
+Paul Rohrbach-Eglin,Evangelische Volkspartei,Waldenburg,512,1579,7,2.2697910069664347
+Sara Fritz,Evangelische Volkspartei,Waldenburg,135,1579,7,0.5984800506649778
+Stephan Seitzinger-Maron,Evangelische Volkspartei,Waldenburg,158,1579,7,0.7004433185560481
+Tobias Valentin-Graf,Evangelische Volkspartei,Waldenburg,163,1579,7,0.7226092463584547
+Esther Maag,Grüne,Arlesheim,5453,40229,7,0.9488428745432399
+Isaac Reber,Grüne,Arlesheim,4352,40229,7,0.7572646598225161
+Karl-Heinz Zeller Zanolari,Grüne,Arlesheim,3873,40229,7,0.6739168261701758
+Madeleine Göschke-Chiquet,Grüne,Arlesheim,3473,40229,7,0.6043152949364886
+Maya Graf,Grüne,Arlesheim,15460,40229,7,2.690099182182008
+Philipp Schoch,Grüne,Arlesheim,4046,40229,7,0.7040194884287454
+Rahel Bänziger Keel,Grüne,Arlesheim,3572,40229,7,0.6215416739168261
+Esther Maag,Grüne,Laufen,487,3558,7,0.9581225407532321
+Isaac Reber,Grüne,Laufen,392,3558,7,0.7712197863968522
+Karl-Heinz Zeller Zanolari,Grüne,Laufen,288,3558,7,0.5666104553119731
+Madeleine Göschke-Chiquet,Grüne,Laufen,261,3558,7,0.5134907251264755
+Maya Graf,Grüne,Laufen,1436,3558,7,2.8251826869027545
+Philipp Schoch,Grüne,Laufen,399,3558,7,0.784991568296796
+Rahel Bänziger Keel,Grüne,Laufen,295,3558,7,0.5803822372119168
+Esther Maag,Grüne,Liestal,2320,15794,7,1.028238571609472
+Isaac Reber,Grüne,Liestal,1780,15794,7,0.7889071799417501
+Karl-Heinz Zeller Zanolari,Grüne,Liestal,1049,15794,7,0.4649233886285931
+Madeleine Göschke-Chiquet,Grüne,Liestal,1015,15794,7,0.449854375079144
+Maya Graf,Grüne,Liestal,6250,15794,7,2.7700392554134483
+Philipp Schoch,Grüne,Liestal,2211,15794,7,0.9799290869950614
+Rahel Bänziger Keel,Grüne,Liestal,1169,15794,7,0.5181081423325313
+Esther Maag,Grüne,Sissach,1591,13571,7,0.8206469677989832
+Isaac Reber,Grüne,Sissach,2103,13571,7,1.084739518090045
+Karl-Heinz Zeller Zanolari,Grüne,Sissach,760,13571,7,0.3920123793382949
+Madeleine Göschke-Chiquet,Grüne,Sissach,744,13571,7,0.3837594871416992
+Maya Graf,Grüne,Sissach,6376,13571,7,3.2887775403433794
+Philipp Schoch,Grüne,Sissach,1184,13571,7,0.6107140225480805
+Rahel Bänziger Keel,Grüne,Sissach,813,13571,7,0.41935008473951807
+Esther Maag,Grüne,Waldenburg,616,4602,7,0.9369839200347675
+Isaac Reber,Grüne,Waldenburg,574,4602,7,0.8730986527596697
+Karl-Heinz Zeller Zanolari,Grüne,Waldenburg,284,4602,7,0.43198609300304214
+Madeleine Göschke-Chiquet,Grüne,Waldenburg,302,4602,7,0.45936549326379833
+Maya Graf,Grüne,Waldenburg,2058,4602,7,3.1303780964797916
+Philipp Schoch,Grüne,Waldenburg,435,4602,7,0.6616688396349413
+Rahel Bänziger Keel,Grüne,Waldenburg,333,4602,7,0.5065189048239895
+John Stämpfli,Liste Einwanderungsstopp-Schweizer Demokraten,Arlesheim,910,2393,3,1.1408274132887588
+Lukas Brodbeck,Liste Einwanderungsstopp-Schweizer Demokraten,Arlesheim,763,2393,3,0.9565399080651902
+Urs Hammel,Liste Einwanderungsstopp-Schweizer Demokraten,Arlesheim,720,2393,3,0.902632678646051
+John Stämpfli,Liste Einwanderungsstopp-Schweizer Demokraten,Laufen,116,292,3,1.1917808219178083
+Lukas Brodbeck,Liste Einwanderungsstopp-Schweizer Demokraten,Laufen,89,292,3,0.9143835616438356
+Urs Hammel,Liste Einwanderungsstopp-Schweizer Demokraten,Laufen,87,292,3,0.8938356164383562
+John Stämpfli,Liste Einwanderungsstopp-Schweizer Demokraten,Liestal,345,871,3,1.1882893226176807
+Lukas Brodbeck,Liste Einwanderungsstopp-Schweizer Demokraten,Liestal,299,871,3,1.0298507462686568
+Urs Hammel,Liste Einwanderungsstopp-Schweizer Demokraten,Liestal,227,871,3,0.7818599311136625
+John Stämpfli,Liste Einwanderungsstopp-Schweizer Demokraten,Sissach,219,535,3,1.2280373831775702
+Lukas Brodbeck,Liste Einwanderungsstopp-Schweizer Demokraten,Sissach,175,535,3,0.9813084112149533
+Urs Hammel,Liste Einwanderungsstopp-Schweizer Demokraten,Sissach,141,535,3,0.7906542056074767
+John Stämpfli,Liste Einwanderungsstopp-Schweizer Demokraten,Waldenburg,156,385,3,1.2155844155844155
+Lukas Brodbeck,Liste Einwanderungsstopp-Schweizer Demokraten,Waldenburg,122,385,3,0.9506493506493506
+Urs Hammel,Liste Einwanderungsstopp-Schweizer Demokraten,Waldenburg,107,385,3,0.8337662337662337
+Matthias Oetterli,Junge Christlichdemokratische Volkspartei,Arlesheim,247,2912,5,0.42410714285714285
+Rolf Adam,Junge Christlichdemokratische Volkspartei,Arlesheim,523,2912,5,0.8980082417582418
+Sabrina Mohn,Junge Christlichdemokratische Volkspartei,Arlesheim,1241,2912,5,2.130837912087912
+Silvio Fareri,Junge Christlichdemokratische Volkspartei,Arlesheim,232,2912,5,0.3983516483516483
+van Quy Peter Tran,Junge Christlichdemokratische Volkspartei,Arlesheim,669,2912,5,1.148695054945055
+Matthias Oetterli,Junge Christlichdemokratische Volkspartei,Laufen,24,174,5,0.6896551724137931
+Rolf Adam,Junge Christlichdemokratische Volkspartei,Laufen,23,174,5,0.6609195402298851
+Sabrina Mohn,Junge Christlichdemokratische Volkspartei,Laufen,71,174,5,2.0402298850574714
+Silvio Fareri,Junge Christlichdemokratische Volkspartei,Laufen,25,174,5,0.7183908045977011
+van Quy Peter Tran,Junge Christlichdemokratische Volkspartei,Laufen,31,174,5,0.8908045977011494
+Matthias Oetterli,Junge Christlichdemokratische Volkspartei,Liestal,134,586,5,1.1433447098976108
+Rolf Adam,Junge Christlichdemokratische Volkspartei,Liestal,54,586,5,0.46075085324232085
+Sabrina Mohn,Junge Christlichdemokratische Volkspartei,Liestal,171,586,5,1.4590443686006827
+Silvio Fareri,Junge Christlichdemokratische Volkspartei,Liestal,120,586,5,1.023890784982935
+van Quy Peter Tran,Junge Christlichdemokratische Volkspartei,Liestal,107,586,5,0.9129692832764505
+Matthias Oetterli,Junge Christlichdemokratische Volkspartei,Sissach,23,198,5,0.5808080808080808
+Rolf Adam,Junge Christlichdemokratische Volkspartei,Sissach,26,198,5,0.6565656565656566
+Sabrina Mohn,Junge Christlichdemokratische Volkspartei,Sissach,77,198,5,1.9444444444444444
+Silvio Fareri,Junge Christlichdemokratische Volkspartei,Sissach,22,198,5,0.5555555555555556
+van Quy Peter Tran,Junge Christlichdemokratische Volkspartei,Sissach,50,198,5,1.2626262626262625
+Matthias Oetterli,Junge Christlichdemokratische Volkspartei,Waldenburg,16,102,5,0.7843137254901961
+Rolf Adam,Junge Christlichdemokratische Volkspartei,Waldenburg,14,102,5,0.6862745098039216
+Sabrina Mohn,Junge Christlichdemokratische Volkspartei,Waldenburg,34,102,5,1.6666666666666667
+Silvio Fareri,Junge Christlichdemokratische Volkspartei,Waldenburg,17,102,5,0.8333333333333334
+van Quy Peter Tran,Junge Christlichdemokratische Volkspartei,Waldenburg,21,102,5,1.0294117647058822
