@@ -19,8 +19,8 @@ def set_plot(dt, ax, xlabel="", ylabel="", labelkey=None):
         data=dt, 
         legend=False,
         linewidth=0,
-        palette=["#385a7c", "#f97171"], 
-        s=120,
+        palette=["#016FB9", "#DD1155"], 
+        s=100,
         style="type", 
         zorder=2,
         ax=ax
@@ -45,7 +45,7 @@ def set_plot(dt, ax, xlabel="", ylabel="", labelkey=None):
             else:
                 return f"$P$ = {round(pvalue, 3)}"
 
-        labels = {"ec": "EC", "ep": "EP"}
+        labels = {"ec": "EC", "ep": "ED"}
         val = corrfunc(pvalue)
         
         ax.text(0.025, pos, f"$ρ_{{{labels[i]}}}$ = {round(corr, 3)} ({val})", transform=ax.transAxes, va="top", fontsize=20)
